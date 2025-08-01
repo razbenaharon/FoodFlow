@@ -1,0 +1,26 @@
+[
+  {
+    "item": "zucchini",
+    "quantity": 3,
+    "unit": "kg",
+    "expires_in_days": 2
+  },
+  {
+    "item": "chicken breast",
+    "quantity": 5,
+    "unit": "kg",
+    "expires_in_days": 1
+  },
+  {
+    "item": "cream",
+    "quantity": 1.5,
+    "unit": "kg",
+    "expires_in_days": 2
+  },
+  {
+    "item": "fresh basil",
+    "quantity": 0.3,
+    "unit": "kg",
+    "expires_in_days": 1
+  }
+]

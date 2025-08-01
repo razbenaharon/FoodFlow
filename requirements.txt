@@ -1,0 +1,10 @@
+openai
+langchain
+qdrant-client
+python-dotenv
+tqdm
+langchain-openai
+qdrant-client
+tiktoken
+langchain_community
+jinja2
