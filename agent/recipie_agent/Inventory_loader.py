@@ -1,7 +1,7 @@
 import json
 import os
 from agent.chat_and_embedding import LLMEmbed
-
+# TODO: currently not in use
 COLLECTION_NAME = "current_inventory_mock"
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

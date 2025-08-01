@@ -121,13 +121,13 @@ except Exception as e:
     recipes_with_scores = []
 
 # --- Print final output ---
-print("\n\U0001f372 Final suggested recipes (with absolute & relative scores):")
+print(f"    \U0001f372 Final suggested recipes (with absolute & relative scores):")
 for recipe in sorted(recipes_with_scores, key=lambda x: x['relative_rank']):
     print(f"\U0001f37d️ {recipe['title']}")
     print(f"    \U0001f9ee Absolute score: {recipe['absolute_score']:.1f}")
     print(f"    \U0001f3c5 Relative rank: {recipe['relative_rank']}")
     print(f"    \U0001f9c2 Uses: {', '.join(recipe.get('used_expiring_ingredients', []))}")
-    print(f"    \ud83d\udca1 Reason: {recipe['reason']}")
+    print(f"    \U0001f4a1 Reason: {recipe['reason']}")
 
 # --- Save output ---
 recipes_for_saving = []

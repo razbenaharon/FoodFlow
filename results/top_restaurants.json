@@ -20,11 +20,11 @@
     "absolute_score": 7.8,
     "relative_rank": 2,
     "matched_ingredients": [
-      "fresh basil",
       "chicken breast",
+      "fresh basil",
       "zucchini"
     ],
-    "reason": "Asian fusion cuisine can incorporate fresh basil, chicken breast, and zucchini in its dishes. Close at 0.29km.",
+    "reason": "Asian fusion cuisine can incorporate chicken breast, fresh basil, and zucchini in stir-fries or curries. Close at 0.29km.",
     "original_data": {
       "name": "Taizu",
       "distance_km": 0.29,
