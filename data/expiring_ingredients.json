@@ -1,26 +1,62 @@
 [
   {
-    "item": "zucchini",
-    "quantity": 3,
-    "unit": "kg",
-    "expires_in_days": 2
+    "name": "Parsley",
+    "quantity": 74.8,
+    "unit": "grams",
+    "days_to_expire": 1
   },
   {
-    "item": "chicken breast",
-    "quantity": 5,
-    "unit": "kg",
-    "expires_in_days": 1
+    "name": "Heirloom tomatoes",
+    "quantity": 6.67,
+    "unit": "unit",
+    "days_to_expire": 3
   },
   {
-    "item": "cream",
-    "quantity": 1.5,
-    "unit": "kg",
-    "expires_in_days": 2
+    "name": "Beets",
+    "quantity": 2.3,
+    "unit": "unit",
+    "days_to_expire": 1
   },
   {
-    "item": "fresh basil",
-    "quantity": 0.3,
+    "name": "Sea bass",
+    "quantity": 1.8,
+    "unit": "fillet",
+    "days_to_expire": 4
+  },
+  {
+    "name": "Cauliflower",
+    "quantity": 4.39,
+    "unit": "unit",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Duck breast",
+    "quantity": 1.11,
     "unit": "kg",
-    "expires_in_days": 1
+    "days_to_expire": 2
+  },
+  {
+    "name": "Shrimp",
+    "quantity": 1.8,
+    "unit": "kg",
+    "days_to_expire": 2
+  },
+  {
+    "name": "Mushrooms",
+    "quantity": 0.33,
+    "unit": "kg",
+    "days_to_expire": 2
+  },
+  {
+    "name": "Mint",
+    "quantity": 59.97,
+    "unit": "grams",
+    "days_to_expire": 3
+  },
+  {
+    "name": "Dill",
+    "quantity": 27.79,
+    "unit": "grams",
+    "days_to_expire": 1
   }
 ]

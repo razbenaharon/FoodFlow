@@ -1,12 +1,12 @@
 import json
 import os
-from agent.chat_and_embedding import LLMEmbed
+from chat_and_embedding import LLMEmbed
 # TODO: currently not in use
 COLLECTION_NAME = "current_inventory_mock"
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
-CURRENT_INVENTORY_FILE = os.path.join(DATA_DIR, "current_inventory.json")
+CURRENT_INVENTORY_FILE = os.path.join(DATA_DIR, "full_inventory.json")
 
 with open(CURRENT_INVENTORY_FILE) as f:
     inventory = json.load(f)

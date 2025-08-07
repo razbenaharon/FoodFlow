@@ -1,6 +1,6 @@
 import json
 import os
-from agent.chat_and_embedding import LLMChat, LLMEmbed
+from chat_and_embedding import LLMChat, LLMEmbed
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, PromptTemplate
 
 # --- Paths ---
@@ -9,7 +9,7 @@ DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
 PROMPT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "prompts")
 
-RESTAURANT_PROMPT_FILE = os.path.join(PROMPT_DIR, "restaurant_scoring_prompt_rag.txt")
+RESTAURANT_PROMPT_FILE = os.path.join(PROMPT_DIR, "restaurant_agent_prompt.txt")
 TOP_RESTAURANTS_FILE = os.path.join(RESULTS_DIR, "top_restaurants.json")
 EXPIRING_INGREDIENTS_FILE = os.path.join(DATA_DIR, "expiring_ingredients.json")
 

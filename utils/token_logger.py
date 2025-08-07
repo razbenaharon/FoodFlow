@@ -10,6 +10,8 @@ CHAT_LOG = os.path.join(LOG_DIR, "chat_tokens.txt")
 EMBED_LOG = os.path.join(LOG_DIR, "embedding_tokens.txt")
 
 
+
+
 def log_tokens(n: int, category: str = "chat"):
     os.makedirs(LOG_DIR, exist_ok=True)
     path = CHAT_LOG if category == "chat" else EMBED_LOG
@@ -26,19 +28,33 @@ def get_total_tokens_used(category: str = "chat") -> int:
         return sum(int(line.strip()) for line in lines if line.strip().isdigit())
 
 
+import tiktoken
+
 def estimate_cost(chat_tokens: int, embedding_tokens: int) -> float:
     """
-    חישוב עלות כוללת:
-    - gpt-4o: $0.005 קלט, $0.015 פלט (בהנחה של 50% קלט/פלט)
-    - embedding: $0.02 ל-1,000 טוקנים
+    Total cost estimation:
+    - gpt-4o: $0.0025 per 1K input tokens, $0.01 per 1K output tokens (assuming 50/50 split)
+    - embedding: $0.02 per 1,000,000 tokens (embedding-3-small)
     """
     input_tokens = chat_tokens / 2
     output_tokens = chat_tokens / 2
-    chat_cost = (input_tokens / 1000) * 0.005 + (output_tokens / 1000) * 0.015
-    embedding_cost = (embedding_tokens / 1000) * 0.02
-    return round(chat_cost + embedding_cost, 4)
+    chat_cost = (input_tokens / 1000) * 0.0025 + (output_tokens / 1000) * 0.01
+    embedding_cost = (embedding_tokens / 1_000_000) * 0.02
+    return round(chat_cost + embedding_cost, 5)
 
 
 def count_tokens(text: str, model: str = "text-embedding-3-small") -> int:
     enc = tiktoken.encoding_for_model(model)
     return len(enc.encode(text))
+
+
+def report_cost():
+    # You need to define this function elsewhere
+    # Example: def get_total_tokens_used(category: str) -> int
+    chat_tokens_used = get_total_tokens_used("chat")
+    embedding_tokens_used = get_total_tokens_used("embedding")
+    total_cost = estimate_cost(chat_tokens_used, embedding_tokens_used)
+    print(f"Total estimated cost: ${total_cost}")
+
+report_cost()  # Uncomment to execute
+

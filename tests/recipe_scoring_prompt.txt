@@ -18,12 +18,12 @@ Your task:
 Respond in this exact format (a JSON array of objects). Do not include markdown formatting:
 
 [
-  {
+  {{
     "title": "Tomato Pasta",
     "absolute_score": 9.2,
     "relative_rank": 1,
     "reason": "Uses mostly expiring and available ingredients.",
     "used_expiring_ingredients": ["Tomatoes", "Basil"]
-  },
+  }},
   ...
 ]

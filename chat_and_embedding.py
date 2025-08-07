@@ -37,15 +37,15 @@ class LLMChat:
         input_content = "\n".join([m.content for m in messages])
         input_tokens = count_tokens(input_content, model="gpt-4")
         log_tokens(input_tokens, category="chat")
-        print(f"Prompt token count: {input_tokens}")
+        # print(f"Prompt token count: {input_tokens}")
 
         response = self.llm_chat.invoke(messages)
 
         output_text = response.content
         output_tokens = count_tokens(output_text, model="gpt-4")
         log_tokens(output_tokens, category="chat")
-        print(f"Completion token count: {output_tokens}")
-        print(f"Total tokens this run: {input_tokens + output_tokens}")
+        # print(f"Completion token count: {output_tokens}")
+        # print(f"Total tokens this run: {input_tokens + output_tokens}")
 
         return output_text
 
@@ -65,14 +65,13 @@ class LLMEmbed:
             azure_endpoint=AZURE_OPENAI_ENDPOINT,
             azure_deployment=EMBEDDING_DEPLOYMENT_NAME,
         )
-        # Connect to Qdrant
         self.qdrant = QdrantClient(
             url=QDRANT_URL,
             api_key=QDRANT_API_KEY,
+            timeout= 30
         )
 
     def embed_line_text_dict(self, collection_name, text_payload_pairs, embedding_dim=EMBEDDING_DIM):
-        # Create collection if not exists
         if not self.qdrant.collection_exists(collection_name):
             self.qdrant.create_collection(
                 collection_name=collection_name,
@@ -85,9 +84,15 @@ class LLMEmbed:
         points = []
         total_embedding_tokens = 0
 
-        for i, (text, payload) in enumerate(text_payload_pairs):
+        for text, payload in text_payload_pairs:
             vector = self.llm_embed.embed_query(text)
-            points.append(PointStruct(id=i, vector=vector, payload=payload))
+
+            # ✅ Pull point ID from the payload (created in main script)
+            point_id = payload.get("id")
+            if point_id is None:
+                raise ValueError("Missing 'id' in payload")
+
+            points.append(PointStruct(id=point_id, vector=vector, payload=payload))
 
             n_tokens = count_tokens(text)
             total_embedding_tokens += n_tokens

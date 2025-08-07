@@ -17,4 +17,3 @@ EMBEDDING_DEPLOYMENT_NAME = "team4-embedding"
 # for VectorDB
 QDRANT_URL = "https://e7d32f20-b66f-4e82-9398-cd5ccefa77b1.eu-central-1-0.aws.cloud.qdrant.io:6333"
 QDRANT_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.d-dHP8BfSJEpTx-gRyJQJ2rfg563Pwy4ng66FXc4k0g"
-

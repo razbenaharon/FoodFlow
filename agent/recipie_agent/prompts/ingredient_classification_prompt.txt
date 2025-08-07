@@ -1,0 +1,28 @@
+You are an ingredient-matching assistant.
+
+Given:
+- A full recipe with step-by-step instructions (but no separate ingredient list),
+- A list of ingredients that are expiring soon,
+- A list of current inventory items,
+
+Your task is to extract every ingredient mentioned in the recipe, and categorize it into one of three lists:
+
+- "expiring": if it appears in the list of expiring items
+- "inventory": if it appears in the current inventory but not in the expiring list
+- "missing": if it is not found in either the expiring or inventory lists
+
+Return your output in this JSON format:
+{
+  "expiring": ["..."],
+  "inventory": ["..."],
+  "missing": ["..."]
+}
+
+Here is the recipe:
+<DISH_TEXT>
+
+Expiring items:
+<EXPIRING_LIST>
+
+Current inventory:
+<INVENTORY_LIST>
