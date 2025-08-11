@@ -3,7 +3,7 @@ import json
 import random
 
 # === Define Paths ===
-PROJECT_ROOT              = Path(__file__).resolve().parent
+PROJECT_ROOT              = Path(__file__).resolve().parent.parent
 DATA_DIR                  = PROJECT_ROOT / "data"
 RESULTS_DIR               = PROJECT_ROOT / "results"
 PROMPT_DIR                = PROJECT_ROOT / "agent" / "decision_agent" / "prompts"

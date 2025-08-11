@@ -1,6 +1,6 @@
 import json
 import os
-from chat_and_embedding import LLMEmbed
+from utils.chat_and_embedding import LLMEmbed
 # TODO: currently not in use
 COLLECTION_NAME = "current_inventory_mock"
 

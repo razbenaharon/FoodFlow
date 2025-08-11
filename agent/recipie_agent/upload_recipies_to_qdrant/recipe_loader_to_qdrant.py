@@ -4,13 +4,13 @@ import uuid
 import pandas as pd
 import time
 from dotenv import load_dotenv
-from chat_and_embedding import LLMEmbed
+from utils.chat_and_embedding import LLMEmbed
 
 # --- Environment and configuration ---
 load_dotenv()
 embedder = LLMEmbed()
 COLLECTION_NAME = "food_recipes"
-STATE_PATH = "../uploaded.json"
+STATE_PATH = "uploaded.json"
 
 # --- Load uploaded state from file ---
 if os.path.exists(STATE_PATH):

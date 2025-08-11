@@ -1,6 +1,7 @@
 import json
+from typing import Any, Dict, List, Tuple
 
-def load_json(path, label, key_fields=("item", "name")):
+def load_json(path: str, label: str, key_fields: Tuple[str, str] = ("item", "name")) -> Tuple[List[Dict[str, Any]], set]:
     try:
         with open(path, encoding="utf-8") as f:
             raw = json.load(f)

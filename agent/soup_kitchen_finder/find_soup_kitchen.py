@@ -31,14 +31,13 @@ def find_best_open_soup_kitchen():
     top_5 = sorted(kitchens, key=lambda x: x["distance_km"])[:5]
     chosen = random.choice(top_5)
 
-    print("\n✅ Random soup kitchen (from 5 closest):")
-    print(f"🏠 Name: {chosen['name']}")
-    print(f"📍 Address: {chosen['address']}")
-    print(f"📏 Distance: {chosen['distance_km']} km")
+    print("\nBest matching soup kitchen:")
+    print(f"Name: {chosen['name']}")
+    print(f"Address: {chosen['address']}")
+    print(f"Distance: {chosen['distance_km']} km")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(chosen, f, indent=2, ensure_ascii=False)
-    print(f"💾 Saved selected soup kitchen to: {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     find_best_open_soup_kitchen()

@@ -1,6 +1,6 @@
 import json
 import os
-from chat_and_embedding import LLMChat, LLMEmbed
+from utils.chat_and_embedding import LLMChat, LLMEmbed
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, PromptTemplate
 
 # --- Paths ---

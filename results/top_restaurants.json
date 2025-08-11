@@ -1,29 +1,31 @@
 [
   {
-    "name": "Sabich Complete",
-    "matched_ingredients": [
-      "Mint",
-      "Labneh",
-      "Honey"
-    ],
-    "reason": "Middle Eastern restaurant where mint, labneh, and honey are commonly used. Extremely close (0.08km)."
-  },
-  {
     "name": "פסטה ויה | Pasta Via",
     "matched_ingredients": [
-      "Crushed tomato",
-      "Heirloom tomatoes",
-      "Cream"
+      "Cream",
+      "Butter",
+      "Basil",
+      "Black pepper"
     ],
-    "reason": "Italian restaurant that likely uses tomatoes and cream in pasta dishes. Close (0.30km) and suitable for the cuisine."
+    "reason": "Italian restaurant specializing in pasta dishes. Cream, butter, basil, and black pepper are ideal for their cuisine. Very close (0.3km) and likely to use these ingredients."
   },
   {
-    "name": "Rustico",
+    "name": "Sabich Complete",
     "matched_ingredients": [
-      "White wine",
-      "Zucchini",
-      "Cream"
+      "Parsley",
+      "Mint",
+      "Yogurt"
     ],
-    "reason": "Italian restaurant where white wine, zucchini, and cream are often used in cooking. Reasonably close (0.47km) and highly rated."
+    "reason": "Middle Eastern restaurant where parsley, mint, and yogurt are commonly used in dishes like sabich or salads. Extremely close (0.08km)."
+  },
+  {
+    "name": "Amore Mio",
+    "matched_ingredients": [
+      "Cream",
+      "Butter",
+      "Basil",
+      "Black pepper"
+    ],
+    "reason": "Italian restaurant with a focus on rich, creamy dishes. Cream, butter, basil, and black pepper are a perfect fit. Close (0.3km) and likely to appreciate these ingredients."
   }
 ]

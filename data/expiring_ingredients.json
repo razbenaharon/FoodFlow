@@ -1,61 +1,61 @@
 [
   {
-    "name": "Parsley",
-    "quantity": 74.8,
+    "name": "Honey",
+    "quantity": 231.93,
     "unit": "grams",
-    "days_to_expire": 1
-  },
-  {
-    "name": "Heirloom tomatoes",
-    "quantity": 6.67,
-    "unit": "unit",
-    "days_to_expire": 3
-  },
-  {
-    "name": "Beets",
-    "quantity": 2.3,
-    "unit": "unit",
-    "days_to_expire": 1
-  },
-  {
-    "name": "Sea bass",
-    "quantity": 1.8,
-    "unit": "fillet",
     "days_to_expire": 4
   },
   {
-    "name": "Cauliflower",
-    "quantity": 4.39,
+    "name": "Cream",
+    "quantity": 1.29,
+    "unit": "liters",
+    "days_to_expire": 4
+  },
+  {
+    "name": "Mint",
+    "quantity": 63.02,
+    "unit": "grams",
+    "days_to_expire": 4
+  },
+  {
+    "name": "Zucchini",
+    "quantity": 6.33,
     "unit": "unit",
     "days_to_expire": 1
   },
   {
-    "name": "Duck breast",
-    "quantity": 1.11,
-    "unit": "kg",
-    "days_to_expire": 2
-  },
-  {
-    "name": "Shrimp",
-    "quantity": 1.8,
-    "unit": "kg",
-    "days_to_expire": 2
-  },
-  {
-    "name": "Mushrooms",
-    "quantity": 0.33,
-    "unit": "kg",
-    "days_to_expire": 2
-  },
-  {
-    "name": "Mint",
-    "quantity": 59.97,
-    "unit": "grams",
+    "name": "Leeks",
+    "quantity": 2.15,
+    "unit": "stalk",
     "days_to_expire": 3
   },
   {
-    "name": "Dill",
-    "quantity": 27.79,
+    "name": "Butter",
+    "quantity": 0.73,
+    "unit": "kg",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Black pepper",
+    "quantity": 127.68,
+    "unit": "grams",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Parsley",
+    "quantity": 62.72,
+    "unit": "grams",
+    "days_to_expire": 2
+  },
+  {
+    "name": "Basil",
+    "quantity": 22.68,
+    "unit": "grams",
+    "days_to_expire": 4
+  },
+  {
+    "name": "Yogurt",
+    "quantity": 320.02,
     "unit": "grams",
     "days_to_expire": 1
   }

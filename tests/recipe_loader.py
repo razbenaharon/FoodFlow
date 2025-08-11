@@ -1,5 +1,5 @@
 import json
-from chat_and_embedding import LLMEmbed
+from utils.chat_and_embedding import LLMEmbed
 
 COLLECTION_NAME = "recipes_mock"
 RECIPE_FILE_PATH = "data/recipes_mock.json"

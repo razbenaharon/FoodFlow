@@ -56,5 +56,28 @@ def report_cost():
     total_cost = estimate_cost(chat_tokens_used, embedding_tokens_used)
     print(f"Total estimated cost: ${total_cost}")
 
-report_cost()  # Uncomment to execute
+
+# token_logger.py
+
+def print_estimated_cost_header():
+    """
+    Print a short, human-readable cost summary for the project based on
+    accumulated token usage. Intended to be called from main.py (not on import).
+    """
+    try:
+        # Assumes these functions already exist in this module
+        chat_tokens = get_total_tokens_used("chat") or 0
+        embedding_tokens = get_total_tokens_used("embedding") or 0
+        total_cost = estimate_cost(chat_tokens, embedding_tokens)
+
+        print("\n==================== Project Estimated Cost ====================")
+        print(f"💬 Chat tokens: {chat_tokens:,}")
+        print(f"🔎 Embedding tokens: {embedding_tokens:,}")
+        print(f"💲 Total estimated cost: ${total_cost:.5f}")
+        print("===============================================================\n")
+    except Exception as e:
+        print("\n[Cost] Failed to compute estimated cost:", e, "\n")
+
+
+
 

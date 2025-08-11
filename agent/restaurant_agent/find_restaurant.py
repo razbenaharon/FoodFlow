@@ -1,7 +1,7 @@
 import json
 import csv
 import os
-from chat_and_embedding import LLMChat
+from utils.chat_and_embedding import LLMChat
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, PromptTemplate
 
 
@@ -85,11 +85,11 @@ def run_find_restaurant():
         restaurant_scores = []
 
     # --- Display results ---
-    print("\n🏪 Top 3 suggested restaurants:")
+    print("\nBest matching restaurants:")
     for idx, r in enumerate(restaurant_scores, 1):
         print(f"{idx}. {r['name']}")
-        print(f"   🧂 Matched ingredients: {', '.join(r.get('matched_ingredients', []))}")
-        print(f"   💡 Reason: {r['reason']}")
+        print(f"   Matched ingredients: {', '.join(r.get('matched_ingredients', []))}")
+        print(f"   Reason: {r['reason']}")
 
     # --- Save results ---
     with open(TOP_RESTAURANTS_FILE, "w", encoding="utf-8") as f:
