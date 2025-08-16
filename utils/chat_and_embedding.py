@@ -51,11 +51,21 @@ class LLMChat:
 
     def extract_json_string(self, text):
         text = text.strip()
-        if text.startswith("```"):
-            text = re.sub(r"^```(?:json)?\\s*", "", text)
-            text = re.sub(r"\\s*```$", "", text)
-        return text.strip()
 
+        # 1. Try extracting from ```json block
+        match = re.search(r"```json\s*(.*?)```", text, re.DOTALL)
+        if match:
+            return match.group(1).strip()
+
+        # 2. Try using the whole text as raw JSON
+        try:
+            json.loads(text)  # just to validate it's valid
+            return text
+        except json.JSONDecodeError:
+            pass
+
+        # 3. Fallback: no valid JSON found
+        raise ValueError("No valid JSON block or content found in LLM output.")
 
 class LLMEmbed:
     def __init__(self):

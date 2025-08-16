@@ -7,7 +7,7 @@ from utils.prepare_inventory import prepare_inventory
 from agent.execution_agent.send_recipie_to_kitchen import main as send_recipe_to_kitchen
 from agent.execution_agent.send_message import send_message
 from utils.token_logger import print_estimated_cost_header
-
+from agent.feedback_agent.get_feedback import run_feedback_agent
 
 # === Define Paths ===
 PROJECT_ROOT              = Path(__file__).resolve().parent
@@ -22,7 +22,7 @@ NEARBY_LOCATIONS_FILE     = DATA_DIR / "nearby_restaurants.csv"
 TOP_RECIPES_FILE          = RESULTS_DIR / "top_recipes.json"
 TOP_RESTAURANTS_FILE      = RESULTS_DIR / "top_restaurants.json"
 DECISION_PROMPT_FILE      = PROMPT_DIR / "ingredient_decision_prompt.txt"
-
+EXPIRED_HISTORY_FILE      = DATA_DIR / "recent_expiring_ingredients.json"
 
 
 def main():
@@ -78,6 +78,10 @@ def main():
     input("\nPress Enter to continue...")
     print("\n===========================================================================\n")
 
+    print("📊 Checking if feedback agent should run...")
+    run_feedback_agent()
+
+    print("\n✅ Simulation complete.")
 
 
 if __name__ == "__main__":

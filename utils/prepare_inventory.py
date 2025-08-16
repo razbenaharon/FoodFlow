@@ -1,3 +1,5 @@
+import shutil
+from datetime import datetime
 from pathlib import Path
 import json
 import random
@@ -11,11 +13,11 @@ PROMPT_DIR                = PROJECT_ROOT / "agent" / "decision_agent" / "prompts
 FULL_INVENTORY_FILE       = DATA_DIR / "full_inventory.json"
 CURRENT_INVENTORY_FILE    = DATA_DIR / "current_inventory.json"
 EXPIRING_INGREDIENTS_FILE = DATA_DIR / "expiring_ingredients.json"
+EXPIRED_HISTORY_FILE = DATA_DIR / "recent_expiring_ingredients.json"
 NEARBY_LOCATIONS_FILE     = DATA_DIR / "nearby_restaurants.csv"
 TOP_RECIPES_FILE          = RESULTS_DIR / "top_recipes.json"
 TOP_RESTAURANTS_FILE      = RESULTS_DIR / "top_restaurants.json"
 DECISION_PROMPT_FILE      = PROMPT_DIR / "ingredient_decision_prompt.txt"
-
 
 
 def prepare_inventory():
@@ -66,6 +68,8 @@ def prepare_inventory():
     with open(CURRENT_INVENTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(current_inventory, f, ensure_ascii=False, indent=2)
 
+    update_expired_history(processed_expiring)
+
     # 7. Print beautifully
     print("📦 Current Inventory (excluding expiring):")
     for ing in current_inventory:
@@ -76,3 +80,24 @@ def prepare_inventory():
         print(f"- {ing['name']}: {ing['quantity']} {ing['unit']} (Expires in {ing['days_to_expire']} days)")
 
     return
+
+def update_expired_history(new_expiring):
+    # Load existing history (or start new)
+    if EXPIRED_HISTORY_FILE.exists():
+        with open(EXPIRED_HISTORY_FILE, "r", encoding="utf-8") as f:
+            content = f.read().strip()
+
+        if not content:
+            history = []
+        else:
+            history = json.loads(content)
+
+    else:
+        history = []
+
+    # Add current batch
+    history.append(new_expiring)
+
+    # Save updated history
+    with open(EXPIRED_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
