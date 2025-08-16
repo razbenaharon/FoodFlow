@@ -21,6 +21,9 @@ EXPIRING_FILE  = DATA_DIR / "expiring_ingredients.json"
 DEFAULT_RESTAURANT_NAME = "HaSalon"
 DEFAULT_CITY = "Tel Aviv"
 
+# ✅ Mock phone number (can override via env var if you want)
+CONTACT_PHONE = os.getenv("FOODFLOW_CONTACT_PHONE", "052-1234567")
+
 
 # ---------------- helpers ----------------
 def _norm(s: str) -> str:
@@ -113,6 +116,28 @@ def _prep_item_lines(items: List[str], exp_map: Dict[str, Dict[str, Any]]) -> Li
             lines.append(f"- {it}, expires in {exp}")
     return lines
 
+def _ensure_contact_phone(text: str) -> str:
+    """Make sure the exact CONTACT_PHONE appears in the message; replace placeholders if found."""
+    if CONTACT_PHONE in text:
+        return text
+    # Replace common placeholder patterns
+    patterns = [
+        r"\[\s*phone\s*number\s*\]", r"\[\s*insert\s*phone\s*number\s*\]",
+        r"\[\s*phone\s*\]", r"\(\s*phone\s*\)", r"\{\s*phone\s*\}",
+        r"\b(?:XXX-XXX-XXXX|000-000-0000)\b",
+    ]
+    new_text = text
+    replaced = False
+    for pat in patterns:
+        if re.search(pat, new_text, flags=re.IGNORECASE):
+            new_text = re.sub(pat, CONTACT_PHONE, new_text, flags=re.IGNORECASE)
+            replaced = True
+    if not replaced:
+        # If nothing replaced and number not present, append a clear contact line
+        sep = "\n" if not new_text.endswith("\n") else ""
+        new_text = f"{new_text}{sep}Contact: {CONTACT_PHONE}"
+    return new_text
+
 def _gpt_message_to_restaurant(
     restaurant: str,
     sell_lines: List[str],
@@ -126,7 +151,7 @@ We want to SELL the following surplus ingredients today (quantities and expiry b
 Please:
 - Start with a warm one-line intro that we're {brand} and have high-quality surplus available today.
 - Bullet the items exactly as given THEN add a per-item suggested price and line subtotal in ILS (₪), based on freshness (bigger discount if fewer days to expire).
-- After bullets, include: a bundled offer price, pickup window today, and a contact phone number placeholder.
+- After bullets, include: a bundled offer price, pickup window today, and this EXACT contact phone number: {CONTACT_PHONE}. Do NOT write placeholders.
 - Keep it under 1200 characters. Avoid markdown code fences.
 
 Surplus list:
@@ -134,7 +159,8 @@ Surplus list:
 
 Output: message text only."""
     chat = LLMChat(temp=0.5)
-    return chat.send_prompt(prompt).strip()
+    msg = chat.send_prompt(prompt).strip()
+    return _ensure_contact_phone(msg)
 
 def _gpt_message_to_soup_kitchen(
     kitchen: str,
@@ -149,7 +175,7 @@ We want to DONATE the following fresh ingredients today (quantities and expiry b
 Please:
 - One-line intro that we're {brand} and we have same-day donation.
 - Bullet the items exactly as given (no prices).
-- Add an estimated pickup window today and a contact phone number placeholder.
+- Add an estimated pickup window today and this EXACT contact phone number: {CONTACT_PHONE}. Do NOT write placeholders.
 - Keep it under 800 characters. Avoid markdown code fences.
 
 Donation list:
@@ -157,7 +183,8 @@ Donation list:
 
 Output: message text only."""
     chat = LLMChat(temp=0.5)
-    return chat.send_prompt(prompt).strip()
+    msg = chat.send_prompt(prompt).strip()
+    return _ensure_contact_phone(msg)
 
 
 # ---------------- public API ----------------
@@ -178,20 +205,22 @@ def send_message(restaurant: Optional[str] = None, soup_kitchen: Optional[str] =
 
     if r_name and sell_lines:
         msg_r = _gpt_message_to_restaurant(r_name, sell_lines)
-        r_path = MESSAGES_DIR / "message_to_restaurant.txt"     # ← fixed filename
+        r_path = MESSAGES_DIR / "message_to_restaurant.txt"
         with open(r_path, "w", encoding="utf-8") as f:
             f.write(msg_r)
         print("\n====== Message to restaurant ======")
         print(msg_r)
+        print(f"(Saved message for restaurant: {r_name})")
         out_paths["restaurant_message_path"] = str(r_path)
 
     if k_name and donate_lines:
         msg_k = _gpt_message_to_soup_kitchen(k_name, donate_lines)
-        k_path = MESSAGES_DIR / "message_to_soup_kitchen.txt"   # ← fixed filename
+        k_path = MESSAGES_DIR / "message_to_soup_kitchen.txt"
         with open(k_path, "w", encoding="utf-8") as f:
             f.write(msg_k)
         print("\n====== Message to soup kitchen ======")
         print(msg_k)
+        print(f"(Saved message for soup kitchen: {k_name})")
         out_paths["soup_kitchen_message_path"] = str(k_path)
 
     if not out_paths:
