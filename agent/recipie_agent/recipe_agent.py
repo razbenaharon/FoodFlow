@@ -315,7 +315,7 @@ def run_find_recipes() -> None:
             "rank": i,
             "title": title,  # ← this is now the REAL retrieved recipe title
             "matched_expiring": exp_match,
-            "inventory": inv_match,
+            "inventory": inv_match, #TODO: add explanation about none
             "missing": miss,
             "reason": reason,
             "restaurant": rest_name,

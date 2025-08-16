@@ -1,62 +1,62 @@
 [
   {
-    "name": "Honey",
-    "quantity": 231.93,
-    "unit": "grams",
-    "days_to_expire": 4
+    "name": "Shrimp",
+    "quantity": 0.96,
+    "unit": "kg",
+    "days_to_expire": 2
   },
   {
     "name": "Cream",
-    "quantity": 1.29,
+    "quantity": 0.61,
     "unit": "liters",
-    "days_to_expire": 4
+    "days_to_expire": 2
   },
   {
-    "name": "Mint",
-    "quantity": 63.02,
+    "name": "Parmesan cheese",
+    "quantity": 280.22,
     "unit": "grams",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Olive oil",
+    "quantity": 614.89,
+    "unit": "ml",
     "days_to_expire": 4
   },
   {
     "name": "Zucchini",
-    "quantity": 6.33,
+    "quantity": 3.13,
     "unit": "unit",
-    "days_to_expire": 1
+    "days_to_expire": 4
   },
   {
-    "name": "Leeks",
-    "quantity": 2.15,
-    "unit": "stalk",
-    "days_to_expire": 3
-  },
-  {
-    "name": "Butter",
-    "quantity": 0.73,
+    "name": "Duck breast",
+    "quantity": 1.08,
     "unit": "kg",
     "days_to_expire": 1
   },
   {
-    "name": "Black pepper",
-    "quantity": 127.68,
+    "name": "Labneh",
+    "quantity": 188.19,
     "unit": "grams",
     "days_to_expire": 1
   },
   {
-    "name": "Parsley",
-    "quantity": 62.72,
+    "name": "Dill",
+    "quantity": 30.92,
     "unit": "grams",
     "days_to_expire": 2
   },
   {
-    "name": "Basil",
-    "quantity": 22.68,
+    "name": "Mint",
+    "quantity": 40.8,
     "unit": "grams",
-    "days_to_expire": 4
+    "days_to_expire": 3
   },
   {
-    "name": "Yogurt",
-    "quantity": 320.02,
-    "unit": "grams",
+    "name": "Garlic",
+    "quantity": 14.27,
+    "unit": "cloves",
     "days_to_expire": 1
   }
 ]

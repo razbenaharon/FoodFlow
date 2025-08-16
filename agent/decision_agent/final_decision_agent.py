@@ -264,7 +264,7 @@ def decide_actions() -> List[Dict[str, Any]]:
     print("cook-list ingirdients:",   ", ".join(cook_list)   if cook_list   else "none")
     print("sell-list ingirdients:",   ", ".join(sell_list)   if sell_list   else "none")
     print("donate-list ingirdients:", ", ".join(donate_list) if donate_list else "none")
-
+    # TODO: add the reason for each ingredient - why the agent chose to sell/cook/donate and where to
     return decisions
 
 # Keep script runnable directly
@@ -273,3 +273,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
