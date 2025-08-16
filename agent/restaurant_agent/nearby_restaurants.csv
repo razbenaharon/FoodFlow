@@ -1,0 +1,554 @@
+name,address,lat,lng,rating,user_ratings_total,types,distance_from_ha_salon_km,name_english
+Toto,"Berkovitch Street 4, Tel Aviv-Yafo",32.0785473,34.7873849,4.2,1978.0,"restaurant, food, point_of_interest, establishment",0.9560856051787727,Toto
+BBB יגאל אלון,"Yigal Alon Street 96, Tel Aviv-Yafo",32.0690556,34.7941389,3.9,3051.0,"restaurant, food, point_of_interest, establishment",2.1862519917014103,BBB Yigal Alon
+Uno Italiano Gungo,"Weizmann Street 2, Tel Aviv-Yafo",32.07756680000001,34.7891393,3.9,1523.0,"restaurant, food, point_of_interest, establishment",1.1350090331948695,Uno Italiano Gungo
+ג׳פניקה קוויק גבעתיים | JAPANIKA QUICK GIVAATAYIM,"HaShalom Road 53, Giv'atayim",32.0670236,34.803109,3.8,1877.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",2.8741585269872147,Japanika Quick Giv'atayim
+Dixie,"Yigal Alon Street 120, Tel Aviv-Yafo",32.0736794,34.79577039999999,4.2,7525.0,"bar, restaurant, food, point_of_interest, establishment",1.8618919056838583,Dixie
+ריבר סושי רמת גן River,"Zeev Jabotinsky Street 7, Ramat Gan",32.0837559,34.80385160000001,3.8,1163.0,"restaurant, food, point_of_interest, establishment",2.032408335720291,River Sushi Ramat Gan
+פאנץ' ליין תל אביב - המלצרים המזמרים - PunchLine TLV,"HaArba'a Street 14, Tel Aviv-Yafo",32.0702542,34.7844629,4.1,690.0,"restaurant, food, point_of_interest, establishment",1.7668579029241334,Punch Line Tel Aviv – Singing Waiters
+Onami,"HaArba'a Street 18, Tel Aviv-Yafo",32.0702368,34.7851696,4.2,2854.0,"restaurant, food, point_of_interest, establishment",1.7770067446220397,Onami
+ליב liv.,"Ha-Yetsira Street 3, Ramat Gan",32.0845284,34.8023595,4.0,436.0,"restaurant, meal_delivery, food, point_of_interest, establishment",1.882928946852467,Liv
+Deda,"Katzenelson Street 113, Giv'atayim",32.0772682,34.8140065,4.3,2236.0,"restaurant, food, point_of_interest, establishment",3.13158052538512,Deda
+"Mensa, homemade food","Tuval Street 28, Ramat Gan",32.0867804,34.8031489,4.5,771.0,"restaurant, meal_takeaway, food, point_of_interest, establishment",1.950806218593211,"Mensa, homemade food"
+Cafe Nelson,"Katzenelson Street 33, Giv'atayim",32.0753338,34.80492049999999,4.1,2376.0,"restaurant, food, point_of_interest, establishment",2.430183469768409,Cafe Nelson
+Tachtit Café,"Lincoln Street 9, Tel Aviv-Yafo",32.0670307,34.78182330000001,4.3,2511.0,"cafe, restaurant, food, point_of_interest, establishment",2.1155243886265254,Tachtit Café
+מפגש הסטייק - מסעדה כשרה בתל אביב,"חנייה חינם משעה 4 אחה""צ, בכתובת סעדיה גאון 10, Menakhem Begin Road 37, Tel Aviv-Yafo",32.0655176,34.7828618,3.9,869.0,"restaurant, food, point_of_interest, establishment",2.282599604817439,The Steak Meeting – Kosher Tel Aviv
+Domino's Pizza,"Carlebach Street 29, Tel Aviv-Yafo",32.06898690000001,34.7827821,3.3,314.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",1.8978271963773916,Domino's Pizza
+Porter & Sons,"HaArba'a Street 14, Tel Aviv-Yafo",32.0702542,34.7844629,4.5,4777.0,"restaurant, bar, food, point_of_interest, establishment",1.7668579029241334,Porter & Sons
+Go Noodles,"Yitzhak Sadeh Street 8, Tel Aviv-Yafo",32.0652061,34.7855969,3.9,541.0,"restaurant, food, point_of_interest, establishment",2.3352631155705903,Go Noodles
+Domino Pizza,"Laskov Street 4, Tel Aviv-Yafo",32.0712598,34.7824498,4.6,785.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",1.64560970145703,Domino Pizza
+Sora,"HaShalom Road 53, Giv'atayim",32.0671419,34.80316179999999,3.8,1404.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",2.8679052791274713,Sora
+פרגו פיצה בתל אביב,"Carlebach Street 12, Tel Aviv-Yafo",32.0699421,34.7829489,3.9,161.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",1.7922212439866674,Fargo Pizza Tel Aviv
+Mystic Pizza Douplus,"Katzenelson Street 9, Giv'atayim",32.0754287,34.8027047,4.2,156.0,"restaurant, food, point_of_interest, establishment",2.244754096596827,Mystic Pizza Douplus
+Pizza Prego,"Katzenelson Street 28, Giv'atayim",32.0750408,34.8048763,3.6,353.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",2.4427012940467367,Pizza Prego
+Suduch,"HaShalom Road 51, Giv'atayim",32.0678388,34.8028111,4.4,1546.0,"restaurant, food, point_of_interest, establishment",2.788875207816267,Suduch
+Domino's Pizza,"Yigal Alon Street 90, Tel Aviv-Yafo",32.0673618,34.7932855,3.1,368.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",2.3139543309377597,Domino's Pizza
+McDonald's,"Nakhalat Yitskhak Street 20, Tel Aviv-Yafo",32.0739817,34.79811360000001,2.7,204.0,"restaurant, food, point_of_interest, establishment",1.9946657863883308,McDonald's
+Oshi Oshi,"עזריאלי גבעתיים, Derech Yitshak Rabin 53, Giv'atayim",32.06644849999999,34.8107108,4.0,317.0,"restaurant, food, point_of_interest, establishment",3.44134926194099,Oshi Oshi
+Shnitzel Company,"Abba Hillel Silver Road 7, Ramat Gan",32.08454569999999,34.8029456,4.1,239.0,"restaurant, food, point_of_interest, establishment",1.9378575590287714,Shnitzel Company
+Tatti Bistro,"HaShalom Road 53, Giv'atayim",32.067164,34.8031748,4.0,3480.0,"restaurant, bar, food, point_of_interest, establishment",2.866944793867597,Tatti Bistro
+ג'חנון קול,"Zeev Jabotinsky Street 20, Ramat Gan",32.0832912,34.8061992,3.7,668.0,"restaurant, food, point_of_interest, establishment",2.258926317801594,Jachnun Cool
+Aroma,"Derech Yitshak Rabin 53, Giv'atayim",32.0668057,34.8099335,3.8,713.0,"cafe, store, restaurant, food, point_of_interest, establishment",3.3595004499197647,Aroma
+Domino's Pizza,"Zeev Jabotinsky Street 16, Ramat Gan",32.0831497,34.8056059,3.3,456.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",2.2057379008485842,Domino's Pizza
+תחנת האוכל (כשר),"Nakhalat Yitskhak Street 22, Tel Aviv-Yafo",32.07441709999999,34.7986221,4.7,502.0,"restaurant, food, point_of_interest, establishment",1.9987736568122871,The Food Station (Kosher)
+Yom Tov Hummus,"Nakhalat Yitskhak Street 18, Tel Aviv-Yafo",32.0741745,34.7978635,4.2,382.0,"restaurant, food, point_of_interest, establishment",1.96281195829709,Yom Tov Hummus
+Madi's,"Menorat HaMa'or Street 4, Tel Aviv-Yafo",32.0746692,34.7963381,4.0,107.0,"restaurant, food, point_of_interest, establishment",1.8203040886415065,Madi's
+Shawarma Nahalat Yitzhak,"Nakhalat Yitskhak Street 7, Tel Aviv-Yafo",32.07520899999999,34.796657,4.1,1134.0,"restaurant, food, point_of_interest, establishment",1.8013637103370748,Shawarma Nahalat Yitzhak
+Django Bar,"Katzenelson Street 43, Giv'atayim",32.0753177,34.8057474,4.4,1334.0,"bar, restaurant, food, point_of_interest, establishment",2.4993298003842197,Django Bar
+Juice Soup,"Katzenelson Street 49, Giv'atayim",32.0753248,34.8062379,4.5,1199.0,"store, restaurant, food, point_of_interest, establishment",2.539721544129634,Juice Soup
+Yaffo Tel Aviv,"בניין אלקטרה, יגאל אלון 98, תל אביב-יפו",32.0700137,34.7940951,4.3,3737.0,"restaurant, food, point_of_interest, establishment",2.0929172357743426,Yaffo Tel Aviv
+Neo Sushi Bar,"Katzenelson Street 55, Giv'atayim",32.07538940000001,34.8071314,4.2,2837.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",2.6111931215404423,Neo Sushi Bar
+McDonald's,"Menakhem Begin Road 132, Tel Aviv-Yafo",32.0744,34.7917,3.4,454.0,"restaurant, food, point_of_interest, establishment",1.5612993121092913,McDonald's
+Black Bar 'n Burger,"Menakhem Begin Road 132, Tel Aviv-Yafo",32.0737241,34.7912751,3.3,681.0,"restaurant, food, point_of_interest, establishment",1.603021551109726,Black Bar 'n Burger
+Cafe Italia,"Kremenetski Street 6, Tel Aviv-Yafo",32.066523,34.7941246,4.4,5745.0,"restaurant, food, point_of_interest, establishment",2.4325300527027136,Cafe Italia
+The Peppers,"Yehudit Boulevard 7, Tel Aviv-Yafo",32.0702928,34.7897797,4.7,100.0,"restaurant, food, point_of_interest, establishment",1.882762924493488,The Peppers
+McDonald's,"Ha-Yetsira Street 3, Ramat Gan",32.08459090000001,34.8029829,3.2,655.0,"restaurant, food, point_of_interest, establishment",1.940925924948333,McDonald's
+Sabor סבור מטבח טרי ופלנצ'ה,Israel,32.0846071,34.8028645,4.2,103.0,"restaurant, food, point_of_interest, establishment",1.929635062051877,Sabor Fresh Kitchen & Plancha
+Fish Market by Meatos,"Sderot Sha'ul HaMelech 33, Tel Aviv-Jaffa",32.0774078,34.7892761,3.5,1086.0,"restaurant, food, point_of_interest, establishment",1.156840969994992,Fish Market by Meatos
+‎Whiskey Bar & Museum | וויסקי בר מוזיאון,"מתחם שרונה, Rav Aluf David Elazar 27, Tel Aviv-Jaffa",32.0710338,34.78828590000001,4.5,3729.0,"restaurant, bar, museum, food, point_of_interest, establishment",1.7577024852015868,Whiskey Bar & Museum
+Café Nimrod,"Rav Aluf David Elazar Street 12, Tel Aviv-Yafo",32.0724995,34.788031,3.6,1380.0,"cafe, restaurant, food, point_of_interest, establishment",1.5959807904423318,Café Nimrod
+Abu Gosh,"Weizmann Street 14, Tel Aviv-Yafo",32.08142780000001,34.7898728,3.4,103.0,"restaurant, food, point_of_interest, establishment",0.8676969900080667,Abu Gosh
+Hummus Eliyahu,"Zisman Shalom Street 3, Ramat Gan",32.0835469,34.8005422,4.2,557.0,"restaurant, food, point_of_interest, establishment",1.7266606068339978,Hummus Eliyahu
+השניצליה,"Zisman Shalom Street 3, Ramat Gan",32.0836275,34.8005562,3.8,55.0,"restaurant, food, point_of_interest, establishment",1.7265218604925445,Schnitzelia
+claro;,"Ha'arbaa st 23, תל אביב-יפו",32.0705483,34.7878816,4.5,6866.0,"restaurant, food, point_of_interest, establishment",1.7977920617640952,claro;
+Hamsa Hamsa Hummus,"Abba Hillel Silver Road 2, Ramat Gan",32.0835734,34.8036327,4.1,304.0,"restaurant, food, point_of_interest, establishment",2.014630804758068,Hamsa Hamsa Hummus
+Hummus Beit Ha-Ful,"HaHashmonaim Street 119, Tel Aviv-Yafo",32.06952,34.7860013,4.3,671.0,"restaurant, food, point_of_interest, establishment",1.8680078699116038,Hummus Beit Ha-Ful
+Tiger Lilly,"שוק, Aluf Kalman Magen 3, Tel Aviv-Jaffa",32.07128470000001,34.7874409,4.1,1789.0,"restaurant, food, point_of_interest, establishment",1.7077864286088487,Tiger Lilly
+The Halva Kingdom,"Aluf Kalman Magen Street 3, Tel Aviv-Yafo",32.0711713,34.7871098,3.1,73.0,"restaurant, food, point_of_interest, establishment",1.7116723236327105,The Halva Kingdom
+Bayern Market,"Aluf Kalman Magen Street 3, Tel Aviv-Yafo",32.0713993,34.7865759,3.7,557.0,"restaurant, food, point_of_interest, establishment",1.674938641347747,Bayern Market
+מינה טומיי תל אביב,"HaArba'a Street 17, Tel Aviv-Yafo",32.0707062,34.7865056,4.3,5275.0,"restaurant, food, point_of_interest, establishment",1.7483810079453812,Mina Tomei Tel Aviv
+Ginger Grill Bar,"Zeev Jabotinsky Street 35, Ramat Gan",32.08387739999999,34.8065869,4.4,36.0,"restaurant, food, point_of_interest, establishment",2.2872621219105054,Ginger Grill Bar
+River,"Weizmann Street 14, Tel Aviv-Yafo",32.081414,34.789766,3.0,104.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",0.8605531763176483,River
+Carlton,"Eliezer Peri Street 10, Tel Aviv-Yafo",32.08652999999999,34.7695666,4.5,2145.0,"gym, spa, lodging, bar, restaurant, health, food, point_of_interest, establishment",1.221902011927456,Carlton
+Thai House,"Bograshov Street 8, Tel Aviv-Yafo",32.0775921,34.7682231,4.4,8701.0,"restaurant, food, point_of_interest, establishment",1.6452369412324421,Thai House
+Mike's Place,"Retsif Herbert Samuel Street 90, Tel Aviv-Yafo",32.07741680000001,34.7667075,4.3,3740.0,"bar, restaurant, food, point_of_interest, establishment",1.7748414104785382,Mike's Place
+Amore Mio,"Shlomo Ibn Gabirol Street 100, Tel Aviv-Yafo",32.0834694,34.7816472,4.5,7549.0,"restaurant, food, point_of_interest, establishment",0.3026091102658416,Amore Mio
+Moon Sushi,"Bograshov Street 58, Tel Aviv-Yafo",32.0756358,34.7720656,4.4,5139.0,"restaurant, food, point_of_interest, establishment",1.5221283546317563,Moon Sushi
+Sabich Complete,"Shlomo Ibn Gabirol Street 99, Tel Aviv-Yafo",32.0858962,34.781719,4.5,174.0,"restaurant, food, point_of_interest, establishment",0.07711585932571069,Sabich Complete
+Molly Bloom's,"Mendele Mokher Sfarim Street 2, Tel Aviv-Yafo",32.07908369999999,34.7680883,4.4,1646.0,"bar, restaurant, food, point_of_interest, establishment",1.5673270073971106,Molly Bloom's
+Pizza Fino,"Ben Yehuda Street 169, Tel Aviv-Yafo",32.0894774,34.77366840000001,4.0,532.0,"restaurant, food, point_of_interest, establishment",0.9139835096490274,Pizza Fino
+La Lasagna,"Dizengoff Street 177, Tel Aviv-Yafo",32.0852136,34.77441880000001,3.8,837.0,"restaurant, food, point_of_interest, establishment",0.7692129823434445,La Lasagna
+Little Prague Restaurant,"Ben Yehuda Street 148, Tel Aviv-Yafo",32.0860176,34.7728233,4.4,1971.0,"restaurant, night_club, food, point_of_interest, establishment",0.913572385487811,Little Prague Restaurant
+Loullie,"חוף גורדון, הירקון 121, תל אביב-יפו",32.08297499999999,34.768507,4.2,1605.0,"restaurant, bar, food, point_of_interest, establishment",1.3657213969649893,Loullie
+Domino's Pizza,"Shlomo Ibn Gabirol Street 143, Tel Aviv-Yafo",32.0898864,34.7824333,3.8,315.0,"meal_delivery, restaurant, food, point_of_interest, establishment",0.4199148624008009,Domino's Pizza
+מקסיקנה בוגרשוב תל אביב - Mexicana,"Bograshov Street 7, Tel Aviv-Yafo",32.0778372,34.7683667,4.1,3722.0,"restaurant, food, point_of_interest, establishment",1.618608544587204,Mexicana Bograshov Tel Aviv
+SCHMEARZ Bagel Shop,"Ben Yehuda Street 171, Tel Aviv-Yafo",32.0896542,34.77371249999999,4.4,2752.0,"restaurant, store, food, point_of_interest, establishment",0.9184274914778141,SCHMEARZ Bagel Shop
+Ernesto 90,"Ben Yehuda Street 90, Tel Aviv-Yafo",32.0816798,34.7709395,4.3,2754.0,"restaurant, food, point_of_interest, establishment",1.196403911477878,Ernesto 90
+Rustico,"Basel Street 42, Tel Aviv-Yafo",32.0897154,34.77995259999999,4.3,3123.0,"restaurant, food, point_of_interest, establishment",0.46750074422002913,Rustico
+Barbunia,"Ben Yehuda Street 192, Tel Aviv-Yafo",32.0891575,34.7739045,4.1,2237.0,"restaurant, food, point_of_interest, establishment",0.8794245859106963,Barbunia
+Yulia TLV,"2 האנגר, נמל ת""א, יורדי הסירה 1, תל אביב-יפו",32.095529,34.772428,4.2,3953.0,"restaurant, food, point_of_interest, establishment",1.413231099212697,Yulia TLV
+"Hummus Abu Dabi, Tel Aviv","King George Street 81, Tel Aviv-Yafo",32.0759729,34.7764908,4.4,1884.0,"restaurant, food, point_of_interest, establishment",1.258148157337155,"Hummus Abu Dabi, Tel Aviv"
+Roladin,"Dizengoff Street 49, Tel Aviv-Yafo",32.07500820000001,34.77534839999999,3.9,174.0,"cafe, bakery, restaurant, store, food, point_of_interest, establishment",1.4030868030573227,Roladin
+Shtsupak,"Ben Yehuda Street 256, Tel Aviv-Yafo",32.09530030000001,34.7757958,4.4,2672.0,"restaurant, food, point_of_interest, establishment",1.2005640450366866,Shtsupak
+Pizza Garage,"Frishman Street 16, Tel Aviv-Yafo",32.0798079,34.7693701,4.3,453.0,"meal_delivery, cafe, meal_takeaway, restaurant, food, point_of_interest, establishment",1.4224415666275712,Pizza Garage
+Humus Ronnen,"Ashtori HaFarhi Street 16, Tel Aviv-Yafo",32.0901539,34.7803258,4.1,94.0,"restaurant, food, point_of_interest, establishment",0.4941711704751782,Humus Ronnen
+Meatbar,"Sderot Chen 52, Tel Aviv-Jaffa",32.079193,34.78031000000001,4.5,2959.0,"restaurant, food, point_of_interest, establishment",0.7933208894857975,Meatbar
+Dabush,"Shlomo Ibn Gabirol Street 64, Tel Aviv-Yafo",32.07977639999999,34.7815765,3.5,1081.0,"restaurant, food, point_of_interest, establishment",0.7066123747828831,Dabush
+האחים,"Shlomo Ibn Gabirol Street 26, Tel Aviv-Yafo",32.07457889999999,34.7821292,4.5,5684.0,"restaurant, food, point_of_interest, establishment",1.27803377550218,The Brothers
+Itzik grilled chicken,"Yirmeyahu Street 52, Tel Aviv-Yafo",32.09497829999999,34.7781982,4.0,96.0,"restaurant, food, point_of_interest, establishment",1.0649651290420006,Itzik grilled chicken
+Restaurant,"London Ministores Tower, Shlomo Ibn Gabirol Street 30, Tel Aviv-Yafo",32.0751252,34.7819283,4.0,133.0,"restaurant, food, point_of_interest, establishment",1.2181723773758417,Restaurant
+Yanas,"Frishman Street 88, Tel Aviv-Yafo",32.0794014,34.7795971,4.2,427.0,"restaurant, food, point_of_interest, establishment",0.7917408288279928,Yanas
+Boston Deli,"Dizengoff Street 64, Tel Aviv-Yafo",32.0757837,34.7750373,3.8,35.0,"restaurant, food, point_of_interest, establishment",1.3435147329453145,Boston Deli
+Kessem Ba-Ir,"Shlomo Ibn Gabirol Street 110, Tel Aviv-Yafo",32.0845972,34.7818843,4.5,242.0,"cafe, restaurant, store, food, point_of_interest, establishment",0.17648920882493316,Kessem Ba-Ir
+Haturkiya & Hakeves,"Shlomo Ibn Gabirol Street 92, Tel Aviv-Yafo",32.0828765,34.7814899,3.8,130.0,"restaurant, food, point_of_interest, establishment",0.3699498181399069,Haturkiya & Hakeves
+Chuma,"Shlomo Ibn Gabirol Street 71, Tel Aviv-Yafo",32.0825389,34.7810951,4.0,337.0,"restaurant, food, point_of_interest, establishment",0.4165630569839461,Chuma
+פסטה ויה | Pasta Via,"Shlomo Ibn Gabirol Street 142, Tel Aviv-Yafo",32.0887664,34.78270490000001,4.3,821.0,"restaurant, food, point_of_interest, establishment",0.2963047248157965,Pasta Via
+Hod Hamahat Record Store,"Dizengoff Street 225, Tel Aviv-Yafo",32.09035009999999,34.77564729999999,4.6,175.0,"cafe, bar, restaurant, store, food, point_of_interest, establishment",0.8003790570670162,Hod Hamahat Record Store
+Hummus Eben Gvirol,"Shlomo Ibn Gabirol Street 150, Tel Aviv-Yafo",32.089433,34.7828115,4.1,505.0,"restaurant, food, point_of_interest, establishment",0.37075888063398454,Hummus Eben Gvirol
+Joseph 'n Sons,"Malkhi Yisrael Street 10, Tel Aviv-Yafo",32.0793311,34.7810442,4.3,1121.0,"restaurant, food, point_of_interest, establishment",0.763070935968677,Joseph 'n Sons
+HaMosad for Special Sandwiches,"Shlomo Ibn Gabirol Street 67, Tel Aviv-Yafo",32.0792696,34.7811299,4.2,2402.0,"restaurant, food, point_of_interest, establishment",0.7683766984428371,HaMosad for Special Sandwiches
+Shmonè,"Malkhi Yisrael Street 8, Tel Aviv-Yafo",32.0792497,34.7808508,4.2,244.0,"restaurant, food, point_of_interest, establishment",0.775410305365549,Shmonè
+SAVTA sandwich,"Shlomo Ibn Gabirol Street 65, Tel Aviv-Yafo",32.07910770000001,34.7811288,4.6,579.0,"restaurant, food, point_of_interest, establishment",0.7860962153903395,SAVTA sandwich
+Zota Pizza,"Dizengoff Street 177, Tel Aviv-Yafo",32.0851919,34.7743575,4.3,1013.0,"restaurant, food, point_of_interest, establishment",0.775261897976607,Zota Pizza
+YAN Sushi House,"Sderot Ben Gurion 40, Tel Aviv-Jaffa",32.0842738,34.7741262,4.0,657.0,"restaurant, food, point_of_interest, establishment",0.816059006587271,YAN Sushi House
+Roladin כיכר המדינה,"Weizmann Street 32, Tel Aviv-Yafo",32.0846974,34.7895811,3.6,249.0,"restaurant, cafe, food, point_of_interest, establishment",0.6863490568396131,Roladin – Kikar Hamedina
+Market Vegan Restaurant,"Dizengoff Street 140, Tel Aviv-Yafo",32.0824224,34.7740918,4.6,603.0,"restaurant, food, point_of_interest, establishment",0.8924154243492041,Market Vegan Restaurant
+Bakery,"Dizengoff Street 260, Tel Aviv-Yafo",32.0910604,34.776127,4.6,966.0,"bakery, restaurant, store, food, point_of_interest, establishment",0.8151738876368394,Bakery
+Bretonne,"Shlomo Ibn Gabirol Street 52, Tel Aviv-Yafo",32.0777198,34.7814998,4.5,2465.0,"restaurant, store, food, point_of_interest, establishment",0.9340510164593088,Bretonne
+Kaspi,"Ben Yehuda 145, Arlozorov 13, Tel Aviv-Jaffa",32.0875178,34.7730724,4.3,964.0,"restaurant, food, point_of_interest, establishment",0.9037826146750164,Kaspi
+Java,"Ben Yehuda Street 196, Tel Aviv-Yafo",32.0897196,34.7740113,4.3,1496.0,"cafe, restaurant, food, point_of_interest, establishment",0.8962550755958956,Java
+Dizzy Frishdon,"Dizengoff Street 121, Tel Aviv-Yafo",32.0811403,34.77365390000001,4.2,1727.0,"bar, restaurant, food, point_of_interest, establishment",0.9999612011516448,Dizzy Frishdon
+Chef Hostel,"Montefiore Street 19, Tel Aviv-Yafo",32.0651634,34.7713842,4.2,62.0,"bicycle_store, real_estate_agency, night_club, travel_agency, lodging, bar, restaurant, store, food, point_of_interest, establishment",2.547818643193378,Chef Hostel
+The Rothschild Hotel,"Rothschild Boulevard 96, Tel Aviv-Yafo",32.0673079,34.77812279999999,4.3,597.0,"lodging, restaurant, food, point_of_interest, establishment",2.1244066609483903,The Rothschild Hotel
+Coffee Bar Express,"Yad Harutsim Street 13, Tel Aviv-Yafo",32.0619929,34.7832599,4.6,3999.0,"restaurant, food, point_of_interest, establishment",2.6741533289686865,Coffee Bar Express
+The Norman Tel Aviv,"Nachmani Street 23-25, Tel Aviv-Yafo",32.0659877,34.775481,4.5,1595.0,"lodging, clothing_store, restaurant, store, food, point_of_interest, establishment",2.32659233520559,The Norman Tel Aviv
+Hotel Montefiore,"Montefiore Street 36, Tel Aviv-Yafo",32.06558159999999,34.7734957,4.6,3158.0,"lodging, restaurant, food, point_of_interest, establishment",2.4288873138654865,Hotel Montefiore
+Shila,"Montefiore Street 9, Tel Aviv-Yafo",32.0648162,34.7701584,4.4,3741.0,"bar, restaurant, food, point_of_interest, establishment",2.6321009611220587,Shila
+Café Noir,"Ahad Ha'Am Street 43, Tel Aviv-Yafo",32.065574,34.7756862,4.4,4824.0,"restaurant, food, point_of_interest, establishment",2.3652599651032324,Café Noir
+Social Club,"Rothschild Boulevard 45, Tel Aviv-Yafo",32.0643577,34.7743186,4.2,1550.0,"restaurant, bar, food, point_of_interest, establishment",2.53168478195612,Social Club
+Dallal Restaurant,"Shabazi Street 10, Tel Aviv-Yafo",32.0611278,34.76349519999999,4.1,3657.0,"restaurant, food, point_of_interest, establishment",3.299674050805703,Dallal Restaurant
+Par Derriere,"Bat Ami Street 7, Tel Aviv-Yafo",32.0553474,34.7599721,4.3,2829.0,"liquor_store, bar, restaurant, store, food, point_of_interest, establishment",4.019115845160778,Par Derriere
+Hatraklin Meat & Wine Bistro,"Heihal HaTalmud Street 4, Tel Aviv-Yafo",32.0617074,34.7686517,4.4,3512.0,"bar, restaurant, food, point_of_interest, establishment",3.0042992479808057,Hatraklin Meat & Wine Bistro
+Rustico Rothschild,"Rothschild Boulevard 15, Tel Aviv-Yafo",32.063287,34.7708413,4.5,3166.0,"restaurant, food, point_of_interest, establishment",2.7588106403553923,Rustico Rothschild
+Pronto Restaurant,"IL 6688215, הרצל 4, תל אביב-יפו",32.06311460000001,34.7696216,4.0,2474.0,"restaurant, food, point_of_interest, establishment",2.8239894221877595,Pronto Restaurant
+Manta Ray,"בתוך חניון בית האצ״ל מאנטה ריי הכניסה לחניון, Nahum Goldmann 4, Tel Aviv-Jaffa",32.0610764,34.7600267,4.3,8269.0,"restaurant, food, point_of_interest, establishment",3.493132650370355,Manta Ray
+Italkia Ba'Tachana,"Ashkelon Street 5, Tel Aviv-Yafo",32.05877079999999,34.7619914,3.7,2892.0,"restaurant, food, point_of_interest, establishment",3.5963115739144533,Italkia Ba'Tachana
+Choco Lulu,"Chayim Vital Street 3, Tel Aviv-Yafo",32.05687710000001,34.7679653,4.2,3447.0,"restaurant, food, point_of_interest, establishment",3.5190950506380134,Choco Lulu
+Ben Ami,"Nachmani Street 21, Tel Aviv-Yafo",32.0660351,34.77474,4.4,381.0,"restaurant, bakery, store, food, point_of_interest, establishment",2.3424850928802505,Ben Ami
+Dr Soup,"Yehuda ha-Levi Street 56, Tel Aviv-Yafo",32.0654354,34.7783852,4.2,720.0,"restaurant, food, point_of_interest, establishment",2.324159360549521,Dr Soup
+Oasis & Rehab by Oasis,"Montefiore Street 17, Tel Aviv-Yafo",32.06507870000001,34.77128599999999,4.1,503.0,"bar, restaurant, food, point_of_interest, establishment",2.5602004804401086,Oasis & Rehab by Oasis
+Cantina,"Rothschild Boulevard 71, Tel Aviv-Yafo",32.0658042,34.77693889999999,3.3,673.0,"restaurant, food, point_of_interest, establishment",2.3109988847026344,Cantina
+Makom Shel Basar,"Shabazi Street 64, Tel Aviv-Yafo",32.0635805,34.7684536,4.5,3334.0,"restaurant, food, point_of_interest, establishment",2.827466015112422,Makom Shel Basar
+Olive,"Lilienblum Street 24, Tel Aviv-Yafo",32.0621388,34.7701048,4.1,329.0,"restaurant, food, point_of_interest, establishment",2.903335670445701,Olive
+Giuseppe Pizza,"Chayim Vital Street 1, Tel Aviv-Yafo",32.0570252,34.7679785,4.5,517.0,"restaurant, food, point_of_interest, establishment",3.5034902848698732,Giuseppe Pizza
+Hamitbahon,"Rabbi Akiva Street 18, Tel Aviv-Yafo",32.0695999,34.7694194,4.4,1935.0,"restaurant, meal_delivery, food, point_of_interest, establishment",2.2074547977716668,Hamitbahon
+Shaffa Bar,"Nakhman Street 2, Tel Aviv-Yafo",32.053146,34.7559479,4.3,3237.0,"bar, restaurant, food, point_of_interest, establishment",4.431560152293891,Shaffa Bar
+Sharon Hummus,"Eilat Street 22, Tel Aviv-Yafo",32.0577784,34.7639823,4.3,810.0,"restaurant, food, point_of_interest, establishment",3.594428152705642,Sharon Hummus
+Italkiya | איטלקיה בפשפשים,"Olei Zion Street 16, Tel Aviv-Yafo",32.05290000000001,34.7567189,4.1,2076.0,"restaurant, food, point_of_interest, establishment",4.413515413331477,The Italian in the Flea Market
+Чикилала,"Ahad Ha'Am Street 15, Tel Aviv-Yafo",32.0638189,34.7710821,4.0,42.0,"restaurant, food, point_of_interest, establishment",2.6956563371386504,Чикилала
+טיפיקו,"Nahalat Binyamin Street 1, Tel Aviv-Yafo",32.0693948,34.7704244,4.4,58.0,"restaurant, food, point_of_interest, establishment",2.175141743730444,Tipico
+Cafe Puaa,"Rabbi Yohanan Street 6, Tel Aviv-Yafo",32.052641,34.756142,4.4,5444.0,"restaurant, cafe, food, point_of_interest, establishment",4.467616070971363,Cafe Puaa
+Yonita,"פינת, נחלת בנימין 12, HaShomer 7, Tel Aviv-Jaffa",32.0683486,34.7699282,4.2,350.0,"cafe, restaurant, food, store, point_of_interest, establishment",2.298593714595535,Yonita
+Shmaya,"Chayim Vital Street 2, Tel Aviv-Yafo",32.05665750000001,34.76781190000001,4.9,330.0,"restaurant, food, point_of_interest, establishment",3.547169161080607,Shmaya
+Chef Salad,"Yehuda ha-Levi Street 47, Tel Aviv-Yafo",32.0622122,34.77369100000001,4.5,230.0,"bakery, cafe, restaurant, food, store, point_of_interest, establishment",2.7763798534208504,Chef Salad
+Meital restaurant,"Ahad Ha'Am Street 30, Tel Aviv-Yafo",32.06378730000001,34.77136700000001,4.1,18.0,"restaurant, food, point_of_interest, establishment",2.6882369430488,Meital restaurant
+Falafel Ben Hur,"המסגר 6, Sderot Washington 32, Tel Aviv-Jaffa",32.0550422,34.76942650000001,4.7,487.0,"restaurant, food, point_of_interest, establishment",3.6584804678360254,Falafel Ben Hur
+America Burgers,"Allenby Street 112, Tel Aviv-Yafo",32.0641166,34.77255789999999,4.4,5811.0,"restaurant, food, point_of_interest, establishment",2.612186294691955,America Burgers
+Men Tenten Ramen Bar,"Nahalat Binyamin Street 57, Tel Aviv-Yafo",32.06416239999999,34.7715381,4.2,4920.0,"bar, restaurant, food, point_of_interest, establishment",2.6436372635037433,Men Tenten Ramen Bar
+The Green Roll,"Ahad Ha'Am Street 15, Tel Aviv-Yafo",32.0638289,34.7711528,4.7,1516.0,"restaurant, food, point_of_interest, establishment",2.6919764245277706,The Green Roll
+Port Sa'id,"Har Sinai Street 5, Tel Aviv-Yafo",32.0646469,34.77227999999999,4.3,3990.0,"bar, restaurant, food, point_of_interest, establishment",2.5671434176804615,Port Sa'id
+McDonald's,"Rothschild Boulevard 33, Tel Aviv-Yafo",32.0638547,34.7735046,3.2,2049.0,"restaurant, food, point_of_interest, establishment",2.6088567344441365,McDonald's
+Ninu,"Yehuda ha-Levi Street 47, Tel Aviv-Yafo",32.0622122,34.77369100000001,4.6,5.0,"restaurant, food, point_of_interest, establishment",2.7763798534208504,Ninu
+Triger טריגר - בשר ויין,"Montefiore Street 21, Tel Aviv-Yafo",32.0653164,34.7716515,4.3,889.0,"restaurant, food, point_of_interest, establishment",2.5220136976016634,Triger – Meat & Wine
+Aria,"Nahalat Binyamin Street 66, Tel Aviv-Yafo",32.06162589999999,34.7723093,4.2,1441.0,"bar, restaurant, food, point_of_interest, establishment",2.8794040105242886,Aria
+Fleishman,"Herzl Street 12, Tel Aviv-Yafo",32.0622812,34.7699656,4.5,585.0,"restaurant, food, store, point_of_interest, establishment",2.8942407972860624,Fleishman
+The Container,"מחסן 2 נמל יפו, Tel Aviv-Jaffa",32.052074,34.74967,4.0,2067.0,"restaurant, bar, food, point_of_interest, establishment",4.883171603501138,The Container
+Kalamata,"Kikar Kdumim 10, Tel Aviv-Jaffa",32.054512,34.7514725,4.3,3116.0,"restaurant, food, point_of_interest, establishment",4.566394174976492,Kalamata
+Dr Shakshuka,"Beit Eshel Street 3, Tel Aviv-Yafo",32.0544381,34.7564172,3.5,4246.0,"restaurant, food, point_of_interest, establishment",4.2885671993322685,Dr Shakshuka
+Falafel Gina,"Shlabim Street 6, Tel Aviv-Yafo",32.0499368,34.76455,3.8,632.0,"restaurant, food, point_of_interest, establishment",4.35353898234733,Falafel Gina
+מטבחי חוץ שאולי מטבח חוץ,"Olei Zion Street 26, Tel Aviv-Yafo",32.0519096,34.7578609,4.6,68.0,"restaurant, food, store, point_of_interest, establishment",4.448203042041469,Shauli's Outdoor Kitchens
+Pizza Roma,"Olei Zion Street 9, Tel Aviv-Yafo",32.0530193,34.7567283,4.2,261.0,"meal_delivery, restaurant, food, point_of_interest, establishment",4.401995142841551,Pizza Roma
+Guetta Restaurant,"Jerusalem Boulevard 8, Tel Aviv-Yafo",32.05623269999999,34.75958639999999,4.3,1072.0,"restaurant, food, point_of_interest, establishment",3.9559586201604415,Guetta Restaurant
+שווארמה בינו,"David Razi'el Street 29, Tel Aviv-Yafo",32.0546913,34.75622360000001,3.3,112.0,"restaurant, food, point_of_interest, establishment",4.2761900459472955,Bino Shawarma
+Beit Kandinof,"HaTsorfim Street 14, Tel Aviv-Yafo",32.0537362,34.7539834,4.4,2761.0,"restaurant, art_gallery, food, point_of_interest, establishment",4.48655232028051,Beit Kandinof
+Urbano,"Olei Zion Street 2, Tel Aviv-Yafo",32.0540685,34.75564339999999,4.1,1286.0,"restaurant, bar, food, point_of_interest, establishment",4.3642308025524255,Urbano
+Albi,"Olei Zion Street 6, Tel Aviv-Yafo",32.053715,34.755893,3.8,1155.0,"bar, restaurant, food, point_of_interest, establishment",4.382643212348533,Albi
+Ramesses by the box Restaurant,"הגמנסיה העברית פינת, Ben Perachyah 7, Tel Aviv-Jaffa",32.0545345,34.7565943,4.1,2264.0,"restaurant, food, point_of_interest, establishment",4.270219093285267,Ramesses by the box Restaurant
+Main Bazaar,"Olei Zion Street 7, Tel Aviv-Yafo",32.0534183,34.7566475,4.3,569.0,"bar, restaurant, food, point_of_interest, establishment",4.3694488741844415,Main Bazaar
+Faruk BaShuk,"Nakhman Street 6, Tel Aviv-Yafo",32.05237589999999,34.7558058,4.2,3290.0,"restaurant, bar, food, point_of_interest, establishment",4.509725793551782,Faruk BaShuk
+ראיסה בשוק הפשפשים,"שוק הפשפשים, Rabbi Yohanan Street 10, Tel Aviv-Yafo",32.0525005,34.7561476,4.3,3027.0,"bar, restaurant, food, point_of_interest, establishment",4.480270277709401,Raisa – Flea Market
+Big Itzik,"David Razi'el Street 3, Tel Aviv-Yafo",32.0566309,34.7593076,4.1,2835.0,"restaurant, food, point_of_interest, establishment",3.9336568651178525,Big Itzik
+Casino San Remo,"Nehama Street 2, Tel Aviv-Yafo",32.0558538,34.7599751,4.1,1450.0,"restaurant, cafe, bar, store, food, point_of_interest, establishment",3.9714276253178245,Casino San Remo
+OCD TLV,"Tirtsa Street 17, Tel Aviv-Yafo",32.0555352,34.7604927,4.6,1416.0,"restaurant, food, point_of_interest, establishment",3.975548818352729,OCD TLV
+The Drisco Hotel,"Auerbach Street 6, Tel Aviv-Yafo",32.05685820000001,34.7625935,4.7,1073.0,"lodging, restaurant, food, point_of_interest, establishment",3.747934013979173,The Drisco Hotel
+Cafe Paul's,"Yefet Street 142, Tel Aviv-Yafo",32.0419663,34.7513779,4.2,418.0,"cafe, meal_delivery, restaurant, food, point_of_interest, establishment",5.708469858475856,Cafe Paul's
+Burek Restaurant,"39, Tsrifin Street, Tel Aviv-Yafo",32.0564521,34.7659038,4.5,361.0,"restaurant, food, point_of_interest, establishment",3.6419540858063684,Burek Restaurant
+Sumsum,"Kaufmann Street 4, Tel Aviv-Yafo",32.0635702,34.76221349999999,3.6,18.0,"restaurant, food, point_of_interest, establishment",3.148032058890848,Sumsum
+KINTO,"Kaufmann Street 6, Tel Aviv-Yafo",32.06380840000001,34.7621879,4.0,369.0,"restaurant, food, point_of_interest, establishment",3.128591047312604,KINTO
+Wok Republic,"Abarbanel Street 74, Tel Aviv-Yafo",32.0553367,34.766846,4.0,839.0,"meal_delivery, restaurant, food, point_of_interest, establishment",3.7177285547507424,Wok Republic
+במבי תל אביב,"HaMered Street 29, Tel Aviv-Yafo",32.0635675,34.76349680000001,3.1,12.0,"restaurant, food, point_of_interest, establishment",3.0760578230808635,Bambi Tel Aviv
+Florentina,"Abarbanel Street 56, Tel Aviv-Yafo",32.0570657,34.7669803,4.6,3077.0,"bar, restaurant, food, point_of_interest, establishment",3.53734967805747,Florentina
+Habarbanel Pizza Bar,"Abarbanel Street 34, Tel Aviv-Yafo",32.05762660000001,34.76698320000001,4.4,1465.0,"meal_delivery, bar, meal_takeaway, restaurant, food, point_of_interest, establishment",3.4807186406030324,Habarbanel Pizza Bar
+The Old Man and the Sea,"Kedem Street 85, Tel Aviv-Yafo",32.04306009999999,34.7478626,4.2,10410.0,"restaurant, food, point_of_interest, establishment",5.785779789218128,The Old Man and the Sea
+פיצה אוליב - יפו,"Yefet Street 97, Tel Aviv-Yafo",32.0420337,34.75184300000001,4.2,194.0,"meal_delivery, restaurant, food, point_of_interest, establishment",5.679553042384849,Olive Pizza – Jaffa
+Falafel Kahil,"Yefet Street 146, Tel Aviv-Yafo",32.0416166,34.7514689,4.5,573.0,"restaurant, food, point_of_interest, establishment",5.737358087530128,Falafel Kahil
+Bread Pomerantz,"Florentin Street 13, Tel Aviv-Yafo",32.0562719,34.7686359,4.6,99.0,"bakery, grocery_or_supermarket, health, store, restaurant, food, point_of_interest, establishment",3.5572032955101043,Bread Pomerantz
+Tometomato,"Sderot Washington 26, Tel Aviv-Jaffa",32.0553234,34.7693925,4.4,549.0,"restaurant, food, point_of_interest, establishment",3.6302351949157283,Tometomato
+BRETONNE,"Sderot Washington 22, Tel Aviv-Jaffa",32.055594,34.7694646,4.6,998.0,"restaurant, food, point_of_interest, establishment",3.5997070922942336,BRETONNE
+Domino's Pizza,"Florentin Street 25, Tel Aviv-Yafo",32.0563949,34.76948429999999,3.0,294.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",3.5157282956700713,Domino's Pizza
+Beccafico,"Shabazi Street 49, Tel Aviv-Yafo",32.0629794,34.76705920000001,4.3,1127.0,"restaurant, food, point_of_interest, establishment",2.949313209713075,Beccafico
+Suzana,"Shabazi Street 9, Tel Aviv-Yafo",32.0614131,34.763658,4.0,4481.0,"cafe, restaurant, food, point_of_interest, establishment",3.264766910278986,Suzana
+Hayam Hasini Chinese Restaurant,"מרכז הטקסטיל והאופנה, שנקר 3, תל אביב-יפו",32.0628069,34.7628012,4.3,505.0,"restaurant, food, point_of_interest, establishment",3.1828805785931285,Hayam Hasini Chinese Restaurant
+Romano,"Derech Jaffa 9, Tel Aviv-Jaffa",32.0608011,34.76923099999999,4.1,2481.0,"restaurant, bar, food, point_of_interest, establishment",3.0723852574663963,Romano
+Teder.fm,"Romano, Derech Jaffa 9, Tel Aviv-Yafo",32.0606806,34.76945,4.4,6129.0,"bar, art_gallery, store, restaurant, food, point_of_interest, establishment",3.0762507357771285,Teder.fm
+Hummus & Co.,"Herzl Street 98, Tel Aviv-Yafo",32.0561868,34.7707356,4.5,733.0,"restaurant, food, point_of_interest, establishment",3.498066094958819,Hummus & Co.
+Sabich Hertzel,"Herzl Street 98, Tel Aviv-Yafo",32.056179,34.770738,4.6,382.0,"restaurant, food, point_of_interest, establishment",3.498814344532087,Sabich Hertzel
+Meshek Barzilay,"Ahad Ha'Am Street 6, Tel Aviv-Yafo",32.0631664,34.7683737,4.4,3915.0,"restaurant, food, point_of_interest, establishment",2.8715985516059517,Meshek Barzilay
+Lehamim,"HaHashmonaim Street 103, Tel Aviv-Yafo",32.06974019999999,34.7843627,4.4,4043.0,"bakery, meal_delivery, cafe, restaurant, store, food, point_of_interest, establishment",1.8226126901686344,Lehamim
+Beta Caffe,"Brodetsky Street 17, Tel Aviv-Yafo",32.1077539,34.7975527,4.1,2289.0,"cafe, restaurant, food, store, point_of_interest, establishment",2.790072877770179,Beta Caffe
+Hummus Abu Taleb,"Ahaliav Street 3, Ramat Gan",32.0873658,34.8029725,3.9,189.0,"restaurant, food, point_of_interest, establishment",1.9377778208916028,Hummus Abu Taleb
+גריל עוף,"Herzl Street 86, Ramat Gan",32.08750369999999,34.8149791,4.2,139.0,"restaurant, food, point_of_interest, establishment",3.070105678193694,Chicken Grill
+Bistro3,"HaBonim Street 3, Ramat Gan",32.0879413,34.8028897,4.5,435.0,"restaurant, food, point_of_interest, establishment",1.9356636502141042,Bistro3
+Sesame Bar Health,"Ha-Khilazon Street 2, Ramat Gan",32.087186,34.80379660000001,3.9,116.0,"restaurant, food, point_of_interest, establishment",2.0140913347810767,Sesame Bar Health
+Noon,"Tuval Street 30, Ramat Gan",32.086502,34.8029975,4.1,301.0,"restaurant, food, point_of_interest, establishment",1.935570163661655,Noon
+Blue Rooster,"Nissim Aloni Street 10, Tel Aviv-Yafo",32.089021,34.7973537,4.3,4396.0,"restaurant, food, point_of_interest, establishment",1.4391607773394257,Blue Rooster
+Jonathan hummus,"Tuval Street 36, Ramat Gan",32.0861136,34.80273749999999,4.3,464.0,"restaurant, food, point_of_interest, establishment",1.9105162383876475,Jonathan hummus
+Meat Night - מיט נייט,"Tuval Street 15, Ramat Gan",32.0860822,34.8030986,2.5,531.0,"restaurant, food, point_of_interest, establishment",1.9446065238483277,Meat Night
+רולנרול,"Bezalel Street 13, Ramat Gan",32.0862159,34.8008728,4.2,347.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",1.7345257987425922,Roll’n’Roll
+Wolfnights Yehuda Maccabi,"Yehuda HaMakkabbi Street 53, Tel Aviv-Yafo",32.0939229,34.7906881,3.5,1073.0,"restaurant, food, point_of_interest, establishment",1.161883390457729,Wolfnights Yehuda Maccabi
+Bazzili.com Pizza,"Yehuda HaMakkabbi Street 53, Tel Aviv-Yafo",32.0939229,34.7906881,4.1,320.0,"meal_delivery, restaurant, food, point_of_interest, establishment",1.161883390457729,Bazzili.com Pizza
+La Cucina Pasta Bar,"Bialik Street 59, Ramat Gan",32.0845564,34.812832,4.3,1177.0,"restaurant, food, point_of_interest, establishment",2.8686196500858103,La Cucina Pasta Bar
+Tony's- Pizza & Pasta טוניס פיצה ופסטה,"Rashi Street 21, Ramat Gan",32.09190040000001,34.8180406,4.1,287.0,"meal_delivery, meal_takeaway, restaurant, food, store, point_of_interest, establishment",3.4161914217779192,Tony's Pizza & Pasta
+Safsal,"Bialik Street 26, Ramat Gan",32.0813178,34.8149999,4.4,3171.0,"restaurant, bar, food, point_of_interest, establishment",3.113712817451206,Safsal
+בורקס רמת אביב,"Mordechai Namir Road 170, Tel Aviv-Yafo",32.1048787,34.7927594,2.6,107.0,"restaurant, food, point_of_interest, establishment",2.296522637978828,Ramat Aviv Bourekas
+Cafe Zorik,"Yehuda HaMakkabbi Street 4א, Tel Aviv-Yafo",32.0937154,34.78527950000001,4.3,3766.0,"restaurant, food, point_of_interest, establishment",0.8842842611026331,Cafe Zorik
+Rotisserie Milano,"Yehuda HaMakkabbi Street 4, Tel Aviv-Yafo",32.0936493,34.7851932,4.5,350.0,"restaurant, food, point_of_interest, establishment",0.8748852827526459,Rotisserie Milano
+Juno,"De Haas Street 1, Tel Aviv-Yafo",32.09351220000001,34.7850894,4.4,2389.0,"cafe, bar, restaurant, food, point_of_interest, establishment",0.8575054187565743,Juno
+עוף צלוחס,"Bareli Street 18, Tel Aviv-Yafo",32.1040488,34.791034,4.1,30.0,"meal_takeaway, restaurant, food, store, point_of_interest, establishment",2.1471606903518063,Tzaloches Chicken
+Meat Stop,"David Ben Gurion Road 26, Ramat Gan",32.0930034,34.8220381,4.3,468.0,"restaurant, food, point_of_interest, establishment",3.810135795125147,Meat Stop
+Agvania,"Bialik Street 14, Ramat Gan",32.0801098,34.81507910000001,3.7,21.0,"restaurant, food, point_of_interest, establishment",3.1466301959757956,Agvania
+טופ-קייטרינג,"David Ben Gurion Road 1, Bnei Brak",32.096206,34.821859,,,"restaurant, food, point_of_interest, establishment",3.880793432775545,Top Catering
+Agvania Pizza,"Zeev Jabotinsky Street 155, Ramat Gan",32.0910055,34.8222721,3.7,612.0,"restaurant, food, point_of_interest, establishment",3.7937742164127686,Agvania Pizza
+Sun meeting,"Zeev Jabotinsky Street 155, Ramat Gan",32.0909351,34.8223294,2.9,277.0,"restaurant, food, point_of_interest, establishment",3.7980191867812905,Sun meeting
+Burgeranch,"Zeev Jabotinsky Street 138, Bnei Brak",32.0903511,34.8223553,3.8,524.0,"restaurant, food, point_of_interest, establishment",3.791857621874474,Burgeranch
+Nagisasushi,"David Ben Gurion Road 13, Ramat Gan",32.0935096,34.8227178,4.1,1080.0,"restaurant, food, point_of_interest, establishment",3.8844873811749583,Nagisasushi
+פיצה אש,"Zeev Jabotinsky Street 4, Bnei Brak",32.09071799999999,34.8230602,4.3,286.0,"meal_delivery, restaurant, food, point_of_interest, establishment",3.863069395400215,Fire Pizza
+Henrietta Café,"Arlozorov Street 186, Tel Aviv-Yafo",32.0828935,34.791633,4.3,1802.0,"cafe, restaurant, food, store, point_of_interest, establishment",0.9326507093181636,Henrietta Café
+Station Market,"Bar Kochva Street 21, Bnei Brak",32.0936765,34.82326139999999,4.4,147.0,"restaurant, food, point_of_interest, establishment",3.938560493437947,Station Market
+Hapina,"Rokach Boulevard 80, Tel Aviv-Yafo",32.1004354,34.80150860000001,4.0,530.0,"restaurant, food, point_of_interest, establishment",2.397218822856167,Hapina
+Bahadunas,"Bialik Street 138, Ramat Gan",32.0885699,34.80440169999999,4.1,536.0,"restaurant, food, point_of_interest, establishment",2.0856573439352166,Bahadunas
+Panama Pizza,"Shlomo Ibn Gabirol Street 185, Tel Aviv-Yafo",32.0938496,34.7832658,4.6,1211.0,"restaurant, food, point_of_interest, establishment",0.8623760577451821,Panama Pizza
+סיטבון,"Menachem Begin 7, Ramat Gan",32.0855311,34.8000098,3.9,169.0,"restaurant, food, point_of_interest, establishment",1.6542164296293236,Sitbon
+Shemesh,"Tuval Street 9, Ramat Gan",32.087509,34.8039622,3.8,1707.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",2.0321329817233322,Shemesh
+Pizza Roma,"David Ben Gurion Road 112, Ramat Gan",32.0834287,34.82116180000001,4.2,362.0,"restaurant, food, point_of_interest, establishment",3.6619102545006,Pizza Roma
+מסעדת רנסאנס,"Shoham Street 4, Ramat Gan",32.0844975,34.8004633,4.1,33.0,"restaurant, food, point_of_interest, establishment",1.7051200111176312,Renaissance Restaurant
+Japanika,"קניון איילון, רמת גן",32.099985,34.827212,4.2,775.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",4.492770358410347,Japanika
+בוצ'רי דה ברילוצ'ה Butchery de Bariloche,"HaBarzel Street 4, Tel Aviv-Yafo",32.1066569,34.8359782,4.2,3038.0,"restaurant, food, point_of_interest, establishment",5.5388477659457624,Butchery de Bariloche
+Joya,"HaBarzel Street 4, Tel Aviv-Yafo",32.1066406,34.83598020000001,3.8,2398.0,"restaurant, food, point_of_interest, establishment",5.53827662811622,Joya
+Arnold,"בניין הועד האולימפי, בכור שלום שטרית 6, Tel Aviv-Jaffa",32.1050232,34.8200995,4.4,1414.0,"bar, restaurant, food, point_of_interest, establishment",4.123104544474383,Arnold
+Goocha Ramat Hahayal,"HaBarzel Street 7, Tel Aviv-Yafo",32.1070235,34.8358814,4.5,3436.0,"restaurant, food, point_of_interest, establishment",5.547391402320924,Goocha Ramat Hahayal
+Giraffe,"HaBarzel Street 19, Tel Aviv-Yafo",32.1082555,34.8380566,4.1,3016.0,"restaurant, food, point_of_interest, establishment",5.7911285835682715,Giraffe
+Hudson Brasserie,"HaBarzel Street 27, Tel Aviv-Yafo",32.1099224,34.8405563,4.6,8974.0,"restaurant, bar, food, point_of_interest, establishment",6.083541057456734,Hudson Brasserie
+Pita Hit,"Mivtsa Kadesh Street 55, Bnei Brak",32.0978965,34.8286666,3.9,344.0,"restaurant, food, point_of_interest, establishment",4.550148178345813,Pita Hit
+"מאמא פסטה בע""מ","Barukh Hirsch Street 30, Bnei Brak",32.0980285,34.8282278,4.4,193.0,"restaurant, food, point_of_interest, establishment",4.514754131091872,mama psth bam
+דוכנים לאירועים תמרי דוכני מזון לאירועים,"Yehuda Somo Street 2, Tel Aviv-Yafo",32.1077057,34.8184722,4.0,11.0,"restaurant, food, store, point_of_interest, establishment",4.15568364043513,dvknym layrvaym tmry dvkny mzvn layrvaym
+Greg's Café mama,"Abba Hillel Silver Road 301, Ramat Gan",32.10031370000001,34.8267285,3.4,552.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",4.462655999434146,Greg's Café mama
+תירס,"Abba Hillel Silver Road 301, Ramat Gan",32.1003137,34.8267284,4.2,21.0,"restaurant, food, point_of_interest, establishment",4.46264716804467,tyrs
+Black,"קניון אילון אבא הלל, 301, Ramat Gan",32.1008865,34.8266763,3.2,412.0,"restaurant, food, point_of_interest, establishment",4.480884492009197,Black
+מקדונלד'ס - קניון אילון - קומת הכניסה,"Azrieli Ayalon Mall, Abba Hillel Silver Road 301, Ramat Gan",32.1004164,34.8269408,3.2,396.0,"restaurant, food, point_of_interest, establishment",4.485426412733596,mkdvnlds - knyvn aylvn - kvmt hknysh
+China Town,"קניון איילון, דרך אבא הלל 301, רמת גן",32.0996371,34.827112,3.1,117.0,"restaurant, food, point_of_interest, establishment",4.470810754213708,China Town
+Shoshana Express,"Barukh Hirsch Street 14, Bnei Brak",32.0971977,34.8262752,4.3,285.0,"restaurant, food, point_of_interest, establishment",4.311681259340834,Shoshana Express
+Hummus Eliyahu,"Ha-Yarkon Street 10, Bnei Brak",32.0956661,34.8252923,4.5,1909.0,"restaurant, food, point_of_interest, establishment",4.176539301039656,Hummus Eliyahu
+Burgerim,"מגדלי בסר 3, מצדה 9, Bnei Brak",32.0947008,34.8242547,4.2,427.0,"restaurant, food, point_of_interest, establishment",4.055398388186245,Burgerim
+Lunch Box,"Kinneret Street 5, Bnei Brak",32.094671,34.8241727,3.2,62.0,"restaurant, food, point_of_interest, establishment",4.047098398722968,Lunch Box
+Sumsum Bar Bri'ut,"HaBarzel Street 5, Tel Aviv-Yafo",32.106903,34.8356821,4.2,59.0,"restaurant, food, point_of_interest, establishment",5.52471917791268,Sumsum Bar Bri'ut
+Pinat HaShlosha restaurant,"HaBarzel Street 24, Tel Aviv-Yafo",32.10890700000001,34.8401083,4.1,1283.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",5.997158297193667,Pinat HaShlosha restaurant
+POMO,"HaBarzel Street 11, Tel Aviv-Yafo",32.1074927,34.8370795,4.4,3706.0,"restaurant, food, point_of_interest, establishment",5.6718669227649645,POMO
+Pizza Prego,"Pinkhas Rosen Street 72, Tel Aviv-Yafo",32.114692,34.8260661,3.8,205.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",5.192539724545753,Pizza Prego
+Burgus Burger Bar,"HaBarzel Street 19א, Tel Aviv-Yafo",32.108558,34.8384029,4.2,2711.0,"restaurant, food, point_of_interest, establishment",5.834975572946774,Burgus Burger Bar
+Avantgarde,"Raoul Wallenberg Street 18, Tel Aviv-Yafo",32.1094627,34.8378105,3.9,1543.0,"bar, restaurant, food, point_of_interest, establishment",5.828325707142634,Avantgarde
+Pizza Hut,"HaNechoshet Street 1, Tel Aviv-Yafo",32.1089397,34.8386572,3.4,189.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",5.8748052536161195,Pizza Hut
+Rotisserie Chicken Club,"North Market, Raoul Wallenberg Street 20, Tel Aviv-Yafo",32.1100501,34.8376485,3.7,165.0,"restaurant, food, point_of_interest, establishment",5.843928591333897,Rotisserie Chicken Club
+Mexicana,"Raoul Wallenberg Street 20, Tel Aviv-Yafo",32.1100501,34.8376485,3.5,226.0,"restaurant, food, point_of_interest, establishment",5.843928591333897,Mexicana
+רושדי אוכל דרוזי,"Raoul Wallenberg Street 20, Tel Aviv-Yafo",32.1100501,34.8376485,,,"restaurant, food, point_of_interest, establishment",5.843928591333897,rvshdy avkl drvzy
+Domino’s Pizza,"Raoul Wallenberg Street 24, Tel Aviv-Yafo",32.1111415,34.83871500000001,3.1,256.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",5.988895304733111,Domino’s Pizza
+Agatha,"Raoul Wallenberg Street 24, Tel Aviv-Yafo",32.1112424,34.8387985,4.6,1180.0,"restaurant, store, food, point_of_interest, establishment",6.0010670353596,Agatha
+Frame chef & Sushi Bar,"Raoul Wallenberg Street 2א, Tel Aviv-Yafo",32.107221,34.834347,4.0,3144.0,"restaurant, food, point_of_interest, establishment",5.425581919837764,Frame chef & Sushi Bar
+לה קרוקט,"Olei ha-Gardom Street 48, Tel Aviv-Yafo",32.11323230000001,34.8367242,,,"restaurant, food, point_of_interest, establishment",5.9370595916384055,lh krvkt
+HaGarage,"Raoul Wallenberg Street 24, Tel Aviv-Yafo",32.1113266,34.8390496,4.0,4233.0,"restaurant, food, point_of_interest, establishment",6.026391848079253,HaGarage
+מסעדת צנעני,"Zeev Jabotinsky Street 92, Bnei Brak",32.09149120000001,34.8313765,4.0,1091.0,"restaurant, food, point_of_interest, establishment",4.652604852050351,msadt tznany
+Delicate Jerusalem,"Yerushalayim Street 69, Bnei Brak",32.0825375,34.8260076,4.8,109.0,"restaurant, store, food, point_of_interest, establishment",4.126356225944846,Delicate Jerusalem
+מסעדת המרפסת,"Ha-Yarkon Street 45, Bnei Brak",32.0971296,34.8289081,,,"restaurant, food, point_of_interest, establishment",4.548404393992012,msadt hmrpst
+Shipudei Hatikva,"Abba Hillel Silver Road 301, Ramat Gan",32.0994169,34.82718619999999,4.0,394.0,"restaurant, food, point_of_interest, establishment",4.469286727984161,Shipudei Hatikva
+Domino Pizza,"Ha-Rav Avraham Yitskhak ha-Cohen Kook Street 14, Bnei Brak",32.08693890000001,34.82657330000001,4.0,139.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",4.161748869498941,Domino Pizza
+פיצה כמעט חינם,"Zeev Jabotinsky Street 89, Ramat Gan",32.0883132,34.81386610000001,4.4,413.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",2.971225505805171,Pizza kmat chynm
+Biscotti,"Ha-Yarkon Street 67, Bnei Brak",32.0982404,34.83202010000001,4.5,2576.0,"bakery, restaurant, store, food, point_of_interest, establishment",4.864610181106521,Biscotti
+מינימלטס ישראל | minimelts Israel,"קניון איילון, דרך אבא הלל 301, רמת גן",32.1004415,34.8266107,4.1,28.0,"restaurant, store, food, point_of_interest, establishment",4.457288200621056,mynymlts yshral  minimelts Israel
+חומוס אליהו רמת גן קניון איילון,"Abba Hillel Silver Road 301, Ramat Gan",32.1003746,34.8266803,4.1,83.0,"restaurant, food, point_of_interest, establishment",4.460790101443627,Hummus alyhv rmt gn knyvn ayylvn
+שווארמה איילון,"ששת הימים 6 קניון איילון, Ramat Gan",32.1003558,34.8267131,5.0,1.0,"restaurant, food, point_of_interest, establishment",4.462946542733958,Shawarma ayylvn
+Landwer Café,"Abba Hillel Silver Road 301, Ramat Gan",32.100284,34.8267366,3.6,767.0,"cafe, restaurant, food, point_of_interest, establishment",4.4622100625773315,Landwer Café
+פלאפל בני,"Derech Sheshet HaYamim 12, Bnei Brak",32.09771,34.82436,4.5,11.0,"restaurant, food, point_of_interest, establishment",4.155964795747234,Falafel bny
+ניודלי Newdeli,"Abba Hillel Silver Road 301, Ramat Gan",32.1003585,34.8267729,3.8,55.0,"restaurant, food, point_of_interest, establishment",4.468331851681675,nyvdly Newdeli
+הקרמבו של שי גולן,Ramat Gan,32.10033319999999,34.8267892,4.8,4.0,"restaurant, food, point_of_interest, establishment",4.468779935556829,hkrmbv shl shy gvln
+פלאפל דני,"Derech Sheshet HaYamim, Bnei Brak",32.09761450000001,34.82432189999999,4.4,10.0,"restaurant, food, point_of_interest, establishment",4.149276263425988,Falafel dny
+חתוכה מרקט,"Ha-Hagana Street 13, Ramat Gan",32.0697104,34.8342861,4.2,96.0,"convenience_store, grocery_or_supermarket, restaurant, store, food, point_of_interest, establishment",5.216141987795322,chtvkh mrkt
+Perry Beauty,"ענתות 34 תל אביב, Hurgin 27, Ramat Gan",32.07363929999999,34.8219413,4.2,36.0,"restaurant, store, food, point_of_interest, establishment",3.9717936721291083,Perry Beauty
+Pizza Shemesh,"Tirzah Street 15, Ramat Gan",32.0734705,34.82871069999999,4.1,584.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",4.582073267379883,Pizza Shemesh
+Rodeo,"Ha-Yarden Street 94, Ramat Gan",32.06031,34.828064,4.1,808.0,"restaurant, food, point_of_interest, establishment",5.165869498190265,Rodeo
+Domino's Pizza,"Aluf Sade Road 15, Giv'atayim",32.059054,34.815062,3.3,466.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",4.2949709989506655,Domino's Pizza
+Ovad's Sabich,"Sirkin Street 7, Giv'atayim",32.0768708,34.8142837,4.5,4952.0,"restaurant, food, point_of_interest, establishment",3.170404192535204,Ovad's Sabich
+Cafe Zelik,"Sheinkin Street 3, Giv'atayim",32.0748157,34.80926340000001,4.0,3326.0,"cafe, restaurant, store, food, point_of_interest, establishment",2.819608326799863,Cafe Zelik
+Katznelson School,"HaMa'ayan Street 19, Giv'atayim",32.071141,34.8121773,3.1,22.0,"school, restaurant, food, point_of_interest, establishment",3.256104240207678,Katznelson School
+ארומה אספרסו בר | בר אילן,"מרכז מסחרי רמת אילן, אורנים 1, Giv'at Shmuel",32.0679414,34.8455148,4.0,825.0,"cafe, restaurant, store, food, point_of_interest, establishment",6.280989664767735,arvmh asprsv Bar  Bar ayln
+Pizza 1 + 1,"Haroe Street 104, Ramat Gan",32.0793376,34.8252511,3.6,304.0,"meal_delivery, restaurant, food, point_of_interest, establishment",4.105124131260788,Pizza 1 + 1
+שווארמה שיפודי סמי ובניו רמת גן,"David Ben Gurion Road 173, Ramat Gan",32.07573079999999,34.8189937,3.9,2294.0,"restaurant, food, point_of_interest, establishment",3.6321732657161148,Shawarma shypvdy smy vbnyv rmt gn
+Hillel School,"Ha-Gilgal Street 44, Ramat Gan",32.080249,34.8237138,,,"primary_school, school, meal_takeaway, restaurant, food, point_of_interest, establishment",3.9446250745036204,Hillel School
+מדינת ישראל,Ramat Gan,32.0684272,34.8247645,,,"restaurant, food, point_of_interest, establishment",4.445599568497394,mdynt yshral
+דודא לה מפגש העיר,Ramat Gan,32.0684272,34.8247645,4.0,1.0,"restaurant, food, point_of_interest, establishment",4.445599568497394,dvda lh mpgsh hayr
+הג'חנון של דבי,Ramat Gan,32.0684271,34.8247646,,,"restaurant, food, point_of_interest, establishment",4.445612933149998,hgchnvn shl dby
+Bariloche- מסעדה דרום אמריקאית,"Haroe Street 186, Ramat Gan",32.07024620000001,34.82458510000001,4.1,166.0,"restaurant, food, point_of_interest, establishment",4.344913511060386,Bariloche- Restaurant drvm amrykayt
+The Original Sabich Buffet,"Negba Road 16, Ramat Gan",32.0702642,34.8245451,4.5,1048.0,"restaurant, food, point_of_interest, establishment",4.340651987121704,The Original Sabich Buffet
+השיפוד והמנגל,"Negba Road 20, Ramat Gan",32.0702918,34.82502650000001,2.3,6.0,"restaurant, food, point_of_interest, establishment",4.381029643630132,hshypvd vhmngl
+ארז הגדול,"Negba Road 18, Ramat Gan",32.07035459999999,34.8248683,3.0,2.0,"restaurant, food, point_of_interest, establishment",4.364553673752832,arz hgdvl
+טעמי תימן,"Negba Road 23, Ramat Gan",32.070497,34.8246007,4.8,12.0,"restaurant, food, point_of_interest, establishment",4.335081055097189,tamy tymn
+ZVOVI - מטעמי הבית - אוכל ביתי ובייקרי,"Truman Street 30, Ramat Gan",32.0680322,34.82593300000001,4.0,1.0,"clothing_store, cafe, restaurant, store, food, point_of_interest, establishment",4.5639502809222545,ZVOVI - mtamy hbyt - avkl byty vbyykry
+אוכל מוכן לקחת,"Haroe Street 184, Ramat Gan",32.0707392,34.82480340000001,5.0,1.0,"restaurant, food, point_of_interest, establishment",4.342024234108275,avkl mvkn lkcht
+שיר לפיצה,"Negba Road 2, Ramat Gan",32.07037329999999,34.82275860000001,4.4,454.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",4.181896329224585,shyr lPizza
+הפלאנצ'ה,"Negba Road 28, Ramat Gan",32.0701858,34.8262974,5.0,2.0,"restaurant, food, point_of_interest, establishment",4.495854797695543,hplantzh
+Memer Falafel,"Negba Road 28, Ramat Gan",32.0701858,34.8262974,4.4,428.0,"restaurant, food, point_of_interest, establishment",4.495854797695543,Memer Falafel
+שניצל נגבה,"Negba Road 41, Ramat Gan",32.0703486,34.8266695,4.1,119.0,"restaurant, food, point_of_interest, establishment",4.5211792208866175,shnytzl ngbh
+תלחייי גבעתיים,"Haroe Street, Ramat Gan",32.0694741,34.8275973,,,"restaurant, food, point_of_interest, establishment",4.639789023553655,tlchyyy gbatyym
+Eclair Café,"Negba Road 40, Ramat Gan",32.070054,34.8278073,4.2,659.0,"cafe, restaurant, bakery, store, food, point_of_interest, establishment",4.632902711730971,Eclair Café
+ג'חנון אסלי,"Uzi'el Street 123, Ramat Gan",32.0669342,34.82141110000001,,,"restaurant, food, point_of_interest, establishment",4.244214299242756,gchnvn asly
+אשכול,"Ruchama Street 47, Ramat Gan",32.0719739,34.8224784,,,"restaurant, food, point_of_interest, establishment",4.086571277584258,ashkvl
+New York Pizza,"Uzi'el Street 69, Ramat Gan",32.0727778,34.8233333,4.0,148.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",4.128488470531825,New York Pizza
+CHEBA — Домашняя кухня в Израиле,"Haroe Street 228, Ramat Gan",32.06512370000001,34.8235974,,,"restaurant, food, point_of_interest, establishment",4.524000750667154,CHEBA — Домашняя кухня в Израиле
+מיסטר פרצל מרום נווה רמת גן,"Khayim Landau Street 7, Ramat Gan",32.07152999999999,34.828277,5.0,5.0,"restaurant, food, point_of_interest, establishment",4.614020615151093,mystr prtzl mrvm nvvh rmt gn
+פיצה האט - מרום נוה רמת גן,"קניון, חיים לנדאו 7, רמת גן",32.07152999999999,34.828277,3.7,264.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",4.614020615151093,Pizza hat - mrvm nvh rmt gn
+מקדונלד'ס - מרום נווה רמת גן (כשר),"Khayim Landau Street 7, Ramat Gan",32.0716934,34.82827969999999,1.8,32.0,"restaurant, food, point_of_interest, establishment",4.6079428000577,mkdvnlds - mrvm nvvh rmt gn (kshr)
+Oshi - Oshi,"Khayim Landau Street 7a, Ramat Gan",32.0717795,34.8282765,3.7,419.0,"restaurant, food, point_of_interest, establishment",4.604356026385211,Oshi - Oshi
+שווארמה מרום,"מרום סנטר, חיים לנדאו 7, רמת גן",32.0717241,34.8284021,4.0,2.0,"restaurant, food, point_of_interest, establishment",4.6176068553183285,Shawarma mrvm
+בורגראנץ' רמת גן - מרום נווה,"Khayim Landau Street 7, Ramat Gan",32.0717872,34.8284407,2.8,215.0,"restaurant, food, point_of_interest, establishment",4.618616780952866,Burgerantz rmt gn - mrvm nvvh
+Meet Meat,Ramat Gan,32.0718223,34.8289091,2.8,39.0,"restaurant, food, point_of_interest, establishment",4.6588462483440205,Meet Meat
+Man Burger,"Tirzah Street 19, Ramat Gan",32.0721587,34.8289346,4.2,134.0,"restaurant, food, point_of_interest, establishment",4.648564845120845,Man Burger
+הגג של יודה,"Atarot Street 36, Ramat Gan",32.0739035,34.8223817,5.0,2.0,"restaurant, food, point_of_interest, establishment",4.00079780903156,hgg shl yvdh
+Chapo Burger,"Uzi'el Street 55, Ramat Gan",32.07418129999999,34.8231826,4.4,597.0,"restaurant, food, point_of_interest, establishment",4.061907681747893,Chapo Burger
+ג׳חנון הירדן,"Mishmar HaYarden Street 2, Ramat Gan",32.0648732,34.82864060000001,5.0,2.0,"restaurant, food, point_of_interest, establishment",4.951620617848648,gchnvn hyrdn
+Tommy Roll,"Sderot Yerushalayim 42, Ramat Gan",32.0745001,34.823601,4.4,1658.0,"restaurant, meal_delivery, food, point_of_interest, establishment",4.0880129228433155,Tommy Roll
+פיצה סטורי שדרות ירושלים 42 רמת גן,"Yerushalayim Street 42, Ramat Gan",32.074506,34.8235379,4.7,52.0,"restaurant, food, point_of_interest, establishment",4.0821524108744125,Pizza stvry shdrvt yrvshlym 42 rmt gn
+בראנץ' אנד מאנץ' רמת גן,"Sderot Yerushalayim 32, Ramat Gan",32.0744481,34.8222707,4.7,9.0,"restaurant, food, point_of_interest, establishment",3.970867822310926,Barantz and mantz rmt gn
+Moto La Pizza,"Sderot Yerushalayim 32, Ramat Gan",32.0744481,34.8222707,4.3,399.0,"meal_delivery, restaurant, food, point_of_interest, establishment",3.970867822310926,Moto La Pizza
+Abu Yunes Hummus,"Uzi'el Street 134, Ramat Gan",32.0644346,34.82026379999999,,,"restaurant, food, point_of_interest, establishment",4.2993605040588445,Abu Yunes Hummus
+ג'פניקה פתח תקווה | JAPANIKA PETACH TIKVA,"Shacham Street 32, Petah Tikva",32.0864311,34.8583433,4.0,2957.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",7.160047577417325,gpnykh ptch tkvvh  JAPANIKA PETACH TIKVA
+Bleecker Bakery,"יכין סנטר, דרך יצחק רבין 17, פתח תקווה",32.088249,34.86063300000001,4.1,1898.0,"cafe, bakery, restaurant, store, food, point_of_interest, establishment",7.379886925354809,Bleecker Bakery
+Spaghettim,"Ha-Sivim Street 18, Petah Tikva",32.088623,34.856224,3.7,1265.0,"restaurant, food, point_of_interest, establishment",6.965419676811873,Spaghettim
+Aroma Orly Givat Shmuel,"תחנת דלק פז ""אורלי, Yona Shpindel 1, Giv'at Shmu'el",32.0815321,34.8455228,4.1,1686.0,"cafe, restaurant, store, food, point_of_interest, establishment",5.97132074086639,Aroma Orly Givat Shmuel
+Pizza Time,"David Ben Gurion Street 20, Giv'at Shmuel",32.0776883,34.8470488,4.5,141.0,"meal_delivery, restaurant, food, point_of_interest, establishment",6.164962908263301,Pizza Time
+גולד קייטרינג,"Giborei Israel Street 16, Bnei Brak",32.08198439999999,34.8431235,3.7,19.0,"restaurant, food, point_of_interest, establishment",5.741440141697579,gvld kyytryng
+Noy hasadeh,"מתחם רוגוזין, מתחם רוגובין, Sderot Menachem Begin 38, Giv'at Shmu'el",32.077327,34.8543621,4.1,564.0,"restaurant, shopping_mall, food, point_of_interest, establishment",6.853837977991196,Noy hasadeh
+McDonald's -Kosher,Giv'at Shmuel,32.0757103,34.8547304,3.5,263.0,"restaurant, food, point_of_interest, establishment",6.915913934990681,McDonald's -Kosher
+Oscar Wilde Irish Pub | אוסקר ווילד,"Shacham Street 36, Petah Tikva",32.08576540000001,34.85841789999999,4.4,4193.0,"bar, restaurant, food, point_of_interest, establishment",7.16711804136631,Oscar Wilde Irish Pub  avskr vvyld
+River Noodles Bar,"Shacham Street 36, Petah Tikva",32.0857415,34.85856779999999,4.0,2486.0,"restaurant, food, point_of_interest, establishment",7.181284262882552,River Noodles Bar
+Max Brenner,"Shacham Street 30, Petah Tikva",32.0873188,34.8587374,3.9,2479.0,"restaurant, food, point_of_interest, establishment",7.198392338612054,Max Brenner
+בהדונס,"Odem Street 3, Petah Tikva",32.09010779999999,34.8579185,4.5,628.0,"restaurant, food, point_of_interest, establishment",7.133564849137012,bhdvns
+BBB - Burgus Burger Bar,"מתחם יכין, Shacham 17, Petah Tikva",32.08726789999999,34.8605958,4.2,3475.0,"restaurant, food, point_of_interest, establishment",7.373703482847634,BBB - Burgus Burger Bar
+Hummus har-bracha,"Bareket Street 9, Petah Tikva",32.0897369,34.8586425,4.4,1040.0,"restaurant, food, point_of_interest, establishment",7.199374382118936,Hummus har-bracha
+שניצל קוקי,"Shoham Street 3, Petah Tikva",32.0908167,34.8577498,4.5,196.0,"restaurant, food, point_of_interest, establishment",7.122983089055039,shnytzl kvky
+Wok A Way,"Shoham Street 7, Petah Tikva",32.0906554,34.8582604,3.3,121.0,"restaurant, food, point_of_interest, establishment",7.1697795637594215,Wok A Way
+קדירה חמה,"Shoham Street 7, Petah Tikva",32.0906554,34.8582604,4.3,573.0,"restaurant, food, point_of_interest, establishment",7.1697795637594215,kdyrh chmh
+Triola,"Shacham Street 14, Petah Tikva",32.0898916,34.85928929999999,4.4,3408.0,"restaurant, food, point_of_interest, establishment",7.261306060724737,Triola
+McDonald's,"פינת, הסיבים 2, פתח תקווה",32.0918724,34.8569235,3.4,857.0,"restaurant, food, point_of_interest, establishment",7.054807882145227,McDonald's
+Jems Beer Factory,"Ef'al Street 15, Petah Tikva",32.0941403,34.8470338,4.4,7039.0,"restaurant, bar, food, point_of_interest, establishment",6.1569252925914055,Jems Beer Factory
+שניצלאנו,"Oranim Street 1, Giv'at Shmuel",32.0681983,34.8456828,4.1,127.0,"restaurant, food, point_of_interest, establishment",6.286955472491102,shnytzlanv
+Pizza Shemesh givat shmuel,"HaArazim Street 1, Giv'at Shmuel",32.0681958,34.84567879999999,4.0,452.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",6.286684756311934,Pizza Shemesh givat shmuel
+Restaurant,"Ha-Sivim Street 2, Petah Tikva",32.09178380000001,34.8568565,4.0,4.0,"restaurant, food, point_of_interest, establishment",7.047627034335403,Restaurant
+Cafe Cafe givat shmuel,"Yoni Netanyahu Street 25, Giv'at Shmuel",32.0769404,34.85495280000001,3.8,1788.0,"restaurant, cafe, food, point_of_interest, establishment",6.915226101127905,Cafe Cafe givat shmuel
+בורגראנץ' פתח תקווה - הקניון הגדול,"Zeev Jabotinsky Street 72, Petah Tikva",32.092532,34.8652372,3.6,636.0,"restaurant, food, point_of_interest, establishment",7.843007195404179,Burgerantz ptch tkvvh - hknyvn hgdvl
+פלאפל עזרא,"Aharonovich Street 59, Bnei Brak",32.0860862,34.8395652,4.2,174.0,"restaurant, food, point_of_interest, establishment",5.387225538401223,Falafel azra
+HaTabun vehaMangal,"Yoni Netanyahu Street 31, Giv'at Shmuel",32.0775445,34.8550213,3.7,991.0,"restaurant, food, point_of_interest, establishment",6.9120885139964905,HaTabun vehaMangal
+דודא לפיצה,"HaPalmach Street, Giv'at Shmuel",32.0804145,34.8470885,5.0,1.0,"restaurant, food, point_of_interest, establishment",6.130154505605271,dvda lPizza
+מסעדת הנשיא בגבעה,"HaNasi Street 17, Giv'at Shmuel",32.0809809,34.85126100000001,4.2,136.0,"point_of_interest, restaurant, food, establishment",6.516316186266656,msadt hnshya bgbah
+Sopranos pizza,"HaNasi Street 17, Giv'at Shmuel",32.08087979999999,34.85123159999999,4.0,185.0,"meal_delivery, restaurant, food, point_of_interest, establishment",6.514541303640192,Sopranos pizza
+English Cake,"Gush Etsyon Street, Giv'at Shmuel",32.08038210000001,34.84589160000001,5.0,1.0,"restaurant, food, point_of_interest, establishment",6.018146893815561,English Cake
+הסביח של גינוס,"David Ben Gurion Street 11, Giv'at Shmuel",32.0778966,34.8467576,4.8,20.0,"restaurant, food, point_of_interest, establishment",6.1343143711194665,hsbych shl gynvs
+פלאפל צ׳ומה,"David Ben Gurion Street 20, Giv'at Shmuel",32.0776883,34.8470488,4.6,201.0,"restaurant, food, point_of_interest, establishment",6.164962908263301,Falafel tzvmh
+חומוס מדאמס,"מתחם רוגוזין, שדרות מנחם בגין 38, גבעת שמואל",32.07744940000001,34.8543801,4.1,172.0,"restaurant, food, point_of_interest, establishment",6.853602819464238,Hummus mdams
+Wingz Israel - ווינגס ישראל גבעת שמואל,"Ha-Sivim Street 49, Giv'at Shmuel",32.0840608,34.8556089,4.5,89.0,"restaurant, food, point_of_interest, establishment",6.905605883644049,Wingz Israel - vvyngs yshral gbat shmval
+Donis fish&wine,"Ha-Sivim Street 49, Petah Tikva",32.0841537,34.8555673,4.2,265.0,"restaurant, food, point_of_interest, establishment",6.90134738928262,Donis fish&wine
+פיצה סטורי גבעת שמואל,"מעל הסופר פארם, מתחם רוגובין, בקומה העליונה מול המדרגות הנעות, Sderot Menachem Begin 38, Giv'at Shmu'el",32.077327,34.8543621,3.1,22.0,"restaurant, food, point_of_interest, establishment",6.853837977991196,Pizza stvry gbat shmval
+Burgerim,"מנחם בגין 38, מרכז מסחרי רוגובין, Giv'at Shmuel",32.077327,34.8543621,4.0,150.0,"restaurant, food, point_of_interest, establishment",6.853837977991196,Burgerim
+Landwer Cafe,"מתחם רוגובין, שדרות מנחם בגין 38, גבעת שמואל",32.0772457,34.8544016,3.8,466.0,"cafe, store, restaurant, food, point_of_interest, establishment",6.858817101094673,Landwer Cafe
+פיצה טוונטי פייב,"HaRav Kahanman Street 100, Bnei Brak",32.0781565,34.8419952,4.2,199.0,"restaurant, food, point_of_interest, establishment",5.685518787088789,Pizza tvvnty pyyb
+פלאפל אליהו,"HaRav Kahanman Street 110, Bnei Brak",32.0778801,34.84205,4.0,3.0,"restaurant, food, point_of_interest, establishment",5.695462994264137,Falafel alyhv
+פיצה רחל,"Bar Yohai Street 4, Bnei Brak",32.0785054,34.8415622,3.9,23.0,"restaurant, food, point_of_interest, establishment",5.639219082172833,Pizza rchl
+מסעדת הפיקחים,"Bar Yohai Street 4, Bnei Brak",32.0785054,34.8415622,5.0,2.0,"restaurant, food, point_of_interest, establishment",5.639219082172833,msadt hpykchym
+שטיסל מרכז האוכל היהודי,"Bar Yohai Street 4, Bnei Brak",32.0785054,34.8415622,4.7,32.0,"restaurant, food, point_of_interest, establishment",5.639219082172833,shtysl mrkz havkl hyhvdy
+מִטְבָל גבעת שמואל,"Yoni Netanyahu Street 31, Giv'at Shmuel",32.07755090000001,34.8550164,3.0,31.0,"restaurant, food, point_of_interest, establishment",6.911532674441189,mִtְbָl gbat shmval
+סוויטלק - הבית המתוק שלי,"HaRav Kahanman Street 104, Bnei Brak",32.07750600000001,34.842168,3.7,9.0,"restaurant, food, point_of_interest, establishment",5.713244117816042,svvytlk - hbyt hmtvk shly
+Pizza Shemesh Bnei brak,"HaRav Kahanman Street 104, Bnei Brak",32.07750600000001,34.842168,3.9,205.0,"restaurant, food, point_of_interest, establishment",5.713244117816042,Pizza Shemesh Bnei brak
+מסעדה לכל כיס,"Kikar HaTa'asiya 3, Bnei Brak",32.0789786,34.8410923,,,"restaurant, food, point_of_interest, establishment",5.587687002538396,Restaurant lkl kys
+ביסלה מרקט,"Ezra Street 4, Bnei Brak",32.0814001,34.8404747,4.0,98.0,"store, restaurant, food, point_of_interest, establishment",5.497982841441387,byslh mrkt
+פיצה קונספט - קניון הגבעה,"Yoni Netanyahu Street 29, Giv'at Shmuel",32.0770732,34.8549557,4.5,48.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",6.913344544560106,Pizza kvnspt - knyvn hgbah
+א גרוייסע פיצה,"HaRav Shmuel Rozovski Street, Bnei Brak",32.0834896,34.84054999999999,3.3,30.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",5.4879118351686555,a grvyysa Pizza
+Benedict,"Ha-Sivim Street 47, Petah Tikva",32.084493,34.8562357,4.1,3309.0,"restaurant, food, point_of_interest, establishment",6.963340337757907,Benedict
+Jerusalem's corner,"Shimshon ha-Gibor Street 8, Bnei Brak",32.0800633,34.8404047,5.0,4.0,"restaurant, food, point_of_interest, establishment",5.507489254694433,Jerusalem's corner
+אולמי ארמונות חן,"Bar Yohai Street 10, Bnei Brak",32.07813,34.841188,,,"restaurant, food, point_of_interest, establishment",5.610707451680702,avlmy armvnvt chn
+פיצה שמש,"Yitskhak Me'ir ha-Cohen Street 4, Bnei Brak",32.084996,34.841131,4.2,10.0,"restaurant, food, point_of_interest, establishment",5.536430753014386,Pizza shmsh
+Papa Johns Pizza,"Levi Eshkol Street 121, Kiryat Ono",32.07868099999999,34.8564402,2.0,1.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",7.028896960170596,Papa Johns Pizza
+"בד""ץ חוג חתם סופר פתח תקוה","Sha'ul ha-Melekh Street 6, Bnei Brak",32.0782249,34.8408784,,,"restaurant, food, point_of_interest, establishment",5.580185960870589,bdtz chvg chtm svpr ptch tkvh
+Cafe Greg,"Sderot Menachem Begin 30, Giv'at Shmu'el",32.0757902,34.8540363,4.0,1286.0,"cafe, restaurant, food, point_of_interest, establishment",6.849821068171363,Cafe Greg
+Falafel Ordea,"Bialik Street 46, Ramat Gan",32.0837669,34.8145866,3.9,273.0,"restaurant, food, point_of_interest, establishment",3.040193343307701,Falafel Ordea
+Hummus Givatayim,"Weizman Street 10, Giv'atayim",32.0754717,34.8085287,4.1,715.0,"restaurant, food, point_of_interest, establishment",2.725376690369361,Hummus Givatayim
+מלך הסירים - אוכל ביתי אוכל מוכן ברמת גן | תל אביב,"Lokhamei Sinai Street 12, Ramat Gan",32.0766254,34.8235197,5.0,8.0,"restaurant, food, point_of_interest, establishment",4.012636475419752,mlk hsyrym - avkl byty avkl mvkn Barmt gn  tl abyb
+Spicy Grill Bar,"Haroe Street 133, Ramat Gan",32.07809939999999,34.82539060000001,4.2,881.0,"restaurant, food, point_of_interest, establishment",4.145300564116537,Spicy Grill Bar
+פלאפל הדסה,"Haroe Street 112, Ramat Gan",32.0784418,34.82515679999999,5.0,11.0,"restaurant, food, point_of_interest, establishment",4.115733227964602,Falafel hdsh
+הסביח של דודי,"Haroe Street 129, Ramat Gan",32.0785758,34.82557709999999,3.5,28.0,"restaurant, food, point_of_interest, establishment",4.151552785060266,hsbych shl dvdy
+טייסטי MEAT,"Khibat Tsiyon Street 45, Ramat Gan",32.0793274,34.8251771,4.5,241.0,"restaurant, food, point_of_interest, establishment",4.098462991016114,tyysty MEAT
+פלאפל מנה ועוד מנה,"Sderot Yerushalayim 26, Ramat Gan",32.0745446,34.8214498,4.3,110.0,"restaurant, food, point_of_interest, establishment",3.8941291745165363,Falafel mnh vavd mnh
+פיצה בייקרי 121,"הרא״ה 121, רמת גן",32.0792246,34.8257757,5.0,6.0,"cafe, restaurant, store, food, point_of_interest, establishment",4.156110028248349,Pizza byykry 121
+Papa John's Pizza,"Sderot Yerushalayim 5, Ramat Gan",32.0748554,34.8197183,3.6,355.0,"restaurant, food, point_of_interest, establishment",3.7284749578199494,Papa John's Pizza
+דודא לה מפגש העיר,"Sderot Yerushalayim 10, Ramat Gan",32.0746663,34.8196272,4.0,50.0,"restaurant, food, point_of_interest, establishment",3.727454039340281,dvda lh mpgsh hayr
+דודאלה - מפגש העיר (שווארמה ובשרים ואוכל מוכן בשישי)),"Sderot Yerushalayim 10, Ramat Gan",32.0745576,34.8196812,,,"restaurant, food, point_of_interest, establishment",3.7363624266574194,dvdalh - mpgsh hayr (Shawarma vMeat vavkl mvkn bshyshy))
+Tomer's Kitchen,"Malal Street 7, Ramat Gan",32.0801214,34.8207336,5.0,8.0,"restaurant, food, point_of_interest, establishment",3.669927060113341,Tomer's Kitchen
+מדנס פיצה,"David Ben Gurion Road 179, Ramat Gan",32.0752086,34.8188047,,,"restaurant, food, point_of_interest, establishment",3.634092538273196,mdns Pizza
+Jelsomino and Friends,"Carlebach Street 3, Tel Aviv-Yafo",32.0667672,34.7833354,4.1,395.0,"night_club, bar, restaurant, food, point_of_interest, establishment",2.1452288632842023,Jelsomino and Friends
+Oban Koban,"HaArba'a Street 16, Tel Aviv-Yafo",32.07011029999999,34.7849197,4.2,2862.0,"restaurant, food, point_of_interest, establishment",1.7877254918849408,Oban Koban
+McDonald's,"HaHashmonaim Street 94, Tel Aviv-Yafo",32.0690383,34.7845191,3.4,344.0,"restaurant, food, point_of_interest, establishment",1.9015202715808506,McDonald's
+Pizza Hut,"Yigal Alon Street 51, Tel Aviv-Yafo",32.0613943,34.7917195,2.8,233.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",2.8745385151879947,Pizza Hut
+PORT 19 חשמונאים,"HaHashmonaim Street 95, Tel Aviv-Yafo",32.0696759,34.7838054,4.4,4100.0,"restaurant, food, point_of_interest, establishment",1.8254038724924146,PORT 19 chshmvnaym
+Greg Cafe,"TLV Mall, HaHashmonaim Street 100, Tel Aviv-Yafo",32.0686337,34.7837975,3.5,370.0,"restaurant, food, point_of_interest, establishment",1.9406761576668916,Greg Cafe
+מטרו,"Menakhem Begin Road 72, Tel Aviv-Yafo",32.0662838,34.7843421,4.4,193.0,"restaurant, food, point_of_interest, establishment",2.204253796982216,mtrv
+Japanika,"ALBI beach, Derech Ben Gurion 134, Bat Yam",32.0125136,34.737648,4.0,2696.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",9.193796428406873,Japanika
+Pizza Pazzaz,"Daniel Street 50, Bat Yam",32.0216034,34.74987370000001,4.1,425.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",7.787359297994716,Pizza Pazzaz
+Aroma Espresso Bar ארומה אספרסו בר,"Rothschild Street 29, Bat Yam",32.0271767,34.7468255,4.1,625.0,"cafe, store, restaurant, food, point_of_interest, establishment",7.351269008798423,Aroma Espresso Bar arvmh asprsv Bar
+Z Burger,"Herzl Street 48, Bat Yam",32.0247941,34.7430232,4.4,617.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",7.7531998000124105,Z Burger
+Golden Dragon,"Ha'Atsmaut Boulevard 67, Bat Yam",32.0281114,34.748518,4.1,603.0,"restaurant, food, point_of_interest, establishment",7.186514982396272,Golden Dragon
+Mr. jack burgers,"Ha'Atsmaut Boulevard 77, Bat Yam",32.0289508,34.7492616,4.5,413.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",7.071900334789364,Mr. jack burgers
+De Lux Restaurant,"Derech Ben Gurion 51, Bat Yam",32.0257252,34.7411844,4.2,352.0,"restaurant, food, point_of_interest, establishment",7.748790031265241,De Lux Restaurant
+DEDA חוויה גאורגית מקורית (דדה),"Derech Ben Gurion 61, Bat Yam",32.0241029,34.7404992,4.2,1432.0,"restaurant, food, point_of_interest, establishment",7.936888768135133,DEDA chvvyh gavrgyt mkvryt (ddh)
+Prestige Restaurant,"Derech Ben Gurion 61-67, Bat Yam",32.0237884,34.7403602,3.6,176.0,"restaurant, food, point_of_interest, establishment",7.973661398131284,Prestige Restaurant
+הטאבון והשווארמה,"Balfour Street 94, Bat Yam",32.0169824,34.7449577,4.2,331.0,"restaurant, food, point_of_interest, establishment",8.4446417776545,htabvn vhShawarma
+Café Joe,"Derech Ben Gurion 69, Bat Yam",32.021602,34.7395775,4.1,2129.0,"cafe, store, restaurant, food, point_of_interest, establishment",8.220862899894552,Café Joe
+Фалафель Ноам,"Balfour Street 111, Bat Yam",32.0162583,34.744617,4.3,99.0,"restaurant, food, point_of_interest, establishment",8.531031587026249,Фалафель Ноам
+Aroma,"Derech Ben Gurion 75, Bat Yam",32.02044120000001,34.7393997,4.0,2017.0,"cafe, store, restaurant, food, point_of_interest, establishment",8.341280548391754,Aroma
+Hachapuri House,"Derech Ben Gurion 105, Bat Yam",32.01596239999999,34.7386945,4.4,971.0,"restaurant, food, point_of_interest, establishment",8.809249744971853,Hachapuri House
+הסורי חומוס פול,"Metsudat Betar Street 8, Bat Yam",32.0133247,34.7503585,4.4,552.0,"restaurant, food, point_of_interest, establishment",8.621911483453983,hsvry Hummus pvl
+ויקטור טוסט נקניק,"Derech Ben Gurion 97, Bat Yam",32.0168276,34.73881240000001,4.3,126.0,"restaurant, food, point_of_interest, establishment",8.719380825216058,vyktvr tvst nknyk
+מיכאלו מסעדה איטלקית,"Derech Ben Gurion 105, Bat Yam",32.01615519999999,34.73860930000001,4.3,212.0,"restaurant, bar, food, point_of_interest, establishment",8.794168314846745,mykalv Restaurant aytlkyt
+Beer Point,"Derech Ben Gurion 115, Bat Yam",32.01384400000001,34.7390284,4.3,120.0,"liquor_store, bar, store, restaurant, food, point_of_interest, establishment",9.002910729613081,Beer Point
+Talburger,"Derech Ben Gurion 141, Bat Yam",32.012563,34.739054,4.1,1329.0,"restaurant, food, point_of_interest, establishment",9.128483018089888,Talburger
+Cassis Restaurant,"Kidron Street 44, Tel Aviv-Yafo",32.0380324,34.7456013,4.0,3118.0,"restaurant, food, point_of_interest, establishment",6.367937940672007,Cassis Restaurant
+Pizza San Siro,"Eilat Street 48, Holon",32.0155906,34.7649002,3.9,225.0,"meal_delivery, restaurant, food, point_of_interest, establishment",7.993348158411854,Pizza San Siro
+Shipudei Tzipora,"Sha'ul Bar Street 5, Bat Yam",32.02788149999999,34.7462802,3.8,2063.0,"restaurant, food, point_of_interest, establishment",7.305854189060083,Shipudei Tzipora
+Pizza Pozzi,"Derech Ben Gurion 119, Bat Yam",32.0145302,34.7388825,4.4,383.0,"meal_delivery, restaurant, food, point_of_interest, establishment",8.94159228447392,Pizza Pozzi
+McDonald's,"בית חולים וולפסון, Ha-Lokhamim Street 62, Holon",32.036126,34.76232299999999,2.6,284.0,"restaurant, food, point_of_interest, establishment",5.859914331365552,McDonald's
+Gorilla,"Derech Ben Gurion 81, Bat Yam",32.01936140000001,34.7392638,3.8,2759.0,"cafe, store, restaurant, food, point_of_interest, establishment",8.452199325444356,Gorilla
+Little Prague,"Derech Ben Gurion 83, Bat Yam",32.01841699999999,34.7390333,4.4,2500.0,"restaurant, food, point_of_interest, establishment",8.554474845432757,Little Prague
+Domino Pizza,"Yoseftal Street 92, Bat Yam",32.0151827,34.7561673,3.9,79.0,"restaurant, food, point_of_interest, establishment",8.247718243198232,Domino Pizza
+Karas,"Derech Ben Gurion 91, Bat Yam",32.017652,34.73887630000001,4.0,965.0,"restaurant, food, point_of_interest, establishment",8.636066230625916,Karas
+ניקה,"Derech Ben Gurion 53, Bat Yam",32.0256338,34.7410997,4.3,18.0,"restaurant, food, point_of_interest, establishment",7.761575284852925,nykh
+Бабай,"Kedem Street 123, Tel Aviv-Yafo",32.04014269999999,34.7468492,4.0,565.0,"restaurant, food, point_of_interest, establishment",6.107641690893642,Бабай
+Domino's Pizza,"Derech Ben Gurion 131, Bat Yam",32.0133234,34.7390301,3.6,923.0,"meal_delivery, meal_takeaway, restaurant, food, point_of_interest, establishment",9.054257346124194,Domino's Pizza
+שירן ג'חנון,"Ha'Atsmaut Boulevard 37, Bat Yam",32.0233619,34.7465964,,,"restaurant, food, point_of_interest, establishment",7.739162641087949,shyrn gchnvn
+פיצה שמש עוזיאל בת ים,"HaRav Uziel Street 25, Bat Yam",32.022231,34.7496191,3.5,19.0,"meal_delivery, restaurant, food, point_of_interest, establishment",7.733113677205493,Pizza shmsh avzyal bt ym
+פצץ בורגר,"HaRav Uziel Street 34, Bat Yam",32.02194360000001,34.74983539999999,4.6,116.0,"restaurant, food, point_of_interest, establishment",7.754164171892074,ptztz Burger
+Falafel Bat yam Balfoour 67,"Balfour Street 67, Bat Yam",32.0236194,34.7454779,1.0,1.0,"restaurant, food, point_of_interest, establishment",7.76051407528317,Falafel Bat yam Balfoour 67
+Rahmunes,"Balfour Street 67, Bat Yam",32.0236194,34.7454779,4.6,96.0,"restaurant, food, point_of_interest, establishment",7.76051407528317,Rahmunes
+Yorsh,"Balfour Street, Bat Yam",32.0223059,34.7454051,5.0,1.0,"restaurant, food, point_of_interest, establishment",7.893878472487998,Yorsh
+מטבח גרוזיני,"Balfour Street 63, Bat Yam",32.0241829,34.7454035,4.3,11.0,"restaurant, food, point_of_interest, establishment",7.707966915778394,mtbch grvzyny
+צ'וף בורגר מסדת בשרים,"Balfour Street 60, Bat Yam",32.0235948,34.7451586,,,"restaurant, food, point_of_interest, establishment",7.7765768091313685,tzvp Burger msdt Meat
+פיצה ליהאנו,"Balfour Street 59, Bat Yam",32.0244601,34.7453691,3.6,32.0,"restaurant, food, point_of_interest, establishment",7.6820797752444285,Pizza lyhanv
+ממתקי העיר,"Balfour Street 53, Bat Yam",32.0250505,34.7453355,,,"restaurant, food, point_of_interest, establishment",7.625343248520738,mmtky hayr
+Hetsi hinam otobus servisi,"Ha'Atsmaut Boulevard 61, Bat Yam",32.02673070000001,34.7480134,3.0,1.0,"restaurant, food, point_of_interest, establishment",7.344839407057102,Hetsi hinam otobus servisi
+יעקב סנדביצ'ים,"Rothschild Street 28, Bat Yam",32.0267557,34.7467458,4.2,132.0,"restaurant, food, point_of_interest, establishment",7.396229127120001,yakb sndbytzym
+Rega Coffee House,"Бальфур 46, Bat Yam",32.0257959,34.7448706,4.9,29.0,"cafe, restaurant, store, food, point_of_interest, establishment",7.572555351512909,Rega Coffee House
+סביח פרישמן בת ים,"Rothschild Street 30, Bat Yam",32.0268812,34.7469876,4.6,5.0,"restaurant, food, point_of_interest, establishment",7.373435519536231,sbych pryshmn bt ym
+פלאפל שרעבי,"Rothschild Street 42, Bat Yam",32.02712210000001,34.7495534,4.3,19.0,"restaurant, food, point_of_interest, establishment",7.24230270283516,Falafel shraby
+החומוסייה של יניב,"Rothschild Street 42, Bat Yam",32.027179,34.7494864,4.8,113.0,"restaurant, food, point_of_interest, establishment",7.239327768766097,hHummusyyh shl ynyb
+מפגש לב העיר,"Rothschild Street 35, Bat Yam",32.0273281,34.7477016,,,"restaurant, food, point_of_interest, establishment",7.298727784516839,mpgsh lb hayr
+פיצה אפי,"Rothschild Street 44, Bat Yam",32.02714179999999,34.7497856,4.5,232.0,"restaurant, food, point_of_interest, establishment",7.230934291524407,Pizza apy
+שווארמה בחבוש,"Rothschild Street 27, Bat Yam",32.0269381,34.7458345,3.1,13.0,"restaurant, food, point_of_interest, establishment",7.4180152052395405,Shawarma bchbvsh
+הסנדק,"Sha'ul Bar Street 1, Bat Yam",32.027148,34.7463243,,,"restaurant, food, point_of_interest, establishment",7.375900304787011,hsndk
+Umi Sushi,"Herzl Street 59, Bat Yam",32.0211028,34.7434362,4.7,26.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",8.096669740210778,Umi Sushi
+התימני הנדיב,"Rothschild Street 27, Bat Yam",32.0273072,34.7462177,4.8,113.0,"restaurant, food, point_of_interest, establishment",7.364935745876804,htymny hndyb
+הפינה של מוטי,"Rothschild Street 18, Bat Yam",32.0266145,34.7447854,5.0,2.0,"restaurant, food, point_of_interest, establishment",7.49633126848529,hpynh shl mvty
+פיצה קשת,"Sha'ul Bar Street 3, Bat Yam",32.0275226,34.7463664,4.5,36.0,"restaurant, food, point_of_interest, establishment",7.337258173380622,Pizza ksht
+לחם הודיה,"Rothschild Street 45, Bat Yam",32.0273164,34.7506744,4.3,1115.0,"bakery, cafe, restaurant, store, food, point_of_interest, establishment",7.177886311299608,lchm hvdyh
+"מטעמי שרעבי בע""מ","Rothschild Street 45, Bat Yam",32.0273739,34.75076,5.0,7.0,"restaurant, food, point_of_interest, establishment",7.16871255771783,mtamy shraby bam
+שיפודי אהובה,"Yerushalayim Street 11, Bat Yam",32.0247532,34.7428704,4.5,13.0,"restaurant, food, point_of_interest, establishment",7.764122278926446,shypvdy ahvbh
+Tzachi Meats,"Herzl Street 82, Bat Yam",32.0188856,34.7450679,4.1,1134.0,"restaurant, food, point_of_interest, establishment",8.24909776820675,Tzachi Meats
+Pizza Shemesh,"Herzl Street 75, Bat Yam",32.0190353,34.7447421,4.4,135.0,"meal_delivery, restaurant, food, point_of_interest, establishment",8.247357521790331,Pizza Shemesh
+Shawarma Daboosh,"מתחם תחנת דלק מבוא שומרון, Derech HaShiv'a 20, Holon",32.0277366,34.79751960000001,3.9,1274.0,"restaurant, food, point_of_interest, establishment",6.625393252867182,Shawarma Daboosh
+"מנועי אריה קרול בע""מ","Ha-Melakha Street 27, Holon",32.0165901,34.8018455,4.7,67.0,"general_contractor, electronics_store, home_goods_store, restaurant, food, store, point_of_interest, establishment",7.921363548956895,mnvay aryh krvl bam
+"כריך בריא (1993) בע""מ","Ha-Banai Street 32, Holon",32.0127625,34.80247459999999,4.3,4.0,"restaurant, food, point_of_interest, establishment",8.348159758810898,kryk Barya (1993) bam
+Hai Phong - Chinese Restaurant,"HaPeled Street 20, Holon",32.0215397,34.7977389,4.3,977.0,"restaurant, food, point_of_interest, establishment",7.302164698842332,Hai Phong - Chinese Restaurant
+Ezra & Sons,"Ha-Khashmona'im Street 2, Azor",32.02570719999999,34.80149449999999,4.2,7670.0,"restaurant, food, point_of_interest, establishment",6.932894532751203,Ezra & Sons
+שמחה קולינארית,"Sprinzak Street 12, Azor",32.0259789,34.8047346,,,"restaurant, cafe, meal_takeaway, food, point_of_interest, establishment",6.989544692722523,shmchh kvlynaryt
+מוגס בורגר,"Moshe Sharet Street 54, Azor",32.0278832,34.8042744,4.8,17.0,"restaurant, food, point_of_interest, establishment",6.775109248819032,mvgs Burger
+מסעדת קרן,"השבעה 19, Azor",32.0207823,34.8094786,,,"restaurant, food, point_of_interest, establishment",7.677982801620218,msadt krn
+פיצה שמש,"Spinoza Street 2, Azor",32.02386500000001,34.803853,4.2,206.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",7.189679264014564,Pizza shmsh
+Albert אלברט,"Ha-Aliya ha-Shinya Street 43, Azor",32.0247917,34.8028945,4.0,2305.0,"restaurant, food, point_of_interest, establishment",7.065892843131862,Albert alBart
+סבתא לינה,"Ha-Aliya ha-Shinya Street 43, Azor",32.024743,34.80274449999999,4.7,65.0,"restaurant, food, point_of_interest, establishment",7.067243711681,sbta lynh
+באגט יוסף יוקנעם,"Ha-Melakha Street 3, Azor",32.0204438,34.8049042,,,"restaurant, food, point_of_interest, establishment",7.581681674801875,bagt yvsp yvknam
+מזנון +,"Ha-Melakha Street, Azor",32.0197835,34.8035958,4.3,7.0,"restaurant, food, point_of_interest, establishment",7.618780328138052,mznvn +
+פלאפל אילן,"Derech HaShiv'a, Azor",32.0174123,34.8094077,,,"restaurant, food, point_of_interest, establishment",8.029348959806466,Falafel ayln
+מפגש ג'רי,"Ha-Melakha Street 16, Holon",32.0193741,34.8032836,5.0,1.0,"restaurant, food, point_of_interest, establishment",7.65499547493719,mpgsh gry
+מלך הסנדוויץ' הטוניסאי,"Ha-Metsuda Street 6, Azor",32.02915009999999,34.7995019,4.0,6.0,"restaurant, food, point_of_interest, establishment",6.515955229242893,mlk hsndvvytz htvnysay
+אוכל מוכן לשבת - פינת הצלע.,"Ha-Metsuda Street 6, Azor",32.02913679999999,34.7994399,3.7,588.0,"restaurant, food, point_of_interest, establishment",6.515944711769492,avkl mvkn lshbt - pynt htzla
+פאפא meat,Azor,32.0291719,34.7993996,5.0,5.0,"restaurant, food, point_of_interest, establishment",6.511237865655609,papa meat
+חלה אזור,"Ha-Metsuda Street 6, Azor",32.0291272,34.799082,4.6,66.0,"restaurant, food, point_of_interest, establishment",6.508762865578112,chlh azvr
+"לורד סנדוויץ בע""מ","Ha-Melakha Street 15, Holon",32.018258,34.802632,3.3,77.0,"restaurant, food, point_of_interest, establishment",7.759379858485235,lvrd sndvvytz bam
+מסעדת חמדוני,"Rehov HaMerkava 15, Holon",32.016033,34.8075454,3.8,24.0,"restaurant, food, point_of_interest, establishment",8.121629677818824,msadt chmdvny
+מתוקה,"Rehov HaMerkava 17, Holon",32.01574400000001,34.8080118,4.5,155.0,"bakery, meal_takeaway, cafe, store, restaurant, food, point_of_interest, establishment",8.165181984605635,mtvkh
+Iraqi - Meat Boutique,"HaPeled Street 46, Holon",32.0194549,34.8004531,4.5,202.0,"restaurant, food, point_of_interest, establishment",7.58212106324182,Iraqi - Meat Boutique
+הישראליה,"HaPeled Street 46, Holon",32.0193596,34.8005046,4.3,18.0,"restaurant, food, point_of_interest, establishment",7.593509155920271,hyshralyh
+פינת הצלע,"השקמה 2, Azor",32.0296948,34.79846089999999,3.8,370.0,"restaurant, food, point_of_interest, establishment",6.433695519980214,pynt htzla
+עברי בפארק - פארק אריאל שרון,"Ariel Sharon Park, Tel Aviv-Yafo",32.0310328,34.8208598,3.8,229.0,"restaurant, food, point_of_interest, establishment",7.099908363841567,aBary bpark - park aryal shrvn
+פיצה ברקה,"Ha-Metsuda Street 8, Azor",32.0294256,34.7981637,3.7,255.0,"restaurant, food, point_of_interest, establishment",6.456232089130028,Pizza Barkh
+חומוס אליהו אזור,"Ha-Metsuda Street 8, Azor",32.02942959999999,34.7981443,4.2,341.0,"restaurant, food, point_of_interest, establishment",6.455380817418401,Hummus alyhv azvr
+מסעדת נצרת,"Rehov HaMerkava 15, Holon",32.0155086,34.8078989,,,"restaurant, food, point_of_interest, establishment",8.186996762090306,msadt ntzrt
+Magic Burger,"מתחם מבנה, הפלד 7, חולון",32.0235403,34.7977149,4.1,45.0,"restaurant, food, point_of_interest, establishment",7.08434643983283,Magic Burger
+Tortia Bar,"Ha-Metsuda Street 8, Azor",32.0295181,34.7980499,3.8,296.0,"restaurant, food, point_of_interest, establishment",6.443790638501684,Tortia Bar
+מרגז,"Ha-Metsuda Street 8, Azor",32.0294393,34.7979679,1.7,28.0,"restaurant, food, point_of_interest, establishment",6.450541198110706,mrgz
+סנדויץ בר בגט,"HaPeled Street 26, Holon",32.0211332,34.7986138,4.2,45.0,"restaurant, food, point_of_interest, establishment",7.3629938654601705,sndvytz Bar bgt
+מסעדת הישראליה (מסעדת פועלים הטובה באזור !),"HaPeled Street 26, Holon",32.0211428,34.7986072,5.0,1.0,"restaurant, food, point_of_interest, establishment",7.361823506453614,msadt hyshralyh (msadt pvalym htvbh bazvr !)
+Pizza Pazzaz,"HaShikma Street 2, Azor",32.0295376,34.7978888,3.5,128.0,"meal_delivery, meal_takeaway, store, restaurant, food, point_of_interest, establishment",6.438234258024278,Pizza Pazzaz
+פלאפל אסולין,"Herzog Street 27, Giv'atayim",32.03227789999999,34.7994079,,,"restaurant, food, point_of_interest, establishment",6.178099423817304,Falafel asvlyn
+Arugula Chef Azur,"HaShikma Street 5, Azor",32.030246,34.7979578,4.6,64.0,"restaurant, food, point_of_interest, establishment",6.3632239229115335,Arugula Chef Azur
+מסעדת רעים,"HaShikma Street 5, Azor",32.030246,34.7979578,4.3,6.0,"restaurant, food, point_of_interest, establishment",6.3632239229115335,msadt raym
+ציקן ביף,"Ha-Metsuda Street 10, Azor",32.0298691,34.7976227,4.3,21.0,"restaurant, food, point_of_interest, establishment",6.396771637146254,tzykn byp
+"מסעדת "" גריל לאנץ ""","Ha-Metsuda Street 10, Azor",32.0298698,34.79757430000001,4.6,36.0,"restaurant, food, point_of_interest, establishment",6.395677121470341,msadt  Grill lantz 
+המאפיה של שולי,"Ha-Metsuda Street, Azor",32.0297839,34.7972409,2.8,17.0,"meal_takeaway, restaurant, bakery, store, food, point_of_interest, establishment",6.398040096842747,hmapyh shl shvly
+חומוס עמו אלי חולון,"Rehov HaMerkava 18, Holon",32.0140306,34.80755610000001,5.0,7.0,"restaurant, food, point_of_interest, establishment",8.33458985591489,Hummus amv aly chvlvn
+קאר קפה,"HaPeled Street 10, Holon",32.0237623,34.7957906,3.7,3.0,"restaurant, food, point_of_interest, establishment",7.025512638328752,kar Cafe
+Holon hot corner,"Hahofer Street 14, Holon",32.0138251,34.80648900000001,4.4,50.0,"restaurant, food, point_of_interest, establishment",8.328465359627105,Holon hot corner
+Hashnizelia,"המשביר 1 חולון IL 5885214, HaMashbir 1, Holon",32.0157568,34.8010934,3.5,137.0,"meal_takeaway, restaurant, food, point_of_interest, establishment",7.995405411625496,Hashnizelia
+שר האופים,"HaPeled Street 8, Holon",32.024454,34.7950939,4.5,694.0,"bakery, restaurant, store, food, point_of_interest, establishment",6.938478548143,shr havpym
+בר בורגר אנטריקוט,"Ha-Mashbir Street 1, Holon",32.0155888,34.8011883,1.0,1.0,"meal_delivery, restaurant, food, point_of_interest, establishment",8.015549673880788,Bar Burger antrykvt
+BAR-MAROC / בר - מרוק,"Ha-Mashbir Street 1, Holon",32.0150807,34.8020837,4.6,423.0,"restaurant, food, point_of_interest, establishment",8.089433115295313,BAR-MAROC / Bar - mrvk
+ז’אנו בשרים,"Ha-Mashbir Street 6, Holon",32.0151516,34.80126680000001,4.8,45.0,"restaurant, food, point_of_interest, establishment",8.064473729645535,z’anv Meat
+לחמה בעג׳ין,"Ha-Mashbir Street 6, Holon",32.0151516,34.80126680000001,5.0,1.0,"restaurant, food, point_of_interest, establishment",8.064473729645535,lchmh bagyn
+מפגש דרבי,"Ha-Shoftim Street, Holon",32.0170585,34.7979508,4.5,6.0,"restaurant, food, point_of_interest, establishment",7.793670294621422,mpgsh drby
+סנדביץ כל,"Yermiyahu Street 49, Holon",32.0169908,34.7979054,4.0,2.0,"restaurant, food, point_of_interest, establishment",7.800243979467397,sndbytz kl
+Hummus Hassouni,"Ha-Mashbir Street 16, Holon",32.0136658,34.80275829999999,4.3,691.0,"restaurant, food, point_of_interest, establishment",8.256782544121252,Hummus Hassouni
+גבריאלה - גריל עוף רוטיסרי וסנדביץ' בר,"Ha-Mashbir Street 32, Holon",32.0117683,34.807785,4.3,196.0,"restaurant, food, point_of_interest, establishment",8.581420738874954,gBaryalh - Grill avp rvtysry vsndbytz Bar
+הבאגט הלוהט,"Ha-Mashbir Street 32, Holon",32.0117306,34.8079125,3.8,11.0,"restaurant, food, point_of_interest, establishment",8.588793327729915,hbagt hlvht
+"מסעדת קאן זמאן בע""מ","Ha-Banai Street 32, Holon",32.0127625,34.80247459999999,,,"restaurant, food, point_of_interest, establishment",8.348159758810898,msadt kan zman bam
+חמים וטעים | חנות המפעל | אוכל מוכן | מסעדה,"Ha-Banai Street 32, Holon",32.0127625,34.80247459999999,4.3,404.0,"restaurant, food, point_of_interest, establishment",8.348159758810898,chmym vtaym  chnvt hmpal  avkl mvkn  Restaurant
+מסעדת הדודקא,"Rehov HaMerkava 31, Holon",32.0108376,34.8083269,4.4,59.0,"restaurant, food, point_of_interest, establishment",8.694816120507726,msadt hdvdka
+רות 44,"מחלף השבעה התאומים, Mishmar HaShiv'a",32.011601,34.8170741,4.7,398.0,"bar, restaurant, food, point_of_interest, establishment",8.8829340187639,rvt 44
+Pizzamella,"Halahav Street 6, Holon",32.0110141,34.8035386,,,"restaurant, food, point_of_interest, establishment",8.559902187829737,Pizzamella
+Lehem Erez,"HaNadiv Street 71, Herzliya",32.1704435,34.8316159,3.8,712.0,"restaurant, food, point_of_interest, establishment",10.438114438869782,Lehem Erez
+Pizza Rosto,"Ha-Ilanot Street 35, Herzliya",32.1785818,34.84515040000001,4.8,468.0,"meal_delivery, restaurant, food, point_of_interest, establishment",11.837045451032449,Pizza Rosto
+Norma,"HaRishonim Street 1, Kfar Shmaryahu",32.1799162,34.8192814,4.4,373.0,"restaurant, food, point_of_interest, establishment",10.966828470588922,Norma
+שף הכפר,"Keren ha-Yesod Street 19, Kfar Shmaryahu",32.1851235,34.820103,3.0,2.0,"restaurant, food, point_of_interest, establishment",11.53960775987362,shp hkpr
+Rooster ba'Kfar - Pizzeria & Italian Restaurant,"ברחבה ליד יין בעיר, הראשונים 2, כפר שמריהו",32.1799011,34.819149,4.7,115.0,"restaurant, bar, food, point_of_interest, establishment",10.961292554882666,Rooster ba'Kfar - Pizzeria & Italian Restaurant
+קפה אפרת,"HaRishonim Street 1, Kfar Shmaryahu",32.1802034,34.8186636,4.5,380.0,"restaurant, food, point_of_interest, establishment",10.978784741808068,Cafe aprt
+אוטאקו,"Natan Alterman Street 42, Herzliya",32.1754101,34.8321101,4.2,6.0,"restaurant, food, point_of_interest, establishment",10.954122093558071,avtakv
+סדנאות אוכל וארוחות פרטיות | MamaD'eli,"Uri'el Ofek Street 4, Herzliya",32.174633,34.831295,5.0,4.0,"restaurant, food, point_of_interest, establishment",10.843404372759329,sdnavt avkl varvchvt prtyvt  MamaDeli
+Parker,"פארק הרצליה שלב ב, Jabotinski 29, Hertsliya",32.1737352,34.8281984,4.3,2181.0,"cafe, bar, restaurant, food, point_of_interest, establishment",10.63153142811582,Parker
+Alter Pizza,"Natan Alterman Street 33, Herzliya",32.1749263,34.83274409999999,4.5,11.0,"restaurant, food, point_of_interest, establishment",10.931460720466658,Alter Pizza
+החצר- אוכל יין אנשים,"Jabotinski Street 29, Herzliya",32.17311549999999,34.8285238,,,"restaurant, food, point_of_interest, establishment",10.581326601571169,hchtzr- avkl yyn anshym
+בליקר סטריט,"Boker Street, Herzliya",32.172716,34.832939,,,"restaurant, food, point_of_interest, establishment",10.719317550809553,blykr stryt
+Amalia Cafe,"Lotem Street 7, Herzliya",32.1891917,34.810375,4.8,64.0,"cafe, restaurant, food, point_of_interest, establishment",11.730399689192332,Amalia Cafe
+Nof Yam Cafe,"Ha'Parssa Street 7, Herzliya",32.1892411,34.8101491,4.4,623.0,"cafe, restaurant, food, point_of_interest, establishment",11.73097988564626,Nof Yam Cafe
+Rita Romno's Kitchen,"Ha'Parssa Street 7, Herzliya",32.1892662,34.8099479,4.5,102.0,"restaurant, food, point_of_interest, establishment",11.729487482926688,Rita Romno's Kitchen
+Tipat Halav,"HaNadiv Street 71, Herzliya",32.1704435,34.8316159,,,"restaurant, food, point_of_interest, establishment",10.438114438869782,Tipat Halav
+פסטה בר,"HaNadiv Street 49, Herzliya",32.1700484,34.8357315,4.7,13.0,"restaurant, food, point_of_interest, establishment",10.577679372236096,psth Bar
+Pizza bar,"HaNadiv Street 49, Herzliya",32.1700484,34.8357315,4.4,143.0,"meal_delivery, restaurant, food, point_of_interest, establishment",10.577679372236096,Pizza bar
+בירקין בר Birkin Bar,"Weizman Street 273, Ra'anana",32.191239,34.8450306,4.4,10.0,"restaurant, food, point_of_interest, establishment",13.066556063016938,byrkyn Bar Birkin Bar
+מסעדת קאמי - Kami Asian,"Weizman Street 273, Ra'anana",32.191239,34.8450306,4.2,476.0,"restaurant, food, point_of_interest, establishment",13.066556063016938,msadt kamy - Kami Asian
+סמולר אקספרס,"Unnamed Road, Rishpon",32.2015387,34.81990029999999,4.7,64.0,"restaurant, food, point_of_interest, establishment",13.27833458377233,smvlr aksprs
+Felicita Express - pizza & pasta food truck - פליצ׳יטה אקספרס - פודטראק איטלקי ברשפון,"HaKfar Street 2, Rishpon",32.2016106,34.8201714,4.9,27.0,"restaurant, food, point_of_interest, establishment",13.292836424227279,Felicita Express - pizza & pasta food truck - plytzyth aksprs - pvdtrak aytlky Barshpvn
+המשאית של שוקי - ג׳חנון בשבת,"HaKfar Street 2, Rishpon",32.2016106,34.8201714,4.4,58.0,"restaurant, food, point_of_interest, establishment",13.292836424227279,hmshayt shl Markety - gchnvn bshbt
+קפה גופרמן,"Ha-Prakhim Street 12, Rishpon",32.2025675,34.8249788,4.8,16.0,"restaurant, food, point_of_interest, establishment",13.522522416302577,Cafe gvprmn
