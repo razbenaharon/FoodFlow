@@ -5,37 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da8b9a8-ebf7-4c06-acfb-75c094784ded" name="Changes" comment="raz3.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agent/decision_agent/final_decision_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/decision_agent/final_decision_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/execution_agent/send_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/execution_agent/send_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/execution_agent/send_recipie_to_kitchen.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/execution_agent/send_recipie_to_kitchen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/feedback_agent/get_feedback.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/feedback_agent/get_feedback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/upload_recipies_to_qdrant/recipe_loader_to_qdrant.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/upload_recipies_to_qdrant/recipe_loader_to_qdrant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/classify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/console.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/io_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/io_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/parsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/recipe_query_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/recipe_query_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/restaurant.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/restaurant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/retrieval.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/retrieval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/fetch_soup_kitchens_tlv_with_distances.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fetch_soup_kitchens_tlv_with_distances.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/prompts/ingredient_classification_prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/prompts/ingredient_classification_prompt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/recipe_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/recipe_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/upload_recipies_to_qdrant/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/upload_recipies_to_qdrant/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/upload_recipies_to_qdrant/recipe_loader_to_qdrant.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/upload_recipies_to_qdrant/recipe_loader_to_qdrant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/console.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/io_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/io_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/parsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/recipe_query_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/recipe_query_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/restaurant.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/restaurant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/retrieval.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipe_agent/utilities/retrieval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/soup_kitchen_finder/find_soup_kitchen.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/soup_kitchen_finder/find_soup_kitchen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/current_inventory.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/current_inventory.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/expiring_ingredients.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/expiring_ingredients.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/recent_expiring_ingredients.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recent_expiring_ingredients.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/best_soup_kitchen.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/best_soup_kitchen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/feedback_suggestions.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/feedback_suggestions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/final_decision_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/final_decision_output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/messages/message_to_kitchen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/messages/message_to_kitchen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/messages/message_to_restaurant.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/messages/message_to_restaurant.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/messages/message_to_soup_kitchen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/messages/message_to_soup_kitchen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/recipes/best_matching_recipes.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/recipes/best_matching_recipes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/recipes/classification_raw/dish1_raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/recipes/classification_raw/dish1_raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/recipes/classification_raw/dish2_raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/recipes/classification_raw/dish2_raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/recipes/classification_raw/dish3_raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/recipes/classification_raw/dish3_raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/recipes/retrieved/retrieved_dish1.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/recipes/retrieved/retrieved_dish1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/recipes/retrieved/retrieved_dish2.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/recipes/retrieved/retrieved_dish2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/recipes/retrieved/retrieved_dish3.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/recipes/retrieved/retrieved_dish3.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/top_restaurants.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/top_restaurants.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Inventory_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/data_printer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/inspect_qdrant.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/query_example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/rag_restaurants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/recipe_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/recipe_scoring_prompt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/recipes_mock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/restaurant_inventory.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/restaurant_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/temp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_connection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/verify_qdrant.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tokens_count/chat_tokens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tokens_count/chat_tokens.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tokens_count/embedding_tokens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tokens_count/embedding_tokens.txt" afterDir="false" />
     </list>
@@ -124,6 +128,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\python\FoodFlow" />
       <recent name="C:\Users\User\Desktop\python\FoodFlow\agent\soup_kitchen_agent" />
       <recent name="C:\Users\User\Desktop\python\FoodFlow\archive" />
     </key>
@@ -247,7 +252,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -270,7 +275,7 @@
     <SUITE FILE_PATH="coverage/main_py$data_printer.coverage" NAME="data_printer Coverage Results" MODIFIED="1754492355186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/main_py$recipe_agent.coverage" NAME="recipe_agent Coverage Results" MODIFIED="1754395483443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
     <SUITE FILE_PATH="coverage/main_py$default.coverage" NAME="default Coverage Results" MODIFIED="1754492955521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/httpx/_transports" />
-    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1755621621592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1755631356340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FoodFlow$token_logger.coverage" NAME="token_logger Coverage Results" MODIFIED="1754046495230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/main_py$recipie_agent.coverage" NAME="recipie_agent Coverage Results" MODIFIED="1754393289257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
     <SUITE FILE_PATH="coverage/main_py$test_connection.coverage" NAME="test_connection Coverage Results" MODIFIED="1755100557140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />

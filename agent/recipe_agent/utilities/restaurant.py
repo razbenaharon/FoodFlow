@@ -1,7 +1,7 @@
 import json, os
 from typing import Any, Dict, List, Optional
-from agent.recipie_agent.utilities.parsing import no_en_dashes
-from agent.recipie_agent.utilities.console import suppress_stdout_stderr
+from agent.recipe_agent.utilities.parsing import no_en_dashes
+from agent.recipe_agent.utilities.console import suppress_stdout_stderr
 from utils.chat_and_embedding import LLMChat
 
 

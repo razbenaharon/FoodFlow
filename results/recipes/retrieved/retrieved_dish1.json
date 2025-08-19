@@ -1,29 +1,20 @@
 [
   {
-    "score": 0.6526,
+    "score": 0.7264,
     "payload": {
-      "instructions": "Watch how to make this recipe.\nMince garlic and mash with salt. In a small bowl stir together garlic paste, rosemary, pepper, and 2 tablespoons oil. Pat lamb chops dry. Reserve 1 tablespoon rosemary for sauce and rub remainder evenly onto chops. Lamb chops can be prepared up to this point 1 day ahead and chilled, covered. Chill reserved rosemary, covered.\nPreheat oven to 425 degrees F.\nQuarter shallots and tomatoes lengthwise and in a bowl toss with 2 tablespoons oil, thyme, minced garlic, sugar, and salt and pepper, to taste. Arrange tomatoes, cut sides up, in 1 layer in a shallow baking pan with shallots and roast in oven for 30 minutes. Halve and pit olives. While vegetables are roasting, in a 12-inch oven-proof skillet, heat remaining tablespoon oil over moderately high heat until hot but not smoking, and sear chops until golden brown, about 2 minutes on each side.\nReduce temperature to 375 degrees F. Put chops in upper third of oven. Roast vegetables until tender and caramelized, about 20 minutes. Roast chops 10 to 15 minutes for medium rare.\nTansfer chops to platter and let rest in a warm place. Add wine to skillet with reserved rosemary and boil, scraping up brown bits, 1 minute. Boil mixture until reduced to about 1/4 cup. Add broth and boil mixture until reduced to about 3/4 cup, about 5 minutes.\nWhen chops are cooked, pour any meat juices from serving dish into skillet and bring jus to a boil. Cut butter into pieces and add it and the olives to jus. Swirl skillet to incorporate butter and boil until jus is slightly thickened. Season jus with salt and pepper and stir in parsley. Arrange chops on serving dish with tomatoes and shallots. Spoon sauce over all servings.",
+      "instructions": "Preheat broiler. Place eggplant on a baking sheet and broil, turning occasionally, until charred all over and softened, about 40 minutes. Set aside to cool.\nWhen cool enough to handle, peel eggplant and roughly chop, reserving liquid. Transfer to a large bowl. Mix in remaining ingredients and season to taste with salt and pepper. Serve chilled or at room temperature, with pita triangles.\nVariation: Make humus by substituting canned garbanzo beans for the eggplant.",
       "ingredients": [
-        "4 garlic cloves",
-        "1 1/2 teaspoons salt",
-        "4 tablespoons chopped fresh rosemary leaves",
-        "1 teaspoon freshly ground black pepper",
-        "5 tablespoons olive oil",
-        "4 (1 1/4-inch-thick) lamb chops (12 to 14 ounces each), frenched, if desired",
-        "8 large shallots",
-        "8 plum tomatoes",
-        "1 tablespoon minced fresh thyme",
+        "1 3/4 pounds eggplant",
+        "3 tablespoons tahini",
+        "1 tablespoon fresh lemon juice",
+        "1 to 2 tablespoons olive oil",
         "1 tablespoon minced garlic",
-        "1/4 teaspoon sugar",
-        "1/2 cup drained Nicoise olives",
-        "1 cup dry white wine",
-        "1 cup chicken broth",
-        "1 tablespoon unsalted butter",
-        "2 to 3 tablespoons minced parsley"
+        "1 teaspoon cayenne",
+        "Salt and freshly ground black pepper"
       ],
-      "title": "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus",
-      "picture_link": "v4W60WEC1vE6XcwMGXmQZkO0tpdQRzG",
-      "id": 1622605748
+      "title": "Roasted Eggplant",
+      "picture_link": null,
+      "id": 1991690341
     }
   }
 ]

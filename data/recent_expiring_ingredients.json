@@ -1,64 +1,188 @@
 [
   [
     {
-      "name": "Zucchini",
-      "quantity": 6.1,
-      "unit": "unit",
+      "name": "Cream",
+      "quantity": 0.67,
+      "unit": "liters",
       "days_to_expire": 1
     },
     {
-      "name": "Cauliflower",
-      "quantity": 2.6,
+      "name": "Lemon zest",
+      "quantity": 2.33,
       "unit": "unit",
       "days_to_expire": 2
     },
     {
-      "name": "Black pepper",
-      "quantity": 205.19,
-      "unit": "grams",
-      "days_to_expire": 1
-    },
-    {
-      "name": "Rosemary",
-      "quantity": 25.8,
-      "unit": "grams",
+      "name": "Zucchini",
+      "quantity": 3.12,
+      "unit": "unit",
       "days_to_expire": 4
     },
     {
+      "name": "Sea bass",
+      "quantity": 1.53,
+      "unit": "fillet",
+      "days_to_expire": 3
+    },
+    {
       "name": "Freekeh",
-      "quantity": 0.93,
+      "quantity": 1.39,
       "unit": "kg",
       "days_to_expire": 1
     },
     {
+      "name": "Parsley",
+      "quantity": 33.95,
+      "unit": "grams",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Shrimp",
+      "quantity": 1.06,
+      "unit": "kg",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Crushed tomato",
+      "quantity": 0.58,
+      "unit": "kg",
+      "days_to_expire": 4
+    },
+    {
+      "name": "Dill",
+      "quantity": 17.99,
+      "unit": "grams",
+      "days_to_expire": 3
+    },
+    {
+      "name": "Duck breast",
+      "quantity": 1.12,
+      "unit": "kg",
+      "days_to_expire": 2
+    }
+  ],
+  [
+    {
+      "name": "Heirloom tomatoes",
+      "quantity": 4.39,
+      "unit": "unit",
+      "days_to_expire": 4
+    },
+    {
+      "name": "Parsley",
+      "quantity": 54.22,
+      "unit": "grams",
+      "days_to_expire": 3
+    },
+    {
+      "name": "Garlic",
+      "quantity": 6.87,
+      "unit": "cloves",
+      "days_to_expire": 3
+    },
+    {
+      "name": "Shrimp",
+      "quantity": 0.93,
+      "unit": "kg",
+      "days_to_expire": 4
+    },
+    {
+      "name": "Eggplant",
+      "quantity": 9.13,
+      "unit": "unit",
+      "days_to_expire": 3
+    },
+    {
+      "name": "Mushrooms",
+      "quantity": 0.76,
+      "unit": "kg",
+      "days_to_expire": 2
+    },
+    {
       "name": "Beets",
-      "quantity": 3.38,
+      "quantity": 2.08,
       "unit": "unit",
       "days_to_expire": 3
     },
     {
       "name": "Duck breast",
-      "quantity": 0.81,
+      "quantity": 0.9,
       "unit": "kg",
       "days_to_expire": 2
     },
     {
-      "name": "Basil",
-      "quantity": 38.58,
-      "unit": "grams",
-      "days_to_expire": 1
-    },
-    {
-      "name": "Lemon zest",
-      "quantity": 3.26,
+      "name": "Cauliflower",
+      "quantity": 2.42,
       "unit": "unit",
       "days_to_expire": 4
     },
     {
-      "name": "Shrimp",
-      "quantity": 0.9,
+      "name": "Lamb chops",
+      "quantity": 1.52,
       "unit": "kg",
       "days_to_expire": 2
+    }
+  ],
+  [
+    {
+      "name": "Labneh",
+      "quantity": 163.56,
+      "unit": "grams",
+      "days_to_expire": 2
+    },
+    {
+      "name": "Yogurt",
+      "quantity": 279.31,
+      "unit": "grams",
+      "days_to_expire": 3
+    },
+    {
+      "name": "Cream",
+      "quantity": 0.69,
+      "unit": "liters",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Butter",
+      "quantity": 0.31,
+      "unit": "kg",
+      "days_to_expire": 1
+    },
+    {
+      "name": "White wine",
+      "quantity": 1.51,
+      "unit": "liters",
+      "days_to_expire": 3
+    },
+    {
+      "name": "Beets",
+      "quantity": 2.64,
+      "unit": "unit",
+      "days_to_expire": 4
+    },
+    {
+      "name": "Heirloom tomatoes",
+      "quantity": 3.44,
+      "unit": "unit",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Rosemary",
+      "quantity": 22.0,
+      "unit": "grams",
+      "days_to_expire": 2
+    },
+    {
+      "name": "Artichoke",
+      "quantity": 2.13,
+      "unit": "unit",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Chili",
+      "quantity": 3.3,
+      "unit": "unit",
+      "days_to_expire": 4
     }
   ]
 ]

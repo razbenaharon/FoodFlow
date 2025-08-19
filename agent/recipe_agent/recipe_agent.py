@@ -6,15 +6,15 @@ import unicodedata
 from typing import Any, Dict, List, Optional
 
 from utils.chat_and_embedding import LLMChat, LLMEmbed
-from agent.recipie_agent.utilities.console import LiveBar, Progress, suppress_stdout_stderr, run_in_thread
-from agent.recipie_agent.utilities.parsing import parse_dishes_block, no_en_dashes
-from agent.recipie_agent.utilities.classify import extract_matched_sets, safe_join, extract_json_block
-from agent.recipie_agent.utilities.restaurant import (
+from agent.recipe_agent.utilities.console import LiveBar, Progress, suppress_stdout_stderr, run_in_thread
+from agent.recipe_agent.utilities.parsing import parse_dishes_block, no_en_dashes
+from agent.recipe_agent.utilities.classify import extract_matched_sets, safe_join, extract_json_block
+from agent.recipe_agent.utilities.restaurant import (
     load_top_restaurant, restaurant_capsule, tailor_reason_for_restaurant
 )
-from agent.recipie_agent.utilities.io_utils import load_json
-from agent.recipie_agent.utilities.retrieval import retrieve_similar_recipes
-from agent.recipie_agent.utilities.recipe_query_builder import build_query_string
+from agent.recipe_agent.utilities.io_utils import load_json
+from agent.recipe_agent.utilities.retrieval import retrieve_similar_recipes
+from agent.recipe_agent.utilities.recipe_query_builder import build_query_string
 
 # ======================
 # Config
@@ -92,7 +92,7 @@ def run_find_recipes() -> None:
 
     EXPIRING_FILE = os.path.join(DATA_DIR, "expiring_ingredients.json")
     INVENTORY_FILE = os.path.join(DATA_DIR, "full_inventory.json")
-    CLASS_PROMPT_FILE = os.path.join(PROJECT_ROOT, "agent", "recipie_agent", "prompts", "ingredient_classification_prompt.txt")
+    CLASS_PROMPT_FILE = os.path.join(PROJECT_ROOT, "agent", "recipe_agent", "prompts", "ingredient_classification_prompt.txt")
 
     # --- load data
     with suppress_stdout_stderr():

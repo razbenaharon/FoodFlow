@@ -1,50 +1,56 @@
 [
   {
-    "item": "Mint",
-    "suggested_reduction": 20,
+    "item": "Garlic",
+    "suggested_reduction": 5,
+    "unit": "cloves",
+    "reason": "Garlic appears frequently with significant leftover quantities (6-13 cloves) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Basil",
+    "suggested_reduction": 10,
     "unit": "grams",
-    "reason": "Mint appears frequently with high leftover quantities (e.g., 45.71g, 46.24g, 71.65g, 71.28g) and short expiration times (2-4 days)."
+    "reason": "Basil consistently has leftover quantities (21-38 grams) and short expiration times (1-4 days)."
   },
   {
-    "item": "Olive oil",
-    "suggested_reduction": 500,
-    "unit": "ml",
-    "reason": "Olive oil consistently has large leftover quantities (e.g., 621.24ml, 1026.21ml, 731.28ml, 892.42ml) and short expiration times (1-2 days)."
+    "item": "Black pepper",
+    "suggested_reduction": 50,
+    "unit": "grams",
+    "reason": "Black pepper has recurring high leftover quantities (90-205 grams) and short expiration times (1-2 days)."
   },
   {
-    "item": "Honey",
+    "item": "Labneh",
     "suggested_reduction": 100,
     "unit": "grams",
-    "reason": "Honey frequently appears with significant leftovers (e.g., 152.55g, 136.18g, 212.27g, 236.24g) and short expiration times (2-4 days)."
-  },
-  {
-    "item": "Cream",
-    "suggested_reduction": 0.5,
-    "unit": "liters",
-    "reason": "Cream appears repeatedly with leftover quantities (e.g., 1.15L, 0.78L, 1.4L, 1.13L) and short expiration times (1-4 days)."
-  },
-  {
-    "item": "Eggplant",
-    "suggested_reduction": 3,
-    "unit": "unit",
-    "reason": "Eggplant consistently has leftover quantities (e.g., 8.09, 8.44, 7.18, 9.39 units) and short expiration times (2-4 days)."
-  },
-  {
-    "item": "Yogurt",
-    "suggested_reduction": 150,
-    "unit": "grams",
-    "reason": "Yogurt frequently appears with leftover quantities (e.g., 379.59g, 230.07g, 248.43g, 197.34g, 180.67g) and short expiration times (1-4 days)."
-  },
-  {
-    "item": "Lamb chops",
-    "suggested_reduction": 0.5,
-    "unit": "kg",
-    "reason": "Lamb chops consistently have leftover quantities (e.g., 0.64kg, 0.86kg, 0.91kg, 1.2kg, 1.47kg) and short expiration times (1-4 days)."
+    "reason": "Labneh frequently has leftover quantities (246-379 grams) and short expiration times (1-3 days)."
   },
   {
     "item": "Parmesan cheese",
     "suggested_reduction": 100,
     "unit": "grams",
-    "reason": "Parmesan cheese frequently appears with leftover quantities (e.g., 383.73g, 243.79g, 219.5g, 181.51g) and short expiration times (2-4 days)."
+    "reason": "Parmesan cheese has recurring high leftover quantities (200-386 grams) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Cream",
+    "suggested_reduction": 0.5,
+    "unit": "liters",
+    "reason": "Cream frequently has leftover quantities (0.6-1.4 liters) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Mint",
+    "suggested_reduction": 20,
+    "unit": "grams",
+    "reason": "Mint has recurring leftover quantities (41-75 grams) and short expiration times (2-4 days)."
+  },
+  {
+    "item": "Zucchini",
+    "suggested_reduction": 2,
+    "unit": "unit",
+    "reason": "Zucchini frequently has leftover quantities (4-6 units) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Rosemary",
+    "suggested_reduction": 10,
+    "unit": "grams",
+    "reason": "Rosemary has recurring leftover quantities (22-32 grams) and short expiration times (1-4 days)."
   }
 ]

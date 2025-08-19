@@ -1,7 +1,7 @@
 ```json
 {
-  "expiring": ["Mushrooms", "Dill"],
-  "inventory": ["Olive oil", "Freekeh", "Yogurt", "Parmesan cheese", "Butter", "Water", "Salt"],
-  "missing": ["Onion"]
+  "expiring": ["Labneh", "Yogurt", "Beets", "Rosemary", "Artichoke", "Chili", "White wine"],
+  "inventory": ["Sea bass", "Dill", "Olive oil", "Sea salt", "Black pepper", "Lemon"],
+  "missing": []
 }
 ```

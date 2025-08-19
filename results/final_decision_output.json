@@ -1,80 +1,74 @@
 [
   {
+    "item": "Yogurt",
+    "action": "COOK",
+    "reason": "Used in selected recipe 'Smoked Fish with Cucumber \"Noodles\"'",
+    "target_recipes": [
+      "Smoked Fish with Cucumber \"Noodles\""
+    ]
+  },
+  {
     "item": "Beets",
     "action": "COOK",
-    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
+    "reason": "Used in selected recipe 'Smoked Fish with Cucumber \"Noodles\"'",
     "target_recipes": [
-      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
+      "Smoked Fish with Cucumber \"Noodles\""
     ]
   },
   {
-    "item": "Olive oil",
-    "action": "COOK",
-    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
-    "target_recipes": [
-      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
-    ]
-  },
-  {
-    "item": "Lamb chops",
-    "action": "COOK",
-    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
-    "target_recipes": [
-      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
-    ]
-  },
-  {
-    "item": "Heirloom tomatoes",
+    "item": "Cream",
     "action": "SELL",
-    "reason": "Better matched to Amore Mio's menu and demand window.",
+    "reason": "Market demand and good shelf life for פסטה ויה | Pasta Via",
     "target_restaurants": [
-      "Amore Mio"
+      "פסטה ויה | Pasta Via"
     ]
   },
   {
-    "item": "Parmesan cheese",
-    "action": "DONATE",
-    "reason": "Short shelf-life / lower marketability today; donation reduces waste.",
-    "donation_center": "בית מעשים טובים"
+    "item": "Butter",
+    "action": "SELL",
+    "reason": "Market demand and good shelf life for פסטה ויה | Pasta Via",
+    "target_restaurants": [
+      "פסטה ויה | Pasta Via"
+    ]
   },
   {
-    "item": "Mushrooms",
+    "item": "White wine",
     "action": "SELL",
-    "reason": "Better matched to Amore Mio's menu and demand window.",
+    "reason": "Market demand and good shelf life for פסטה ויה | Pasta Via",
     "target_restaurants": [
-      "Amore Mio"
+      "פסטה ויה | Pasta Via"
     ]
   },
   {
     "item": "Rosemary",
-    "action": "COOK",
-    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
-    "target_recipes": [
-      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
+    "action": "SELL",
+    "reason": "Market demand and good shelf life for פסטה ויה | Pasta Via",
+    "target_restaurants": [
+      "פסטה ויה | Pasta Via"
     ]
   },
   {
-    "item": "Sea bass",
-    "action": "SELL",
-    "reason": "Better matched to Amore Mio's menu and demand window.",
-    "target_restaurants": [
-      "Amore Mio"
-    ]
+    "item": "Labneh",
+    "action": "DONATE",
+    "reason": "Better suited for community benefit",
+    "donation_center": "המקרר הקהילתי בצפון דיזנגוף"
+  },
+  {
+    "item": "Heirloom tomatoes",
+    "action": "DONATE",
+    "reason": "Better suited for community benefit",
+    "donation_center": "המקרר הקהילתי בצפון דיזנגוף"
+  },
+  {
+    "item": "Artichoke",
+    "action": "DONATE",
+    "reason": "Better suited for community benefit",
+    "donation_center": "המקרר הקהילתי בצפון דיזנגוף"
   },
   {
     "item": "Chili",
-    "action": "COOK",
-    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
-    "target_recipes": [
-      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
-    ]
-  },
-  {
-    "item": "Dill",
-    "action": "SELL",
-    "reason": "Better matched to Amore Mio's menu and demand window.",
-    "target_restaurants": [
-      "Amore Mio"
-    ]
+    "action": "DONATE",
+    "reason": "Better suited for community benefit",
+    "donation_center": "המקרר הקהילתי בצפון דיזנגוף"
   }
 ]

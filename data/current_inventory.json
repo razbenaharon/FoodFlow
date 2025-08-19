@@ -20,17 +20,27 @@
     "unit": "grams"
   },
   {
-    "name": "Heirloom tomatoes",
-    "quantity": 10,
-    "unit": "unit"
-  },
-  {
     "name": "Garlic",
     "quantity": 20,
     "unit": "cloves"
   },
   {
+    "name": "Basil",
+    "quantity": 50,
+    "unit": "grams"
+  },
+  {
+    "name": "Black pepper",
+    "quantity": 300,
+    "unit": "grams"
+  },
+  {
     "name": "Lamb chops",
+    "quantity": 2,
+    "unit": "kg"
+  },
+  {
+    "name": "Freekeh",
     "quantity": 2,
     "unit": "kg"
   },
@@ -40,29 +50,24 @@
     "unit": "grams"
   },
   {
+    "name": "Shrimp",
+    "quantity": 2.5,
+    "unit": "kg"
+  },
+  {
     "name": "Crushed tomato",
     "quantity": 1.2,
     "unit": "kg"
   },
   {
-    "name": "Chili",
-    "quantity": 10,
+    "name": "Cauliflower",
+    "quantity": 6,
     "unit": "unit"
   },
   {
-    "name": "White wine",
-    "quantity": 2,
-    "unit": "liters"
-  },
-  {
-    "name": "Butter",
-    "quantity": 1,
-    "unit": "kg"
-  },
-  {
-    "name": "Cream",
-    "quantity": 2,
-    "unit": "liters"
+    "name": "Lemon zest",
+    "quantity": 5,
+    "unit": "unit"
   },
   {
     "name": "Lemon",
@@ -70,14 +75,14 @@
     "unit": "unit"
   },
   {
-    "name": "Artichoke",
-    "quantity": 6,
+    "name": "Zucchini",
+    "quantity": 8,
     "unit": "unit"
   },
   {
-    "name": "Yogurt",
-    "quantity": 500,
-    "unit": "grams"
+    "name": "Duck breast",
+    "quantity": 1.5,
+    "unit": "kg"
   },
   {
     "name": "Honey",
@@ -97,11 +102,6 @@
   {
     "name": "Dill",
     "quantity": 50,
-    "unit": "grams"
-  },
-  {
-    "name": "Labneh",
-    "quantity": 500,
     "unit": "grams"
   },
   {

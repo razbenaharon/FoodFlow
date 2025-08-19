@@ -1,51 +1,47 @@
 [
   {
     "rank": 1,
-    "title": "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus",
+    "title": "Roasted Eggplant",
     "matched_expiring": [
-      "Beets",
-      "Olive oil",
-      "Lamb chops",
-      "Rosemary",
+      "Labneh",
       "Chili"
     ],
-    "inventory": [],
+    "inventory": [
+      "Eggplant",
+      "Olive oil"
+    ],
     "missing": [],
-    "reason": "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus embodies HaSalon's Mediterranean ethos, highlighting expiring lamb chops and olive oil with vibrant, fire-kissed flavors.",
+    "reason": "Roasted Eggplant, paired with labneh and chili, embodies HaSalon's Israeli Mediterranean ethos, celebrating produce-driven simplicity and bold, fire-kissed flavors.",
     "restaurant": "HaSalon",
     "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
   },
   {
     "rank": 2,
-    "title": "Branzino Alla Max",
+    "title": "Sturgeon Fillets Served with a Fig and Corn Cream, a Licorice Flavored Crustacean Broth, and Stuffed Artichokes",
     "matched_expiring": [
-      "Parmesan cheese",
-      "Sea bass"
+      "White wine",
+      "Rosemary"
     ],
-    "inventory": [
-      "Sea salt",
-      "Basil",
-      "Crushed tomato",
-      "Zucchini"
-    ],
+    "inventory": [],
     "missing": [],
-    "reason": "Branzino Alla Max highlights Israeli Mediterranean flavors with sea bass and Parmesan, embracing HaSalon's produce-driven ethos and live fire cooking.",
+    "reason": "This dish embodies HaSalon's Mediterranean ethos with fresh produce and live fire, enhanced by rosemary and white wine's aromatic depth.",
     "restaurant": "HaSalon",
     "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
   },
   {
     "rank": 3,
-    "title": "Mushroom and Pea Quinoa Risotto",
+    "title": "Smoked Fish with Cucumber \"Noodles\"",
     "matched_expiring": [
-      "Mushrooms",
-      "Dill"
+      "Yogurt",
+      "Beets"
     ],
     "inventory": [
-      "Freekeh",
-      "Yogurt"
+      "Sea salt",
+      "Sea bass",
+      "Dill"
     ],
     "missing": [],
-    "reason": "Mushroom and Pea Quinoa Risotto highlights expiring mushrooms and dill, embracing HaSalon's produce-driven ethos and Mediterranean flavors with vibrant simplicity.",
+    "reason": "Smoked Fish with Cucumber \"Noodles,\" paired with tangy yogurt and earthy beets, highlights HaSalon's Mediterranean ethos and produce-driven creativity.",
     "restaurant": "HaSalon",
     "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
   }
