@@ -1,0 +1,190 @@
+👋 Welcome to FoodFlow!
+You are now simulating operations for 'HaSalon' restaurant in Tel Aviv, owned by chef Eyal Shani.
+Our goal is to make smart, sustainable decisions about what to cook, sell, or donate among expiring ingredients.
+
+For each expiring ingredient, the agent will determine the most suitable action:
+- 🍽️ Cook: A message will be sent to the chef with today’s special based on this ingredient.
+- 🍴 Sell: A message will be sent to a nearby restaurant most likely to purchase it.
+- ❤️ Donate: A pickup will be scheduled with a nearby donation center.
+
+===========================================================================
+
+Press Enter to see the magic happen...
+
+===========================================================================
+
+📦 Current Inventory (excluding expiring):
+- Olive oil: 1500 ml
+- Sea salt: 500 grams
+- Parsley: 100 grams
+- Heirloom tomatoes: 10 unit
+- Basil: 50 grams
+- Black pepper: 300 grams
+- Lamb chops: 2 kg
+- Freekeh: 2 kg
+- Mint: 100 grams
+- Chili: 10 unit
+- White wine: 2 liters
+- Butter: 1 kg
+- Cream: 2 liters
+- Lemon zest: 5 unit
+- Lemon: 10 unit
+- Artichoke: 6 unit
+- Yogurt: 500 grams
+- Honey: 300 grams
+- Sea bass: 5 fillet
+- Leeks: 6 stalk
+- Beets: 5 unit
+- Mushrooms: 1 kg
+- Parmesan cheese: 500 grams
+- Water: unlimited unit
+- Salt: unlimited unit
+
+⏳ Expiring Ingredients:
+- Shrimp: 1.62 kg (Expires in 2 days)
+- Crushed tomato: 0.83 kg (Expires in 1 days)
+- Garlic: 14.66 cloves (Expires in 4 days)
+- Dill: 16.03 grams (Expires in 2 days)
+- Labneh: 280.86 grams (Expires in 3 days)
+- Eggplant: 5.55 unit (Expires in 3 days)
+- Cauliflower: 3.42 unit (Expires in 1 days)
+- Zucchini: 5.09 unit (Expires in 1 days)
+- Rosemary: 29.15 grams (Expires in 3 days)
+- Duck breast: 0.98 kg (Expires in 1 days)
+
+===========================================================================
+
+🥣 choosing soup kitchen for today...
+
+Best matching soup kitchen:
+Name: בית מעשים טובים
+Address: Zeev Jabotinsky St 106, Ramat Gan
+Distance: 3.25 km
+
+===========================================================================
+
+🧑‍🍳 Running recipe recommendation agent...
+Recipe agent       [██████████████████████████████] 100%
+
+Best matching recipes:
+1. Harissa Shrimp with Roasted Eggplant and Dill Labneh
+   Matched expiring ingredients: Shrimp, Dill, Labneh, Eggplant
+   Inventory ingredients: none
+   Missing ingredients: none
+   Reason: Harissa Shrimp with Roasted Eggplant and Dill Labneh highlights Israeli Mediterranean flavors, utilizing expiring shrimp and dill in a produce-driven, live-fire concept.
+2. Duck Breast with Cherries and Chocolate
+   Matched expiring ingredients: Cauliflower, Zucchini, Rosemary, Duck breast
+   Inventory ingredients: none
+   Missing ingredients: none
+   Reason: Duck Breast with Cherries and Chocolate embodies HaSalon's bold Mediterranean spirit, while rosemary and zucchini highlight its produce-driven, live-fire ethos.
+3. Freekeh-Stuffed Zucchini with Tomato-Basil Sauce
+   Matched expiring ingredients: Crushed tomato, Zucchini
+   Inventory ingredients: Basil, Freekeh
+   Missing ingredients: none
+   Reason: Freekeh-stuffed zucchini with tomato-basil sauce highlights HaSalon's Mediterranean roots, utilizing expiring crushed tomatoes and zucchini in a produce-driven, fire-kissed preparation.
+
+===========================================================================
+
+🍽️ Running restaurant recommendation agent...
+
+Best matching restaurants:
+1. Amore Mio
+   Matched ingredients: Crushed tomato, Garlic, Rosemary
+   Reason: Italian restaurant likely to use crushed tomato, garlic, and rosemary in their dishes. Close by (0.3km) and a good match for the cuisine.
+2. Hummus Eben Gvirol
+   Matched ingredients: Garlic, Labneh, Cauliflower
+   Reason: Middle Eastern restaurant where garlic, labneh, and cauliflower are commonly used. Located just 0.37km away.
+3. Meatbar
+   Matched ingredients: Duck breast, Rosemary, Garlic
+   Reason: Specializes in meat dishes, making duck breast, rosemary, and garlic a great fit. Nearby (0.79km) and well-suited for the ingredients.
+
+===========================================================================
+
+🧠 Running decision agent...
+
+cook-list ingirdients: Cauliflower, Zucchini, Rosemary, Duck breast
+reason: picked 'Duck Breast with Cherries and Chocolate' (rank #2) to convert 4 expiring items into menu value (Cauliflower, Zucchini, Rosemary) including 3 due ≤1 day ; prioritizes quick-spoil items (e.g., Cauliflower, Zucchini).
+sell-list ingirdients: Shrimp, Garlic, Dill, Labneh, Eggplant
+reason: sending 5 items to Amore Mio because 5 item(s) have ≥2 days left and their menu matches items like Garlic.
+donate-list ingirdients: Crushed tomato
+reason: donating 1 item(s) to בית מעשים טובים because 1 expire ≤1 day.
+
+===========================================================================
+
+🧑‍🍳 Sending selected recipe to kitchen...
+
+================= SEND TO KITCHEN =================
+👨‍🍳  Recipe: Duck Breast with Cherries and Chocolate
+---------------------------------------------------
+🧺  Ingredients:
+  • 6 duck breasts
+  • 2 tablespoons grapeseed oil, plus more for sauteeing
+  • Salt and freshly ground black pepper
+  • 2 tablespoons chopped garlic
+  • 1/4 cup chopped onions
+  • 4 tablespoons brandy
+  • 1 (14-ounce) can cherry pie filling
+  • 1/2 cup heavy cream or vanilla yoghurt
+  • 1/2 cup semisweet chocolate chips
+  • 4 rosemary sprigs, leaves chopped
+  • 1 stick unsalted butter, divided
+  • 1 head savoy cabbage, shredded
+---------------------------------------------------
+🧾  Instructions:
+  Preheat the oven to 375 degrees F.
+  Score the duck breast using a crosshatch pattern and season both sides with salt and pepper, to taste.
+  In a large oven proof skillet heat the grapeseed oil, over medium heat, until it begins to smoke, then add the seasoned duck breasts fat side down first. Cook until golden brown on both sides. Remove the duck breasts from the skillet to a baking sheet, and bake for another 10 minutes. Remove the duck to a plate and allow to rest.
+  Remove all but 1 tablespoon of the duck fat in the same skillet, and over medium heat, add the garlic and chopped onion. Saute until translucent. Remove from the heat and add the brandy. Ignite the brandy with a long kitchen match to burn off the alcohol. Return the skillet to the heat and add the can of cherries. Continue to cook for another 4 minutes, then add the heavy cream, chocolate and the fresh chopped rosemary leaves. Add the cooked duck breasts to the sauce, then remove the pan from the heat and let rest for 5 minutes.
+  Meanwhile in another skillet, over medium heat, add 1/2 of the butter and a little oil. When hot, add the cabbage and saute until tender. Season with salt and pepper and remove from the heat. Finish the sauce by adding the remaining butter. Whisk well and adjust seasoning, if necessary. To serve, spoon some of the cabbage in the center of each plate and top with a duck breast. Ladle a little of the sauce on top of the duck and serve.
+===================================================
+
+
+===========================================================================
+
+✉️ Preparing outbound messages...
+
+====== Message to restaurant ======
+Hi Amore Mio,
+This is HaSalon in Tel Aviv. We have some high-quality surplus ingredients available today—perfect for your kitchen!
+
+- Shrimp: 1.62 kg, expires in 2 days – ₪140/kg, subtotal ₪226.80
+- Garlic: 14.66 cloves, expires in 4 days – ₪1.50/clove, subtotal ₪21.99
+- Dill: 16.03 grams, expires in 2 days – ₪0.80/gram, subtotal ₪12.82
+- Labneh: 280.86 grams, expires in 3 days – ₪35/kg, subtotal ₪9.83
+- Eggplant: 5.55 units, expires in 3 days – ₪4/unit, subtotal ₪22.20
+
+Bundled offer: ₪270 for everything. Pickup today between 13:00–18:00.
+Contact us at 052-1234567 to confirm. Looking forward to collaborating!
+(Saved message for restaurant: Amore Mio)
+
+====== Message to soup kitchen ======
+Hi, this is HaSalon in Tel Aviv 😊 We have a same-day donation of fresh ingredients for you:
+
+- Crushed tomato: 0.83 kg, expires in 1 day
+
+Pickup is possible today between 14:00-17:00. Please call us at 052-1234567 to coordinate. Thank you! 💛
+(Saved message for soup kitchen: בית מעשים טובים)
+
+===========================================================================
+
+📊 Checking if feedback agent should run -- asking for feedback only each 10 iterations of the agent...
+
+📣 Feedback Suggestions:
+- Basil: reduce by ~10 grams
+  Reason: Consistently high leftover quantities across multiple runs, often close to expiration.
+- Chili: reduce by ~2 unit
+  Reason: Frequent appearances with significant leftover quantities, often close to expiration.
+- Olive oil: reduce by ~300 ml
+  Reason: Recurring high leftover quantities across multiple runs, indicating overstocking.
+- Parsley: reduce by ~20 grams
+  Reason: Consistently high leftover quantities across multiple runs, often close to expiration.
+- Yogurt: reduce by ~50 grams
+  Reason: Recurring leftover quantities across multiple runs, indicating overstocking.
+- Sea bass: reduce by ~1 fillet
+  Reason: Frequent appearances with leftover quantities close to expiration.
+- Mint: reduce by ~10 grams
+  Reason: Recurring leftover quantities across multiple runs, often close to expiration.
+- Lemon zest: reduce by ~1 unit
+  Reason: Frequent appearances with leftover quantities close to expiration.
+
+✅ Simulation complete.

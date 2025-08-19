@@ -12,3 +12,6 @@ python-dotenv
 tqdm
 tiktoken
 jinja2
+requests
+pandas
+geopy
