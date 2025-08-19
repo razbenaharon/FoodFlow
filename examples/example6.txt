@@ -1,0 +1,177 @@
+👋 Welcome to FoodFlow!
+You are now simulating operations for 'HaSalon' restaurant in Tel Aviv, owned by chef Eyal Shani.
+Our goal is to make smart, sustainable decisions about what to cook, sell, or donate among expiring ingredients.
+
+For each expiring ingredient, the agent will determine the most suitable action:
+- 🍽️ Cook: A message will be sent to the chef with today’s special based on this ingredient.
+- 🍴 Sell: A message will be sent to a nearby restaurant most likely to purchase it.
+- ❤️ Donate: A pickup will be scheduled with a nearby donation center.
+
+===========================================================================
+
+Press Enter to see the magic happen...
+
+===========================================================================
+
+📦 Current Inventory (excluding expiring):
+- Eggplant: 12 unit
+- Olive oil: 1500 ml
+- Sea salt: 500 grams
+- Heirloom tomatoes: 10 unit
+- Basil: 50 grams
+- Black pepper: 300 grams
+- Lamb chops: 2 kg
+- Freekeh: 2 kg
+- Shrimp: 2.5 kg
+- Crushed tomato: 1.2 kg
+- Chili: 10 unit
+- Butter: 1 kg
+- Cauliflower: 6 unit
+- Lemon: 10 unit
+- Artichoke: 6 unit
+- Yogurt: 500 grams
+- Honey: 300 grams
+- Sea bass: 5 fillet
+- Leeks: 6 stalk
+- Dill: 50 grams
+- Labneh: 500 grams
+- Mushrooms: 1 kg
+- Parmesan cheese: 500 grams
+- Water: unlimited unit
+- Salt: unlimited unit
+
+⏳ Expiring Ingredients:
+- Rosemary: 37.52 grams (Expires in 2 days)
+- Zucchini: 2.45 unit (Expires in 4 days)
+- Beets: 1.61 unit (Expires in 4 days)
+- Parsley: 76.36 grams (Expires in 2 days)
+- White wine: 1.15 liters (Expires in 3 days)
+- Duck breast: 0.8 kg (Expires in 4 days)
+- Lemon zest: 2.26 unit (Expires in 3 days)
+- Mint: 36.06 grams (Expires in 3 days)
+- Garlic: 9.63 cloves (Expires in 4 days)
+- Cream: 1.52 liters (Expires in 3 days)
+
+===========================================================================
+
+🥣 choosing soup kitchen for today...
+
+Best matching soup kitchen:
+Name: המקרר הקהילתי בצפון דיזנגוף
+Address: Dizengoff St 316, Tel Aviv-Yafo
+Distance: 1.19 km
+
+===========================================================================
+
+🧑‍🍳 Running recipe recommendation agent...
+Recipe agent       [██████████████████████████████] 100%
+
+Best matching recipes:
+1. Rosemary and Garlic Duck Breast with Lemon-Parsley Gremolata
+   Matched expiring ingredients: Rosemary, Parsley, Duck breast, Lemon zest, Garlic
+   Inventory ingredients: Lemon
+   Missing ingredients: none
+   Reason: The rosemary and garlic duck breast, paired with lemon-parsley gremolata, highlights HaSalon's Mediterranean ethos and celebrates fresh, produce-driven Israeli flavors.
+2. Grilled Vegetable Salad with Feta and Mint
+   Matched expiring ingredients: Zucchini, Mint
+   Inventory ingredients: Heirloom tomatoes, Crushed tomato, Labneh
+   Missing ingredients: none
+   Reason: Grilled Vegetable Salad with Feta and Mint highlights HaSalon's produce-driven ethos, utilizing expiring zucchini and mint to celebrate vibrant Israeli Mediterranean flavors.
+3. Beet and Beet Green Risotto with Horseradish
+   Matched expiring ingredients: Rosemary, Beets
+   Inventory ingredients: Freekeh, Parmesan cheese
+   Missing ingredients: none
+   Reason: The beet and beet green risotto with horseradish highlights Israeli Mediterranean produce, utilizing expiring beets and rosemary, perfectly aligning with HaSalon's vibrant, seasonal ethos.
+
+===========================================================================
+
+🍽️ Running restaurant recommendation agent...
+
+Best matching restaurants:
+1. Amore Mio
+   Matched ingredients: Rosemary, White wine, Duck breast, Garlic, Cream
+   Reason: Italian restaurant likely to use rosemary, white wine, duck breast, garlic, and cream in their dishes. Very close (0.3km) and a great match for the ingredients.
+2. Rustico
+   Matched ingredients: Parsley, Zucchini, Garlic, Cream, White wine
+   Reason: Italian cuisine with a focus on fresh ingredients like parsley, zucchini, garlic, cream, and white wine. Located nearby (0.47km) and highly suitable.
+3. Haturkiya & Hakeves
+   Matched ingredients: Mint, Garlic, Parsley, Lemon zest
+   Reason: Middle Eastern restaurant where mint, garlic, parsley, and lemon zest are commonly used. Close proximity (0.37km) and a good fit for the ingredients.
+
+===========================================================================
+
+🧠 Running decision agent...
+
+cook-list ingirdients: Rosemary, Parsley, Duck breast, Lemon zest, Garlic
+reason: picked 'Rosemary and Garlic Duck Breast with Lemon-Parsley Gremolata' (rank #1) to convert 5 expiring items into menu value (Rosemary, Parsley, Duck breast) ; prioritizes quick-spoil items (e.g., Duck breast).
+sell-list ingirdients: Zucchini, White wine, Cream
+reason: sending 3 items to Amore Mio because 3 item(s) have ≥2 days left and their menu matches items like White wine, Cream.
+donate-list ingirdients: Beets, Mint
+reason: donating 2 item(s) to המקרר הקהילתי בצפון דיזנגוף and items are serviceable for bulk/meal-prep (e.g., Beets) to reduce overstock where market demand is uncertain today.
+
+===========================================================================
+
+🧑‍🍳 Sending selected recipe to kitchen...
+
+================= SEND TO KITCHEN =================
+👨‍🍳  Recipe: Muscovy Duck Breasts with Pomegranate-Wine Sauce
+---------------------------------------------------
+🧺  Ingredients:
+  • 3 tablespoons olive oil, divided
+  • 1 1/2 cups minced shallots (about 8 large)
+  • 6 garlic cloves, minced
+  • 1 1/4 cups dry white wine, divided
+  • 3/4 cup dry red wine
+  • 2 14-ounce cans low-salt chicken broth
+  • 1 14-ounce can low-salt beef broth
+  • 3/4 cup fresh orange juice
+  • 2 tablespoons pomegranate molasses*
+  • 3 teaspoons minced fresh marjoram, divided
+  • 1 fresh bay leaf
+  • 4 pounds boneless Muscovy duck breasts (4 to 8 breast halves, depending on size)
+  • 1 1/2 tablespoons all purpose flour
+---------------------------------------------------
+🧾  Instructions:
+  Heat 2 tablespoons oil in heavy medium saucepan over medium heat. Add shallots; sauté until golden brown, about 18 minutes. Add garlic; sauté 3 minutes. Add 1 cup white wine and 3/4 cup red wine. Boil until most of liquid evaporates, about 10 minutes. Add both broths, orange juice, pomegranate molasses, 1 teaspoon marjoram, and bay leaf; boil until mixture is reduced to 2 cups, about 20 minutes. Discard bay leaf. (Sauce can be made 3 days ahead. Cover and chill.)
+  Set rack at lowest position in oven; preheat to 450°F. Rub meat side of duck breasts with 1 tablespoon olive oil and 2 teaspoons marjoram. Sprinkle with salt and pepper. Working in batches, sear breasts, skin side down, in heavy large skillet over high heat until skin browns and fat is rendered, about 8 minutes.
+  Transfer duck breasts, skin side down, to rimmed baking sheet. Drain all but 1 1/2 tablespoons fat from skillet; reserve skillet. Roast duck until thermometer inserted into thickest part registers 145°F for medium-rare, about 20 minutes.
+  Meanwhile, bring sauce to simmer. Rewarm duck fat in reserved skillet over medium heat. Add flour; stir 1 minute. Gradually whisk in sauce.
+  Transfer duck breasts to cutting board. Pour off all fat from baking sheet. Add 1/4 cup white wine to sheet and scrape up browned bits; add to sauce. Simmer sauce 3 minutes to blend flavors. Season with salt and pepper. Thinly slice duck breasts and divide among 8 plates. Drizzle with sauce.
+  *Available at some supermarkets and Middle Eastern markets, and by mail at adrianascaravan.com.
+===================================================
+
+
+===========================================================================
+
+✉️ Preparing outbound messages...
+
+====== Message to restaurant ======
+Hi from HaSalon Tel Aviv! We have high-quality surplus ingredients available today—perfect for your kitchen needs. Here's the list:
+
+- Zucchini: 2.45 units (expires in 4 days) - ₪8/unit, subtotal: ₪19.60
+- White wine: 1.15 liters (expires in 3 days) - ₪25/liter, subtotal: ₪28.75
+- Cream: 1.52 liters (expires in 3 days) - ₪18/liter, subtotal: ₪27.36
+
+Bundle offer: All items for ₪70. Pickup window: Today, 14:00–18:00.
+
+Contact us at 052-1234567 to confirm. Looking forward to hearing from you!
+(Saved message for restaurant: Amore Mio)
+
+====== Message to soup kitchen ======
+Hi, this is HaSalon! We have a same-day donation for you:
+
+- Beets: 1.61 unit, expires in 4 days
+- Mint: 36.06 grams, expires in 3 days
+
+Pickup window: Today between 16:00–18:00.
+Contact: 052-1234567
+
+Let us know if you can come by!
+(Saved message for soup kitchen: המקרר הקהילתי בצפון דיזנגוף)
+
+===========================================================================
+
+📊 Checking if feedback agent should run -- asking for feedback only each 10 iterations of the agent...
+ℹ️ Only 1 runs found. Need 10 to activate feedback agent.
+
+✅ Simulation complete.
