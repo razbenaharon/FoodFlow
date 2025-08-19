@@ -1,62 +1,62 @@
 [
   {
-    "name": "Shrimp",
-    "quantity": 0.96,
-    "unit": "kg",
+    "name": "Zucchini",
+    "quantity": 6.1,
+    "unit": "unit",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Cauliflower",
+    "quantity": 2.6,
+    "unit": "unit",
     "days_to_expire": 2
   },
   {
-    "name": "Cream",
-    "quantity": 0.61,
-    "unit": "liters",
-    "days_to_expire": 2
-  },
-  {
-    "name": "Parmesan cheese",
-    "quantity": 280.22,
+    "name": "Black pepper",
+    "quantity": 205.19,
     "unit": "grams",
     "days_to_expire": 1
   },
   {
-    "name": "Olive oil",
-    "quantity": 614.89,
-    "unit": "ml",
+    "name": "Rosemary",
+    "quantity": 25.8,
+    "unit": "grams",
     "days_to_expire": 4
   },
   {
-    "name": "Zucchini",
-    "quantity": 3.13,
+    "name": "Freekeh",
+    "quantity": 0.93,
+    "unit": "kg",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Beets",
+    "quantity": 3.38,
+    "unit": "unit",
+    "days_to_expire": 3
+  },
+  {
+    "name": "Duck breast",
+    "quantity": 0.81,
+    "unit": "kg",
+    "days_to_expire": 2
+  },
+  {
+    "name": "Basil",
+    "quantity": 38.58,
+    "unit": "grams",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Lemon zest",
+    "quantity": 3.26,
     "unit": "unit",
     "days_to_expire": 4
   },
   {
-    "name": "Duck breast",
-    "quantity": 1.08,
+    "name": "Shrimp",
+    "quantity": 0.9,
     "unit": "kg",
-    "days_to_expire": 1
-  },
-  {
-    "name": "Labneh",
-    "quantity": 188.19,
-    "unit": "grams",
-    "days_to_expire": 1
-  },
-  {
-    "name": "Dill",
-    "quantity": 30.92,
-    "unit": "grams",
     "days_to_expire": 2
-  },
-  {
-    "name": "Mint",
-    "quantity": 40.8,
-    "unit": "grams",
-    "days_to_expire": 3
-  },
-  {
-    "name": "Garlic",
-    "quantity": 14.27,
-    "unit": "cloves",
-    "days_to_expire": 1
   }
 ]

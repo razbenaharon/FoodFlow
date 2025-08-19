@@ -1,7 +1,9 @@
 import re
 from typing import Any, Dict, List, Optional, Tuple
 
+
 def _dedupe_keep_order(items: List[str]) -> List[str]:
+    """Removes duplicate strings from a list while preserving their original order."""
     seen, out = set(), []
     for x in items:
         if not isinstance(x, str):
@@ -12,7 +14,14 @@ def _dedupe_keep_order(items: List[str]) -> List[str]:
             out.append(x.strip())
     return out
 
+
 def _collect_lists_by_keys(obj: Any, keys_exact=None, key_substrings=None) -> List[str]:
+    """
+    Recursively walks through a nested dictionary or list to find lists of strings
+    associated with specific keys.
+
+    It searches for keys that are an exact match or contain a specific substring.
+    """
     keys_exact = [k.lower() for k in (keys_exact or [])]
     key_substrings = [s.lower() for s in (key_substrings or [])]
     out: List[str] = []
@@ -32,7 +41,15 @@ def _collect_lists_by_keys(obj: Any, keys_exact=None, key_substrings=None) -> Li
     walk(obj)
     return _dedupe_keep_order(out)
 
+
 def extract_matched_sets(analysis: Optional[Dict[str, Any]]) -> Tuple[List[str], List[str], List[str]]:
+    """
+    Extracts and categorizes ingredients from an analysis dictionary into three lists:
+    expiring, inventory, and missing ingredients.
+
+    It uses a predefined set of key names and substrings to find the relevant lists
+    within the input analysis.
+    """
     analysis = analysis or {}
     expiring = _collect_lists_by_keys(
         analysis,
@@ -51,10 +68,18 @@ def extract_matched_sets(analysis: Optional[Dict[str, Any]]) -> Tuple[List[str],
     )
     return expiring, inventory, missing
 
+
 def safe_join(lst: List[str]) -> str:
+    """Joins a list of strings into a comma-separated string, handling empty lists gracefully."""
     return ", ".join(lst) if lst else "none"
 
+
 def extract_json_block(text: str) -> str:
+    """
+    Extracts the first JSON object string from a given text block.
+
+    Raises a ValueError if no JSON object is found.
+    """
     m = re.search(r"\{[\s\S]*\}", text)
     if not m:
         raise ValueError("No JSON object found in response.")

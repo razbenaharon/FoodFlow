@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2da8b9a8-ebf7-4c06-acfb-75c094784ded" name="Changes" comment="raz3.0">
+      <change beforePath="$PROJECT_DIR$/agent/decision_agent/final_decision_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/decision_agent/final_decision_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/execution_agent/send_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/execution_agent/send_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/execution_agent/send_recipie_to_kitchen.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/execution_agent/send_recipie_to_kitchen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/feedback_agent/get_feedback.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/feedback_agent/get_feedback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/upload_recipies_to_qdrant/recipe_loader_to_qdrant.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/upload_recipies_to_qdrant/recipe_loader_to_qdrant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/console.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/io_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/io_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/parsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/recipe_query_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/recipe_query_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/restaurant.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/restaurant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/recipie_agent/utilities/retrieval.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/recipie_agent/utilities/retrieval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/fetch_soup_kitchens_tlv_with_distances.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fetch_soup_kitchens_tlv_with_distances.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/expiring_ingredients.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/expiring_ingredients.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recent_expiring_ingredients.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recent_expiring_ingredients.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/top_restaurants.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/top_restaurants.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Inventory_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data_printer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/inspect_qdrant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/query_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/rag_restaurants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/recipe_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/recipe_scoring_prompt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/recipes_mock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/restaurant_inventory.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/restaurant_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/verify_qdrant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokens_count/chat_tokens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tokens_count/chat_tokens.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokens_count/embedding_tokens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tokens_count/embedding_tokens.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;razbenaharon&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/galsobol/FoodFlow.git&quot;,
+    &quot;accountId&quot;: &quot;ec6cc205-bdcf-410b-9734-18e78eedb09d&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="30gLR5wNhFeu6ebtL55w1H0I7aI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cols.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_printer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.default.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fetch_restaurants_tlv_with_distances.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fetch_soup_kitchens_tlv_with_distances.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_decision_agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find_restaurant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find_soup_kitchen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inspect_qdrant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.learning_smoke_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_inventory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag_query_builder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag_retriever.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag_specials.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recipe_agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recipe_loader_to_qdrant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recipe_scorer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recipie_agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.restaurant_loader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.resturant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.send_recipie_to_kitchen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.token_logger.executor&quot;: &quot;Run&quot;,
+    &quot;Python.upload_zip_to_qdrant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.verify_qdrant.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/python/FoodFlow&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\python\FoodFlow\agent\soup_kitchen_agent" />
+      <recent name="C:\Users\User\Desktop\python\FoodFlow\archive" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\python\FoodFlow\utils" />
+      <recent name="C:\Users\User\Desktop\python\FoodFlow\agent\recipie_agent\upload_recipies_to_qdrant" />
+      <recent name="C:\Users\User\Desktop\python\FoodFlow\agent\recipie_agent\utilities" />
+      <recent name="C:\Users\User\Desktop\python\FoodFlow\tests" />
+      <recent name="C:\Users\User\Desktop\python\FoodFlow\agent\recipie_agent" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test_connection" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="FoodFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (FoodFlow)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.74" />
+        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2da8b9a8-ebf7-4c06-acfb-75c094784ded" name="Changes" comment="" />
+      <created>1754044258117</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754044258117</updated>
+      <workItem from="1754044259334" duration="4422000" />
+      <workItem from="1754202156639" duration="41349000" />
+      <workItem from="1754374214200" duration="18065000" />
+      <workItem from="1754402957230" duration="18084000" />
+      <workItem from="1754559058051" duration="702000" />
+      <workItem from="1754662553918" duration="15474000" />
+      <workItem from="1754842717006" duration="11727000" />
+      <workItem from="1754986384831" duration="1890000" />
+      <workItem from="1755100526550" duration="4973000" />
+      <workItem from="1755238128460" duration="12231000" />
+      <workItem from="1755348699182" duration="1509000" />
+      <workItem from="1755359645181" duration="380000" />
+      <workItem from="1755589708045" duration="10491000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit ever">
+      <option name="closed" value="true" />
+      <created>1754046160407</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754046160407</updated>
+    </task>
+    <task id="LOCAL-00002" summary="raz2.0">
+      <option name="closed" value="true" />
+      <created>1754559128408</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1754559128408</updated>
+    </task>
+    <task id="LOCAL-00003" summary="raz3.0">
+      <option name="closed" value="true" />
+      <created>1754917420735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754917420735</updated>
+    </task>
+    <task id="LOCAL-00004" summary="raz3.0">
+      <option name="closed" value="true" />
+      <created>1755346482147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755346482147</updated>
+    </task>
+    <task id="LOCAL-00005" summary="raz3.0">
+      <option name="closed" value="true" />
+      <created>1755349094525</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755349094525</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit ever" />
+    <MESSAGE value="raz2.0" />
+    <MESSAGE value="raz3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="raz3.0" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$find_restaurant.coverage" NAME="find_restaurant Coverage Results" MODIFIED="1754259307334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/restaurant_agent" />
+    <SUITE FILE_PATH="coverage/main_py$data_printer.coverage" NAME="data_printer Coverage Results" MODIFIED="1754492355186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/main_py$recipe_agent.coverage" NAME="recipe_agent Coverage Results" MODIFIED="1754395483443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/main_py$default.coverage" NAME="default Coverage Results" MODIFIED="1754492955521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/httpx/_transports" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1755621621592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FoodFlow$token_logger.coverage" NAME="token_logger Coverage Results" MODIFIED="1754046495230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/main_py$recipie_agent.coverage" NAME="recipie_agent Coverage Results" MODIFIED="1754393289257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/main_py$test_connection.coverage" NAME="test_connection Coverage Results" MODIFIED="1755100557140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/main_py$final_decision_agent.coverage" NAME="final_decision_agent Coverage Results" MODIFIED="1754492127331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/decision_agent" />
+    <SUITE FILE_PATH="coverage/FoodFlow$test_connection.coverage" NAME="test_connection Coverage Results" MODIFIED="1754045666669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$token_logger.coverage" NAME="token_logger Coverage Results" MODIFIED="1754319579641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/main_py$verify_qdrant.coverage" NAME="verify_qdrant Coverage Results" MODIFIED="1754378786357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/main_py$learning_smoke_test.coverage" NAME="learning_smoke_test Coverage Results" MODIFIED="1755328827228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/main_py$recipe_loader_to_qdrant.coverage" NAME="recipe_loader_to_qdrant Coverage Results" MODIFIED="1754404164710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$test_connection.coverage" NAME="test_connection Coverage Results" MODIFIED="1754204031181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$find_soup_kitchen.coverage" NAME="find_soup_kitchen Coverage Results" MODIFIED="1754258671721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/soup_kitchen_finder" />
+    <SUITE FILE_PATH="coverage/main_py$send_recipie_to_kitchen.coverage" NAME="send_recipie_to_kitchen Coverage Results" MODIFIED="1754843758139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/execution_agent" />
+    <SUITE FILE_PATH="coverage/main_py$rag_specials.coverage" NAME="rag_specials Coverage Results" MODIFIED="1754380862604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/FoodFlow$rag_specials.coverage" NAME="rag_specials Coverage Results" MODIFIED="1754046595843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/main_py$agent.coverage" NAME="agent Coverage Results" MODIFIED="1754381456778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/main_py$rag_retriever.coverage" NAME="rag_retriever Coverage Results" MODIFIED="1754493487155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/main_py$utils.coverage" NAME="utils Coverage Results" MODIFIED="1754381241800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$temp.coverage" NAME="temp Coverage Results" MODIFIED="1754238497585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$main.coverage" NAME="main Coverage Results" MODIFIED="1754259464174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$fetch_soup_kitchens_tlv_with_distances.coverage" NAME="fetch_soup_kitchens_tlv_with_distances Coverage Results" MODIFIED="1754237914769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/archive" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$resturant.coverage" NAME="resturant Coverage Results" MODIFIED="1754235833673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../googleAPI" />
+    <SUITE FILE_PATH="coverage/main_py$recipe_scorer.coverage" NAME="recipe_scorer Coverage Results" MODIFIED="1754383335249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/main_py$upload_zip_to_qdrant.coverage" NAME="upload_zip_to_qdrant Coverage Results" MODIFIED="1754374231396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent" />
+    <SUITE FILE_PATH="coverage/main_py$inspect_qdrant.coverage" NAME="inspect_qdrant Coverage Results" MODIFIED="1754378867591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/main_py$rag_query_builder.coverage" NAME="rag_query_builder Coverage Results" MODIFIED="1754389126568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/recipie_agent" />
+    <SUITE FILE_PATH="coverage/FoodFlow$final_decision_agent.coverage" NAME="final_decision_agent Coverage Results" MODIFIED="1754046293967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent/decision_agent" />
+    <SUITE FILE_PATH="coverage/main_py$cols.coverage" NAME="cols Coverage Results" MODIFIED="1754377574212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/main_py$prepare_inventory.coverage" NAME="prepare_inventory Coverage Results" MODIFIED="1754489425088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$cols.coverage" NAME="cols Coverage Results" MODIFIED="1754231196391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$restaurant_loader.coverage" NAME="restaurant_loader Coverage Results" MODIFIED="1754255009195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$fetch_restaurants_tlv_with_distances_py.coverage" NAME="fetch_restaurants_tlv_with_distances.py Coverage Results" MODIFIED="1754237083080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/archive" />
+    <SUITE FILE_PATH="coverage/final_decision_agent_py$upload_zip_to_qdrant.coverage" NAME="upload_zip_to_qdrant Coverage Results" MODIFIED="1754320899416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/agent" />
+  </component>
+</project>

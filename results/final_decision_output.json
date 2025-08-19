@@ -1,0 +1,80 @@
+[
+  {
+    "item": "Beets",
+    "action": "COOK",
+    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
+    "target_recipes": [
+      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
+    ]
+  },
+  {
+    "item": "Olive oil",
+    "action": "COOK",
+    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
+    "target_recipes": [
+      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
+    ]
+  },
+  {
+    "item": "Lamb chops",
+    "action": "COOK",
+    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
+    "target_recipes": [
+      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
+    ]
+  },
+  {
+    "item": "Heirloom tomatoes",
+    "action": "SELL",
+    "reason": "Better matched to Amore Mio's menu and demand window.",
+    "target_restaurants": [
+      "Amore Mio"
+    ]
+  },
+  {
+    "item": "Parmesan cheese",
+    "action": "DONATE",
+    "reason": "Short shelf-life / lower marketability today; donation reduces waste.",
+    "donation_center": "בית מעשים טובים"
+  },
+  {
+    "item": "Mushrooms",
+    "action": "SELL",
+    "reason": "Better matched to Amore Mio's menu and demand window.",
+    "target_restaurants": [
+      "Amore Mio"
+    ]
+  },
+  {
+    "item": "Rosemary",
+    "action": "COOK",
+    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
+    "target_recipes": [
+      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
+    ]
+  },
+  {
+    "item": "Sea bass",
+    "action": "SELL",
+    "reason": "Better matched to Amore Mio's menu and demand window.",
+    "target_restaurants": [
+      "Amore Mio"
+    ]
+  },
+  {
+    "item": "Chili",
+    "action": "COOK",
+    "reason": "Used in selected recipe 'Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus'.",
+    "target_recipes": [
+      "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus"
+    ]
+  },
+  {
+    "item": "Dill",
+    "action": "SELL",
+    "reason": "Better matched to Amore Mio's menu and demand window.",
+    "target_restaurants": [
+      "Amore Mio"
+    ]
+  }
+]

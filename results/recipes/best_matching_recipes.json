@@ -1,0 +1,52 @@
+[
+  {
+    "rank": 1,
+    "title": "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus",
+    "matched_expiring": [
+      "Beets",
+      "Olive oil",
+      "Lamb chops",
+      "Rosemary",
+      "Chili"
+    ],
+    "inventory": [],
+    "missing": [],
+    "reason": "Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus embodies HaSalon's Mediterranean ethos, highlighting expiring lamb chops and olive oil with vibrant, fire-kissed flavors.",
+    "restaurant": "HaSalon",
+    "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
+  },
+  {
+    "rank": 2,
+    "title": "Branzino Alla Max",
+    "matched_expiring": [
+      "Parmesan cheese",
+      "Sea bass"
+    ],
+    "inventory": [
+      "Sea salt",
+      "Basil",
+      "Crushed tomato",
+      "Zucchini"
+    ],
+    "missing": [],
+    "reason": "Branzino Alla Max highlights Israeli Mediterranean flavors with sea bass and Parmesan, embracing HaSalon's produce-driven ethos and live fire cooking.",
+    "restaurant": "HaSalon",
+    "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
+  },
+  {
+    "rank": 3,
+    "title": "Mushroom and Pea Quinoa Risotto",
+    "matched_expiring": [
+      "Mushrooms",
+      "Dill"
+    ],
+    "inventory": [
+      "Freekeh",
+      "Yogurt"
+    ],
+    "missing": [],
+    "reason": "Mushroom and Pea Quinoa Risotto highlights expiring mushrooms and dill, embracing HaSalon's produce-driven ethos and Mediterranean flavors with vibrant simplicity.",
+    "restaurant": "HaSalon",
+    "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
+  }
+]

@@ -1,8 +1,14 @@
 from typing import Dict, List, Any
 
+
 def _name_qty_unit(item: Dict[str, Any]) -> str:
+    """
+    Formats a dictionary item with name, quantity, and unit into a concise string.
+
+    Handles cases where quantity or unit might be missing.
+    """
     name = item.get("item") or item.get("name") or ""
-    qty  = item.get("quantity")
+    qty = item.get("quantity")
     unit = item.get("unit")
     if qty is None and not unit:
         return f"- {name}".strip()
@@ -12,10 +18,14 @@ def _name_qty_unit(item: Dict[str, Any]) -> str:
         return f"- {name}: {qty} {unit}".strip()
     return f"- {name}: {qty}".strip()
 
+
 def build_query_string(expiring: List[Dict[str, Any]], inventory: List[Dict[str, Any]]) -> str:
     """
-    Build a deterministic prompt asking for EXACTLY three dishes with a Reason line.
-    Output must follow the numbered format our parser expects.
+    Builds a deterministic prompt for an LLM to generate recipe suggestions.
+
+    The prompt is designed to elicit exactly three dishes, with specific formatting
+    including a bold title, steps, and a one-sentence reason, based on the provided
+    expiring and inventory ingredients.
     """
     exp_lines = "\n".join(_name_qty_unit(x) for x in expiring if isinstance(x, dict))
     inv_lines = "\n".join(_name_qty_unit(x) for x in inventory if isinstance(x, dict))

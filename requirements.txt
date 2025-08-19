@@ -1,10 +1,14 @@
+# Core LLM + LangChain
 openai
 langchain
+langchain-openai
+langchain_community
+
+# Vector DB
 qdrant-client
+
+# Utilities
 python-dotenv
 tqdm
-langchain-openai
-qdrant-client
 tiktoken
-langchain_community
 jinja2

@@ -1,0 +1,7 @@
+```json
+{
+  "expiring": ["Beets", "Olive oil", "Lamb chops", "Rosemary", "Chili"],
+  "inventory": ["Sea salt", "Garlic", "Black pepper", "Butter", "Salt", "Water"],
+  "missing": []
+}
+```

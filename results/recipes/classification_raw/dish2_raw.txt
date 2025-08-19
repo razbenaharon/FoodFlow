@@ -1,0 +1,14 @@
+Here is the categorized output based on the recipe and the provided lists:
+
+```json
+{
+  "expiring": ["Sea bass", "Heirloom tomatoes", "Parmesan cheese", "Mushrooms", "Dill"],
+  "inventory": ["Olive oil", "Basil", "Zucchini", "Garlic", "Black pepper", "Salt"],
+  "missing": []
+}
+``` 
+
+### Explanation:
+1. **Expiring**: These are ingredients from the recipe that are listed in the "Expiring items" list.
+2. **Inventory**: These are ingredients from the recipe that are in the "Current inventory" but not in the "Expiring items" list.
+3. **Missing**: All ingredients in the recipe are accounted for in either the "Expiring" or "Inventory" lists, so there are no missing items.

@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Eggplant",
+    "quantity": 12,
+    "unit": "unit"
+  },
+  {
+    "name": "Olive oil",
+    "quantity": 1500,
+    "unit": "ml"
+  },
+  {
+    "name": "Sea salt",
+    "quantity": 500,
+    "unit": "grams"
+  },
+  {
+    "name": "Parsley",
+    "quantity": 100,
+    "unit": "grams"
+  },
+  {
+    "name": "Heirloom tomatoes",
+    "quantity": 10,
+    "unit": "unit"
+  },
+  {
+    "name": "Garlic",
+    "quantity": 20,
+    "unit": "cloves"
+  },
+  {
+    "name": "Lamb chops",
+    "quantity": 2,
+    "unit": "kg"
+  },
+  {
+    "name": "Mint",
+    "quantity": 100,
+    "unit": "grams"
+  },
+  {
+    "name": "Crushed tomato",
+    "quantity": 1.2,
+    "unit": "kg"
+  },
+  {
+    "name": "Chili",
+    "quantity": 10,
+    "unit": "unit"
+  },
+  {
+    "name": "White wine",
+    "quantity": 2,
+    "unit": "liters"
+  },
+  {
+    "name": "Butter",
+    "quantity": 1,
+    "unit": "kg"
+  },
+  {
+    "name": "Cream",
+    "quantity": 2,
+    "unit": "liters"
+  },
+  {
+    "name": "Lemon",
+    "quantity": 10,
+    "unit": "unit"
+  },
+  {
+    "name": "Artichoke",
+    "quantity": 6,
+    "unit": "unit"
+  },
+  {
+    "name": "Yogurt",
+    "quantity": 500,
+    "unit": "grams"
+  },
+  {
+    "name": "Honey",
+    "quantity": 300,
+    "unit": "grams"
+  },
+  {
+    "name": "Sea bass",
+    "quantity": 5,
+    "unit": "fillet"
+  },
+  {
+    "name": "Leeks",
+    "quantity": 6,
+    "unit": "stalk"
+  },
+  {
+    "name": "Dill",
+    "quantity": 50,
+    "unit": "grams"
+  },
+  {
+    "name": "Labneh",
+    "quantity": 500,
+    "unit": "grams"
+  },
+  {
+    "name": "Mushrooms",
+    "quantity": 1,
+    "unit": "kg"
+  },
+  {
+    "name": "Parmesan cheese",
+    "quantity": 500,
+    "unit": "grams"
+  },
+  {
+    "name": "Water",
+    "quantity": "unlimited",
+    "unit": "unit"
+  },
+  {
+    "name": "Salt",
+    "quantity": "unlimited",
+    "unit": "unit"
+  }
+]

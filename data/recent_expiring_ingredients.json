@@ -1,1 +1,64 @@
-[]
+[
+  [
+    {
+      "name": "Zucchini",
+      "quantity": 6.1,
+      "unit": "unit",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Cauliflower",
+      "quantity": 2.6,
+      "unit": "unit",
+      "days_to_expire": 2
+    },
+    {
+      "name": "Black pepper",
+      "quantity": 205.19,
+      "unit": "grams",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Rosemary",
+      "quantity": 25.8,
+      "unit": "grams",
+      "days_to_expire": 4
+    },
+    {
+      "name": "Freekeh",
+      "quantity": 0.93,
+      "unit": "kg",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Beets",
+      "quantity": 3.38,
+      "unit": "unit",
+      "days_to_expire": 3
+    },
+    {
+      "name": "Duck breast",
+      "quantity": 0.81,
+      "unit": "kg",
+      "days_to_expire": 2
+    },
+    {
+      "name": "Basil",
+      "quantity": 38.58,
+      "unit": "grams",
+      "days_to_expire": 1
+    },
+    {
+      "name": "Lemon zest",
+      "quantity": 3.26,
+      "unit": "unit",
+      "days_to_expire": 4
+    },
+    {
+      "name": "Shrimp",
+      "quantity": 0.9,
+      "unit": "kg",
+      "days_to_expire": 2
+    }
+  ]
+]

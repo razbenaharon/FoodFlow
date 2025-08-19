@@ -4,7 +4,15 @@ from agent.recipie_agent.utilities.parsing import no_en_dashes
 from agent.recipie_agent.utilities.console import suppress_stdout_stderr
 from utils.chat_and_embedding import LLMChat
 
+
 def load_top_restaurant(results_dir: str) -> Optional[Dict[str, Any]]:
+    """
+    Loads and identifies the top-ranked restaurant from a JSON file.
+
+    The function handles various JSON structures by searching for common keys
+    like 'restaurants', 'top', or 'results'. It then iterates through the
+    found candidates to find the one with the highest score, rank, or rating.
+    """
     path = os.path.join(results_dir, "top_restaurants.json")
     if not os.path.exists(path):
         return None
@@ -41,7 +49,14 @@ def load_top_restaurant(results_dir: str) -> Optional[Dict[str, Any]]:
             best, best_score = r, sc
     return best
 
+
 def restaurant_capsule(rest: Dict[str, Any]) -> str:
+    """
+    Creates a concise summary string (a "capsule") from a restaurant dictionary.
+
+    It extracts relevant details like name, cuisine, city, tags, and specialties,
+    then formats them into a single, semicolon-separated sentence.
+    """
     if not isinstance(rest, dict):
         return ""
     name = rest.get("name") or rest.get("title") or rest.get("restaurant") or ""
@@ -68,14 +83,22 @@ def restaurant_capsule(rest: Dict[str, Any]) -> str:
         capsule = f"{name}; " + capsule if capsule else name
     return no_en_dashes(capsule)
 
+
 def tailor_reason_for_restaurant(
-    dish_title: str,
-    expiring_list: List[str],
-    inventory_list: List[str],
-    missing_list: List[str],
-    restaurant_name: str,
-    restaurant_capsule_text: str
+        dish_title: str,
+        expiring_list: List[str],
+        inventory_list: List[str],
+        missing_list: List[str],
+        restaurant_name: str,
+        restaurant_capsule_text: str
 ) -> str:
+    """
+    Uses a large language model (LLM) to generate a concise, tailored reason
+    explaining why a dish is suitable for a particular restaurant.
+
+    The function formats a prompt with all the relevant context (dish, ingredients,
+    restaurant info) and sends it to the LLM for a single-sentence response.
+    """
     chat = LLMChat(temp=0.2)
     exp_str = ", ".join(expiring_list) if expiring_list else "none"
     inv_str = ", ".join(inventory_list) if inventory_list else "none"

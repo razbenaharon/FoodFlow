@@ -2,32 +2,28 @@
   {
     "name": "פסטה ויה | Pasta Via",
     "matched_ingredients": [
-      "Shrimp",
-      "Cream",
-      "Parmesan cheese",
-      "Olive oil",
-      "Garlic"
+      "Zucchini",
+      "Basil",
+      "Black pepper"
     ],
-    "reason": "Italian restaurant that can use shrimp, cream, Parmesan, olive oil, and garlic in pasta dishes. Very close (0.3km) and likely to appreciate these ingredients."
+    "reason": "Italian restaurant that can use zucchini, basil, and black pepper in pasta dishes. Very close (0.3km) and likely to appreciate fresh herbs."
+  },
+  {
+    "name": "Hummus Eben Gvirol",
+    "matched_ingredients": [
+      "Freekeh",
+      "Black pepper",
+      "Beets"
+    ],
+    "reason": "Middle Eastern restaurant where freekeh, black pepper, and beets are common ingredients. Close (0.37km) and a good fit for the cuisine."
   },
   {
     "name": "Amore Mio",
     "matched_ingredients": [
-      "Parmesan cheese",
-      "Olive oil",
-      "Garlic",
-      "Zucchini"
+      "Duck breast",
+      "Basil",
+      "Black pepper"
     ],
-    "reason": "Italian restaurant where Parmesan, olive oil, garlic, and zucchini are staples. Close by (0.3km) and a good fit for these ingredients."
-  },
-  {
-    "name": "Haturkiya & Hakeves",
-    "matched_ingredients": [
-      "Labneh",
-      "Mint",
-      "Garlic",
-      "Dill"
-    ],
-    "reason": "Middle Eastern restaurant that can use labneh, mint, garlic, and dill in traditional dishes. Located nearby (0.37km)."
+    "reason": "Upscale Italian restaurant that can use duck breast, basil, and black pepper in gourmet dishes. Close (0.3km) and likely to value high-quality ingredients."
   }
 ]
