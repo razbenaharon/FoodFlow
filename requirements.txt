@@ -8,3 +8,6 @@ qdrant-client
 tiktoken
 langchain_community
 jinja2
+requests
+pandas
+geopy

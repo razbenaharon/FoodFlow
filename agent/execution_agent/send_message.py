@@ -22,7 +22,7 @@ DEFAULT_RESTAURANT_NAME = "HaSalon"
 DEFAULT_CITY = "Tel Aviv"
 
 # ✅ Mock phone number (can override via env var if you want)
-CONTACT_PHONE = os.getenv("FOODFLOW_CONTACT_PHONE", "052-1234567")
+CONTACT_PHONE = "052-1234567"
 
 
 # ---------------- helpers ----------------

@@ -6,7 +6,7 @@ from utils.chat_and_embedding import LLMChat
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, \
     PromptTemplate
 
-LEN_FOR_FEEDBACK = 2
+LEN_FOR_FEEDBACK = 10
 def run_feedback_agent():
     # --- Paths ---
     PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

@@ -87,4 +87,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-# TODO: phone number - write the same number for all prints (mock number)
