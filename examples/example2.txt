@@ -1,0 +1,172 @@
+👋 Welcome to FoodFlow!
+You are now simulating operations for 'HaSalon' restaurant in Tel Aviv, owned by chef Eyal Shani.
+Our goal is to make smart, sustainable decisions about what to cook, sell, or donate among expiring ingredients.
+
+For each expiring ingredient, the agent will determine the most suitable action:
+- 🍽️ Cook: A message will be sent to the chef with today’s special based on this ingredient.
+- 🍴 Sell: A message will be sent to a nearby restaurant most likely to purchase it.
+- ❤️ Donate: A pickup will be scheduled with a nearby donation center.
+
+===========================================================================
+
+Press Enter to see the magic happen...
+
+===========================================================================
+
+📦 Current Inventory (excluding expiring):
+- Eggplant: 12 unit
+- Olive oil: 1500 ml
+- Sea salt: 500 grams
+- Heirloom tomatoes: 10 unit
+- Garlic: 20 cloves
+- Black pepper: 300 grams
+- Lamb chops: 2 kg
+- Freekeh: 2 kg
+- Crushed tomato: 1.2 kg
+- Cream: 2 liters
+- Cauliflower: 6 unit
+- Lemon: 10 unit
+- Artichoke: 6 unit
+- Yogurt: 500 grams
+- Duck breast: 1.5 kg
+- Rosemary: 50 grams
+- Honey: 300 grams
+- Sea bass: 5 fillet
+- Dill: 50 grams
+- Beets: 5 unit
+- Labneh: 500 grams
+- Mushrooms: 1 kg
+- Parmesan cheese: 500 grams
+- Water: unlimited unit
+- Salt: unlimited unit
+
+⏳ Expiring Ingredients:
+- Chili: 4.93 unit (Expires in 1 days)
+- Mint: 47.52 grams (Expires in 2 days)
+- Leeks: 3.6 stalk (Expires in 3 days)
+- Parsley: 34.15 grams (Expires in 1 days)
+- Zucchini: 4.7 unit (Expires in 3 days)
+- White wine: 0.95 liters (Expires in 3 days)
+- Basil: 39.67 grams (Expires in 3 days)
+- Shrimp: 1.34 kg (Expires in 1 days)
+- Lemon zest: 3.99 unit (Expires in 2 days)
+- Butter: 0.38 kg (Expires in 3 days)
+
+===========================================================================
+
+🥣 choosing soup kitchen for today...
+
+Best matching soup kitchen:
+Name: אוכל לנזקקים
+Address: 4, Namal Tel Aviv, Tel Aviv-Yafo
+Distance: 1.27 km
+
+===========================================================================
+
+🧑‍🍳 Running recipe recommendation agent...
+Recipe agent       [██████████████████████████████] 100%
+
+Best matching recipes:
+1. Grilled Shrimp over Zucchini Noodles
+   Matched expiring ingredients: Chili, Leeks, Zucchini, Shrimp, Lemon zest, Butter
+   Inventory ingredients: Garlic, Lemon
+   Missing ingredients: none
+   Reason: Grilled Shrimp over Zucchini Noodles highlights HaSalon's produce-driven ethos, pairing expiring zucchini and shrimp with Mediterranean flavors and live-fire cooking.
+2. Grilled T-bone Lamb Chops with Fava Bean and Feta Salad
+   Matched expiring ingredients: Mint, Parsley
+   Inventory ingredients: Lamb chops, Freekeh
+   Missing ingredients: none
+   Reason: Grilled T-bone Lamb Chops with Fava Bean and Feta Salad highlights HaSalon's Mediterranean roots, using mint and parsley to elevate fresh, bold flavors.
+3. Artichoke Toasts
+   Matched expiring ingredients: Chili, Basil, Butter
+   Inventory ingredients: Eggplant, Labneh
+   Missing ingredients: none
+   Reason: Artichoke Toasts, enriched with chili and butter, celebrate HaSalon's Mediterranean ethos and Eyal Shani's focus on bold, produce-driven flavors.
+
+===========================================================================
+
+🍽️ Running restaurant recommendation agent...
+
+Best matching restaurants:
+1. פסטה ויה | Pasta Via
+   Matched ingredients: Basil, White wine, Butter, Zucchini
+   Reason: Italian restaurant where basil, white wine, butter, and zucchini are commonly used in pasta dishes. Very close (0.3km) and likely to appreciate these ingredients.
+2. Amore Mio
+   Matched ingredients: Shrimp, White wine, Butter, Lemon zest
+   Reason: Italian restaurant that can use shrimp, white wine, butter, and lemon zest in seafood pasta or risotto. Close (0.3km) and a good fit for these ingredients.
+3. Hummus Eben Gvirol
+   Matched ingredients: Parsley, Lemon zest, Mint
+   Reason: Middle Eastern restaurant where parsley, lemon zest, and mint are staples for dishes like hummus and salads. Close (0.37km) and a great match for these herbs.
+
+===========================================================================
+
+🧠 Running decision agent...
+
+cook-list ingirdients: Chili, Leeks, Zucchini, Shrimp, Lemon zest, Butter
+reason: picked 'Grilled Shrimp over Zucchini Noodles' (rank #1) to convert 6 expiring items into menu value (Chili, Leeks, Zucchini) including 2 due ≤1 day ; prioritizes quick-spoil items (e.g., Zucchini, Shrimp).
+sell-list ingirdients: Mint, Parsley, Basil
+reason: sending 3 items to פסטה ויה | Pasta Via because 2 item(s) have ≥2 days left and their menu matches items like Basil.
+donate-list ingirdients: White wine
+reason: donating 1 item(s) to אוכל לנזקקים to reduce overstock where market demand is uncertain today.
+
+===========================================================================
+
+🧑‍🍳 Sending selected recipe to kitchen...
+
+================= SEND TO KITCHEN =================
+👨‍🍳  Recipe: Grilled Shrimp over Zucchini Noodles
+---------------------------------------------------
+🧺  Ingredients:
+  • Lemon Basil Dressing: ADVERTISEMENT
+  • 2 cups thinly sliced fresh basil ADVERTISEMENT
+  • 9 tablespoons olive oil, divided ADVERTISEMENT
+  • 1/3 cup toasted sliced almonds, divided ADVERTISEMENT
+  • 1 tablespoon red wine vinegar ADVERTISEMENT
+  • 1 shallot, coarsely chopped ADVERTISEMENT
+  • 2 cloves garlic, coarsely chopped ADVERTISEMENT
+  • 1 lemon, zested ADVERTISEMENT
+  • 1/4 teaspoon red pepper flakes ADVERTISEMENT
+  • 1 pound shrimp, peeled and deveined ADVERTISEMENT
+  • 5 zucchini ADVERTISEMENT
+  • kosher salt and freshly ground black pepper to taste ADVERTISEMENT
+  • ADVERTISEMENT
+---------------------------------------------------
+🧾  Instructions:
+  Blend basil, 1/2 cup olive oil, 1/4 cup almonds, vinegar, shallot, garlic, lemon zest, and red pepper flakes in a blender until lemon basil dressing is smooth.
+  Heat 1 tablespoon olive oil in a skillet over medium-high heat; saute shrimp until cooked through and pink, 2 to 4 minutes. Remove skillet from heat and mix shrimp with 2 tablespoons dressing in a bowl.
+  Run zucchini through a spiralizer to create spaghetti-size noodle shapes. Add to skillet; cook and stir over medium heat until zucchini noodles are tender, 1 to 2 minutes. Add 2 tablespoons lemon basil dressing and toss to coat. Remove skillet from heat.
+  Arrange shrimp on top of zucchini noodles; season with salt and black pepper. Top with remaining almonds.
+===================================================
+
+
+===========================================================================
+
+✉️ Preparing outbound messages...
+
+====== Message to restaurant ======
+Hi Pasta Via, this is HaSalon! We have some high-quality surplus ingredients available today—perfect for your kitchen.
+
+- Mint: 47.52g (expires in 2 days) - ₪12 | Subtotal: ₪12
+- Parsley: 34.15g (expires in 1 day) - ₪8 | Subtotal: ₪8
+- Basil: 39.67g (expires in 3 days) - ₪15 | Subtotal: ₪15
+
+Bundle offer: All for ₪30.
+Pickup window: Today, 14:00–18:00.
+Contact us at 052-1234567 to confirm.
+
+Looking forward to hearing from you!
+(Saved message for restaurant: פסטה ויה | Pasta Via)
+
+====== Message to soup kitchen ======
+Hi, this is HaSalon in Tel Aviv. We’d like to donate fresh ingredients today for same-day pickup:
+- White wine: 0.95 liters, expires in 3 days
+
+Pickup window: 16:00–18:00. Please contact us at 052-1234567 to coordinate. Thank you!
+(Saved message for soup kitchen: אוכל לנזקקים)
+
+===========================================================================
+
+📊 Checking if feedback agent should run -- asking for feedback only each 10 iterations of the agent...
+ℹ️ Only 4 runs found. Need 10 to activate feedback agent.
+
+✅ Simulation complete.

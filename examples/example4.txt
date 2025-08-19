@@ -1,0 +1,168 @@
+👋 Welcome to FoodFlow!
+You are now simulating operations for 'HaSalon' restaurant in Tel Aviv, owned by chef Eyal Shani.
+Our goal is to make smart, sustainable decisions about what to cook, sell, or donate among expiring ingredients.
+
+For each expiring ingredient, the agent will determine the most suitable action:
+- 🍽️ Cook: A message will be sent to the chef with today’s special based on this ingredient.
+- 🍴 Sell: A message will be sent to a nearby restaurant most likely to purchase it.
+- ❤️ Donate: A pickup will be scheduled with a nearby donation center.
+
+===========================================================================
+
+Press Enter to see the magic happen...
+
+===========================================================================
+
+📦 Current Inventory (excluding expiring):
+- Eggplant: 12 unit
+- Olive oil: 1500 ml
+- Sea salt: 500 grams
+- Parsley: 100 grams
+- Heirloom tomatoes: 10 unit
+- Garlic: 20 cloves
+- Lamb chops: 2 kg
+- Freekeh: 2 kg
+- Shrimp: 2.5 kg
+- Crushed tomato: 1.2 kg
+- Chili: 10 unit
+- White wine: 2 liters
+- Cauliflower: 6 unit
+- Lemon zest: 5 unit
+- Lemon: 10 unit
+- Artichoke: 6 unit
+- Yogurt: 500 grams
+- Rosemary: 50 grams
+- Honey: 300 grams
+- Leeks: 6 stalk
+- Dill: 50 grams
+- Beets: 5 unit
+- Labneh: 500 grams
+- Water: unlimited unit
+- Salt: unlimited unit
+
+⏳ Expiring Ingredients:
+- Duck breast: 0.99 kg (Expires in 3 days)
+- Cream: 1.48 liters (Expires in 2 days)
+- Zucchini: 4.57 unit (Expires in 1 days)
+- Mushrooms: 0.79 kg (Expires in 3 days)
+- Butter: 0.58 kg (Expires in 3 days)
+- Mint: 31.97 grams (Expires in 2 days)
+- Parmesan cheese: 370.3 grams (Expires in 3 days)
+- Basil: 34.24 grams (Expires in 4 days)
+- Black pepper: 234.03 grams (Expires in 2 days)
+- Sea bass: 2.5 fillet (Expires in 1 days)
+
+===========================================================================
+
+🥣 choosing soup kitchen for today...
+
+Best matching soup kitchen:
+Name: עמותת לשובע המסעדה
+Address: Chlenov St 18, Tel Aviv-Yafo
+Distance: 3.15 km
+
+===========================================================================
+
+🧑‍🍳 Running recipe recommendation agent...
+Recipe agent       [██████████████████████████████] 100%
+
+Best matching recipes:
+1. Roasted Duck Breasts with Farro Risotto and Duck Confit
+   Matched expiring ingredients: Duck breast, Zucchini, Mushrooms, Mint
+   Inventory ingredients: none
+   Missing ingredients: none
+   Reason: Roasted Duck Breasts with Farro Risotto and Duck Confit highlights Israeli Mediterranean flavors, utilizing expiring duck breast and mint in a produce-driven, live-fire approach.
+2. Sea Bass with Artichoke Pesto
+   Matched expiring ingredients: Cream, Parmesan cheese, Basil, Sea bass
+   Inventory ingredients: Sea salt, Artichoke
+   Missing ingredients: none
+   Reason: Sea Bass with Artichoke Pesto highlights HaSalon's Mediterranean focus, using expiring cream and Parmesan to enrich fresh, produce-driven flavors over live fire.
+3. Lamb Chops with Freekeh Pilaf and Roasted Beets with Labneh
+   Matched expiring ingredients: none
+   Inventory ingredients: Lamb chops, Freekeh, Beets, Labneh
+   Missing ingredients: none
+   Reason: Lamb chops with freekeh pilaf and roasted beets with labneh embody HaSalon's Israeli Mediterranean ethos, celebrating live fire and fresh, vibrant produce.
+
+===========================================================================
+
+🍽️ Running restaurant recommendation agent...
+
+Best matching restaurants:
+1. פסטה ויה | Pasta Via
+   Matched ingredients: Zucchini, Parmesan cheese, Basil, Butter
+   Reason: Italian restaurant specializing in pasta dishes. Zucchini, Parmesan, basil, and butter are ideal for their cuisine. Very close (0.3km).
+2. Amore Mio
+   Matched ingredients: Duck breast, Cream, Mushrooms, Parmesan cheese
+   Reason: Upscale Italian restaurant likely to use duck, cream, mushrooms, and Parmesan in their dishes. Close proximity (0.3km).
+3. Meatbar
+   Matched ingredients: Duck breast, Sea bass, Black pepper, Butter
+   Reason: High-end restaurant specializing in meat and fish. Duck, sea bass, black pepper, and butter are a great fit. Nearby (0.8km).
+
+===========================================================================
+
+🧠 Running decision agent...
+
+cook-list ingirdients: Cream, Parmesan cheese, Basil, Sea bass
+reason: picked 'Sea Bass with Artichoke Pesto' (rank #2) to convert 4 expiring items into menu value (Cream, Parmesan cheese, Basil) including 1 due ≤1 day ; prioritizes quick-spoil items (e.g., Sea bass).
+sell-list ingirdients: Butter, Mint, Black pepper
+reason: sending 3 items to פסטה ויה | Pasta Via because 3 item(s) have ≥2 days left and their menu matches items like Butter.
+donate-list ingirdients: Duck breast, Zucchini, Mushrooms
+reason: donating 3 item(s) to עמותת לשובע המסעדה because 1 expire ≤1 day.
+
+===========================================================================
+
+🧑‍🍳 Sending selected recipe to kitchen...
+
+================= SEND TO KITCHEN =================
+👨‍🍳  Recipe: Sea Bass with Artichoke Pesto
+---------------------------------------------------
+🧺  Ingredients:
+  • Nonstick cooking spray
+  • 4 (5 to 6-ounce) sea bass filets, about 3/4-inch thick
+  • 1 (12-ounce) jar marinated artichoke hearts
+  • 1/2 cup prepared basil pesto
+  • 1/8 teaspoon red pepper flakes
+  • 2 tablespoons extra-virgin olive oil
+  • Kosher salt and freshly ground black pepper
+---------------------------------------------------
+🧾  Instructions:
+  Preheat the oven to 400 degrees F. Spray a baking dish with cooking spray and set aside.
+  Put the sea bass filets in one layer, skin side up, into the baking dish. Drain the artichoke hearts, pouring the liquid over the fish. Let marinate while you make the pesto.
+  To make the pesto, put the artichoke hearts into the bowl of a food processor. Add the pesto and red pepper flakes and process until chunky. Scrape down the sides of the bowl and start processing again. Drizzle in 1 to 2 tablespoons of the olive oil, adding more as needed until you get the consistency that is thick but pourable. Taste and add salt and pepper if needed. Can be refrigerated for up to 1 week.
+  Bake the sea bass until it is cooked through, 10 to 12 minutes. Spoon about 2 tablespoons of the pesto each onto 4 plates. Place the fish onto the pesto and also top with a generous spoonful of the pesto.
+===================================================
+
+
+===========================================================================
+
+✉️ Preparing outbound messages...
+
+====== Message to restaurant ======
+Hi Pasta Via,
+This is HaSalon – we have high-quality surplus ingredients available today that might be useful for your kitchen.
+
+- **Butter**: 0.58 kg (expires in 3 days) – ₪25/kg → **₪14.50**
+- **Mint**: 31.97 g (expires in 2 days) – ₪80/kg → **₪2.50**
+- **Black Pepper**: 234.03 g (expires in 2 days) – ₪120/kg → **₪28**
+
+**Bundle offer**: Take all for **₪40**!
+Pickup window: Today, 12:00–18:00.
+
+Contact us directly at **052-1234567** to confirm. Looking forward to hearing from you!
+(Saved message for restaurant: פסטה ויה | Pasta Via)
+
+====== Message to soup kitchen ======
+Hi, this is HaSalon in Tel Aviv. We have a same-day donation of fresh ingredients for you:
+- Duck breast: 0.99 kg, expires in 3 days
+- Zucchini: 4.57 units, expires in 1 day
+- Mushrooms: 0.79 kg, expires in 3 days
+
+Pickup is possible today between 14:00–18:00. Please contact us at 052-1234567 to coordinate.
+(Saved message for soup kitchen: עמותת לשובע המסעדה)
+
+===========================================================================
+
+📊 Checking if feedback agent should run -- asking for feedback only each 10 iterations of the agent...
+ℹ️ Only 9 runs found. Need 10 to activate feedback agent.
+
+✅ Simulation complete.

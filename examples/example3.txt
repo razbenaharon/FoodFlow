@@ -1,0 +1,175 @@
+👋 Welcome to FoodFlow!
+You are now simulating operations for 'HaSalon' restaurant in Tel Aviv, owned by chef Eyal Shani.
+Our goal is to make smart, sustainable decisions about what to cook, sell, or donate among expiring ingredients.
+
+For each expiring ingredient, the agent will determine the most suitable action:
+- 🍽️ Cook: A message will be sent to the chef with today’s special based on this ingredient.
+- 🍴 Sell: A message will be sent to a nearby restaurant most likely to purchase it.
+- ❤️ Donate: A pickup will be scheduled with a nearby donation center.
+
+===========================================================================
+
+Press Enter to see the magic happen...
+
+===========================================================================
+
+📦 Current Inventory (excluding expiring):
+- Eggplant: 12 unit
+- Olive oil: 1500 ml
+- Sea salt: 500 grams
+- Parsley: 100 grams
+- Heirloom tomatoes: 10 unit
+- Garlic: 20 cloves
+- Freekeh: 2 kg
+- Mint: 100 grams
+- Crushed tomato: 1.2 kg
+- White wine: 2 liters
+- Butter: 1 kg
+- Cream: 2 liters
+- Lemon zest: 5 unit
+- Lemon: 10 unit
+- Artichoke: 6 unit
+- Zucchini: 8 unit
+- Yogurt: 500 grams
+- Duck breast: 1.5 kg
+- Sea bass: 5 fillet
+- Dill: 50 grams
+- Beets: 5 unit
+- Labneh: 500 grams
+- Parmesan cheese: 500 grams
+- Water: unlimited unit
+- Salt: unlimited unit
+
+⏳ Expiring Ingredients:
+- Chili: 5.52 unit (Expires in 4 days)
+- Black pepper: 184.54 grams (Expires in 3 days)
+- Shrimp: 1.1 kg (Expires in 2 days)
+- Mushrooms: 0.78 kg (Expires in 4 days)
+- Cauliflower: 2.84 unit (Expires in 2 days)
+- Rosemary: 24.22 grams (Expires in 4 days)
+- Leeks: 2.32 stalk (Expires in 1 days)
+- Lamb chops: 1.41 kg (Expires in 2 days)
+- Honey: 137.17 grams (Expires in 2 days)
+- Basil: 38.97 grams (Expires in 2 days)
+
+===========================================================================
+
+🥣 choosing soup kitchen for today...
+
+Best matching soup kitchen:
+Name: בית מעשים טובים
+Address: Zeev Jabotinsky St 106, Ramat Gan
+Distance: 3.25 km
+
+===========================================================================
+
+🧑‍🍳 Running recipe recommendation agent...
+Recipe agent       [██████████████████████████████] 100%
+
+Best matching recipes:
+1. Shrimp Scampi
+   Matched expiring ingredients: Shrimp, Cauliflower
+   Inventory ingredients: Freekeh
+   Missing ingredients: none
+   Reason: Shrimp Scampi, featuring expiring shrimp and cauliflower, aligns with HaSalon's produce-driven Mediterranean ethos and celebrates live fire cooking with bold flavors.
+2. Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus
+   Matched expiring ingredients: Mushrooms, Rosemary, Leeks, Lamb chops, Honey
+   Inventory ingredients: none
+   Missing ingredients: none
+   Reason: Roasted Lamb Chops with Shallots, Tomatoes, and Olive Jus embodies HaSalon's Mediterranean ethos, enhanced by rosemary's aroma and honey's subtle sweetness.
+3. Charred Eggplant & Basil Labneh Spread with Chili Oil
+   Matched expiring ingredients: Chili, Basil
+   Inventory ingredients: Eggplant, Olive oil, Labneh
+   Missing ingredients: none
+   Reason: Charred Eggplant & Basil Labneh Spread with Chili Oil embodies HaSalon's produce-driven Israeli Mediterranean ethos, highlighting expiring basil and chili in vibrant harmony.
+
+===========================================================================
+
+🍽️ Running restaurant recommendation agent...
+
+Best matching restaurants:
+1. Amore Mio
+   Matched ingredients: Basil, Rosemary, Mushrooms
+   Reason: Italian restaurant likely to use basil, rosemary, and mushrooms in their dishes. Very close (0.3km) and a good match for the cuisine.
+2. Meatbar
+   Matched ingredients: Lamb chops, Rosemary, Black pepper
+   Reason: Specializes in meat dishes, making lamb chops, rosemary, and black pepper a perfect fit. Close (0.8km) and highly relevant.
+3. Hummus Eben Gvirol
+   Matched ingredients: Cauliflower, Black pepper, Chili
+   Reason: Middle Eastern restaurant where cauliflower, black pepper, and chili are commonly used. Very close (0.37km) and a good match for the cuisine.
+
+===========================================================================
+
+🧠 Running decision agent...
+
+cook-list ingirdients: Shrimp, Cauliflower
+reason: picked 'Shrimp Scampi' (rank #1) to convert 2 expiring items into menu value (Shrimp, Cauliflower) ; prioritizes quick-spoil items (e.g., Shrimp, Cauliflower).
+sell-list ingirdients: Chili, Mushrooms, Rosemary, Leeks
+reason: sending 4 items to Amore Mio because 3 item(s) have ≥2 days left and their menu matches items like Mushrooms, Rosemary.
+donate-list ingirdients: Black pepper, Lamb chops, Honey, Basil
+reason: donating 4 item(s) to בית מעשים טובים to reduce overstock where market demand is uncertain today.
+
+===========================================================================
+
+🧑‍🍳 Sending selected recipe to kitchen...
+
+================= SEND TO KITCHEN =================
+👨‍🍳  Recipe: Shrimp Scampi
+---------------------------------------------------
+🧺  Ingredients:
+  • 1 cup cauliflower florets
+  • 2 tablespoons grapeseed oil
+  • Salt and pepper
+  • 6 jumbo shrimp (16/20 count), tail-on, peeled and deveined
+  • 1 teaspoon chopped garlic
+  • Pinch chile flakes
+  • 1 teaspoon capers, with brine
+  • 1 ounce chicken stock
+  • 1 tablespoon chopped fresh parsley
+  • 1 tablespoon lemon juice
+  • 1 tablespoon unsalted butter
+---------------------------------------------------
+🧾  Instructions:
+  Preheat the oven to 450 degrees F.
+  Toss the cauliflower florets with 1 tablespoon of the grapeseed oil and some salt and pepper. Transfer to a baking sheet and roast until tender and browned, 5 minutes. Set aside.
+  Heat the remaining 1 tablespoon grapeseed oil in a pan. Add the shrimp and garlic. Then add the chile flakes, capers, chicken stock, parsley and lemon juice. Cook for 3 to 4 minutes to cook the shrimp and build the sauce. Remove from the heat and whisk in the butter to emulsify the sauce.
+  Add the cauliflower to the shrimp.
+===================================================
+
+
+===========================================================================
+
+✉️ Preparing outbound messages...
+
+====== Message to restaurant ======
+Hi Amore Mio, greetings from HaSalon! We have some high-quality surplus ingredients available today at great prices:
+
+- Chili: 5.52 units (expires in 4 days) – ₪2/unit, subtotal ₪11.04
+- Mushrooms: 0.78 kg (expires in 4 days) – ₪15/kg, subtotal ₪11.70
+- Rosemary: 24.22 grams (expires in 4 days) – ₪0.10/gram, subtotal ₪2.42
+- Leeks: 2.32 stalks (expires in 1 day) – ₪3/stalk, subtotal ₪6.96
+
+Bundled offer price: ₪30 for everything.
+Pickup window: Today, 12:00–18:00.
+Contact us at 052-1234567 to confirm.
+
+Looking forward to collaborating!
+(Saved message for restaurant: Amore Mio)
+
+====== Message to soup kitchen ======
+Hi, this is HaSalon in Tel Aviv. We have a same-day donation available for you:
+
+- Black pepper: 184.54 grams, expires in 3 days
+- Lamb chops: 1.41 kg, expires in 2 days
+- Honey: 137.17 grams, expires in 2 days
+- Basil: 38.97 grams, expires in 2 days
+
+Pickup is possible today between 14:00–16:00. Please call us at 052-1234567 to coordinate.
+(Saved message for soup kitchen: בית מעשים טובים)
+
+===========================================================================
+
+📊 Checking if feedback agent should run -- asking for feedback only each 10 iterations of the agent...
+ℹ️ Only 8 runs found. Need 10 to activate feedback agent.
+
+✅ Simulation complete.
