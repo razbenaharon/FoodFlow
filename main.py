@@ -39,7 +39,8 @@ def main():
     print("- 🍴 Sell: A message will be sent to a nearby restaurant most likely to purchase it.")
     print("- ❤️ Donate: A pickup will be scheduled with a nearby donation center.")
 
-    print("\n===========================================================================\n")
+    print("\n=========================================="
+          "=================================\n")
     input("Press Enter to see the magic happen...")
 
     print("\n===========================================================================\n")
