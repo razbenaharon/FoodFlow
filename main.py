@@ -41,11 +41,18 @@ def main():
 
     print("\n=========================================="
           "=================================\n")
-    input("Press Enter to see the magic happen...")
+
+    print("Choose how to prepare expiring ingredients:")
+    print("1. 🎲 Random mode (automatic)")
+    print("2. ✍️ Manual mode (choose yourself)")
+    choice = input("\nEnter 1 or 2: ").strip()
 
     print("\n===========================================================================\n")
 
-    prepare_inventory()
+    if choice == "2":
+        prepare_inventory(mode="manual")
+    else:
+        prepare_inventory(mode="auto")
 
     print("\n===========================================================================\n")
 
