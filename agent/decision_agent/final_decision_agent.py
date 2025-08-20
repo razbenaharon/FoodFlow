@@ -143,56 +143,123 @@ def _format_donation_center(donation_data: Any) -> str:
     return str(donation_data)
 
 
-def _parse_llm_response(response: str) -> Tuple[List[str], List[str], List[str], str, str, str]:
+# def _parse_llm_response(response: str) -> Tuple[List[str], List[str], List[str], str, str, str]:
+#     """
+#     Parse the LLM response to extract the three action lists and targets.
+#     Returns: (sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center)
+#     """
+#     sell_items, cook_items, donate_items = [], [], []
+#     restaurant_name, recipe_title, donation_center = "", "", ""
+#
+#     lines = response.strip().split('\n')
+#
+#     for line in lines:
+#         line = line.strip()
+#         if not line:
+#             continue
+#
+#         # Parse selling line
+#         if line.lower().startswith('selling to'):
+#             # Extract restaurant name and items
+#             match = re.match(r'selling to ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
+#             if match:
+#                 restaurant_name = match.group(1).strip()
+#                 items_str = match.group(2).strip()
+#                 if items_str:
+#                     sell_items = [item.strip() for item in items_str.split(',') if item.strip()]
+#
+#         # Parse cooking line
+#         elif line.lower().startswith('cook recipe'):
+#             match = re.match(r'cook recipe ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
+#             if match:
+#                 recipe_title = match.group(1).strip()
+#                 items_str = match.group(2).strip()
+#                 if items_str:
+#                     cook_items = [item.strip() for item in items_str.split(',') if item.strip()]
+#
+#         # Parse donation line
+#         elif line.lower().startswith('donate to'):
+#             match = re.match(r'donate to ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
+#             if match:
+#                 donation_center = match.group(1).strip()
+#                 items_str = match.group(2).strip()
+#                 if items_str:
+#                     donate_items = [item.strip() for item in items_str.split(',') if item.strip()]
+#
+#     return sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center
+
+def _parse_llm_response(response: str) -> Tuple[
+    List[str], List[str], List[str],
+    str, str, str,
+    Optional[str], Optional[str], Optional[str]
+]:
     """
-    Parse the LLM response to extract the three action lists and targets.
-    Returns: (sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center)
+    Parse the LLM response to extract the three action lists and their reasons.
+    Returns:
+    - sell_items, cook_items, donate_items
+    - restaurant_name, recipe_title, donation_center
+    - reason_cook, reason_sell, reason_donate
     """
     sell_items, cook_items, donate_items = [], [], []
     restaurant_name, recipe_title, donation_center = "", "", ""
+    reason_cook, reason_sell, reason_donate = None, None, None
 
     lines = response.strip().split('\n')
+    last_action = None
 
     for line in lines:
         line = line.strip()
         if not line:
             continue
 
-        # Parse selling line
+        # Match actions
         if line.lower().startswith('selling to'):
-            # Extract restaurant name and items
+            last_action = "SELL"
             match = re.match(r'selling to ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
             if match:
                 restaurant_name = match.group(1).strip()
                 items_str = match.group(2).strip()
                 if items_str:
                     sell_items = [item.strip() for item in items_str.split(',') if item.strip()]
-
-        # Parse cooking line
         elif line.lower().startswith('cook recipe'):
+            last_action = "COOK"
             match = re.match(r'cook recipe ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
             if match:
                 recipe_title = match.group(1).strip()
                 items_str = match.group(2).strip()
                 if items_str:
                     cook_items = [item.strip() for item in items_str.split(',') if item.strip()]
-
-        # Parse donation line
         elif line.lower().startswith('donate to'):
+            last_action = "DONATE"
             match = re.match(r'donate to ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
             if match:
                 donation_center = match.group(1).strip()
                 items_str = match.group(2).strip()
                 if items_str:
                     donate_items = [item.strip() for item in items_str.split(',') if item.strip()]
+        elif line.lower().startswith('reason:'):
+            reason_text = line[len("reason:"):].strip()
+            if last_action == "COOK":
+                reason_cook = reason_text
+            elif last_action == "SELL":
+                reason_sell = reason_text
+            elif last_action == "DONATE":
+                reason_donate = reason_text
 
-    return sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center
+    return (
+        sell_items, cook_items, donate_items,
+        restaurant_name, recipe_title, donation_center,
+        reason_cook, reason_sell, reason_donate
+    )
 
-
-def _create_decision_output(sell_items: List[str], cook_items: List[str], donate_items: List[str],
-                            restaurant_name: str, recipe_title: str, donation_center: str,
-                            recipes_data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def _create_decision_output(
+    sell_items: List[str], cook_items: List[str], donate_items: List[str],
+    restaurant_name: str, recipe_title: str, donation_center: str,
+    recipes_data: List[Dict[str, Any]],
+    reason_cook: Optional[str], reason_sell: Optional[str], reason_donate: Optional[str]
+) -> List[Dict[str, Any]]:
     """Create the structured decision output."""
+
     decisions = []
 
     # Try to find the real retrieved title
@@ -213,7 +280,7 @@ def _create_decision_output(sell_items: List[str], cook_items: List[str], donate
         decisions.append({
             "item": item,
             "action": "COOK",
-            "reason": f"Used in selected recipe '{recipe_title}'",
+            "reason": reason_cook or f"Used in selected recipe '{recipe_title}'",
             "target_recipes": [recipe_title, retrieved_title],
         })
 
@@ -222,7 +289,7 @@ def _create_decision_output(sell_items: List[str], cook_items: List[str], donate
         decisions.append({
             "item": item,
             "action": "SELL",
-            "reason": f"Market demand and good shelf life for {restaurant_name}",
+            "reason": reason_sell or f"Market demand and good shelf life for {restaurant_name}",
             "target_restaurants": [restaurant_name],
         })
 
@@ -231,7 +298,7 @@ def _create_decision_output(sell_items: List[str], cook_items: List[str], donate
         decisions.append({
             "item": item,
             "action": "DONATE",
-            "reason": "Better suited for community benefit",
+            "reason": reason_donate or "Better suited for community benefit",
             "donation_center": donation_center,
         })
 
@@ -292,14 +359,18 @@ Please provide your decision in the exact format specified above."""
         raise
 
     # --- 6. Parse LLM response ---
-    sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center = _parse_llm_response(
-        raw_response)
+    (
+        sell_items, cook_items, donate_items,
+        restaurant_name, recipe_title, donation_center,
+        reason_cook, reason_sell, reason_donate
+    ) = _parse_llm_response(raw_response)
 
     # --- 7. Create structured output ---
     decisions = _create_decision_output(
         sell_items, cook_items, donate_items,
         restaurant_name, recipe_title, donation_center,
-        recipes_data  # ← pass it in
+        recipes_data,
+        reason_cook, reason_sell, reason_donate
     )
 
     # --- 8. Save to file ---
@@ -312,14 +383,20 @@ Please provide your decision in the exact format specified above."""
     print(f"COOK   ({len(cook_items)} items): ", ", ".join(cook_items) if cook_items else "none")
     if recipe_title:
         print(f"  ↳ Recipe: {recipe_title}")
+    if reason_cook:
+        print(f"  🧾 Reason (COOK): {reason_cook}")
 
     print(f"SELL   ({len(sell_items)} items): ", ", ".join(sell_items) if sell_items else "none")
     if restaurant_name:
         print(f"  ↳ Restaurant: {restaurant_name}")
+    if reason_sell:
+        print(f"  🧾 Reason (SELL): {reason_sell}")
 
     print(f"DONATE ({len(donate_items)} items): ", ", ".join(donate_items) if donate_items else "none")
     if donation_center:
         print(f"  ↳ Donation Center: {donation_center}")
+    if reason_donate:
+        print(f"  🧾 Reason (DONATE): {reason_donate}")
     print("----------------------------")
 
     print(f"\nLLM Raw Response:\n{raw_response}")

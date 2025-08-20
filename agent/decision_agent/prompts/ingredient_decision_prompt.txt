@@ -22,11 +22,22 @@ Core rules
 7) Keep reasons short, one clause per decision, plain ASCII only.
 
 Output format
-Return exactly three lines, ASCII only, with a colon after the label and a bracketed, comma separated list of ingredient names. Include only expiring items.
+Return exactly six lines, ASCII only:
+- Three decision lines
+- Three reason lines, each immediately following its corresponding decision
 
-selling to <restaurant-name>: [item1, item2, item3]
-cook recipe <recipe-title>: [item1, item2]
-donate to <donation-centre-name>: [item1]
+Each decision line has a colon after the label and a bracketed, comma-separated list of ingredient names. Include only expiring items.
+
+Format:
+
+selling to <restaurant-name>: [item1, item2]
+reason: short reason for sell choice
+
+cook recipe <recipe-title>: [item1]
+reason: short reason for recipe choice
+
+donate to <donation-centre-name>: [item1, item2]
+reason: short reason for donate choice
 
 Additional guidance
 - Normalize obvious synonyms and casing when matching names, but do not merge distinct items incorrectly. Example, "sea salt" and "salt" are distinct unless the input uses one consistently.
@@ -34,3 +45,4 @@ Additional guidance
 - If a list is empty, leave empty brackets.
 - Do not include quantities, dates, or units in the output lists, only the ingredient names.
 - Never use the en dash character. Use a colon and commas as shown above.
+- Keep each reason to a single clause. Do not write explanations or justifications. Just explain *why* the action was selected, simply and briefly.
