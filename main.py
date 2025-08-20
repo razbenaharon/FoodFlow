@@ -2,7 +2,7 @@ from pathlib import Path
 from agent.decision_agent.final_decision_agent import decide_actions
 from agent.restaurant_agent.find_restaurant import run_find_restaurant
 from agent.soup_kitchen_finder.find_soup_kitchen import find_best_open_soup_kitchen
-from agent.recipie_agent.recipe_agent import run_find_recipes
+from agent.recipe_agent.recipe_agent import run_find_recipes
 from utils.prepare_inventory import prepare_inventory
 from agent.execution_agent.send_recipie_to_kitchen import main as send_recipe_to_kitchen
 from agent.execution_agent.send_message import send_message

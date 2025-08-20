@@ -1,0 +1,48 @@
+[
+  {
+    "rank": 1,
+    "title": "Roasted Eggplant",
+    "matched_expiring": [
+      "Labneh",
+      "Chili"
+    ],
+    "inventory": [
+      "Eggplant",
+      "Olive oil"
+    ],
+    "missing": [],
+    "reason": "Roasted Eggplant, paired with labneh and chili, embodies HaSalon's Israeli Mediterranean ethos, celebrating produce-driven simplicity and bold, fire-kissed flavors.",
+    "restaurant": "HaSalon",
+    "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
+  },
+  {
+    "rank": 2,
+    "title": "Sturgeon Fillets Served with a Fig and Corn Cream, a Licorice Flavored Crustacean Broth, and Stuffed Artichokes",
+    "matched_expiring": [
+      "White wine",
+      "Rosemary"
+    ],
+    "inventory": [],
+    "missing": [],
+    "reason": "This dish embodies HaSalon's Mediterranean ethos with fresh produce and live fire, enhanced by rosemary and white wine's aromatic depth.",
+    "restaurant": "HaSalon",
+    "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
+  },
+  {
+    "rank": 3,
+    "title": "Smoked Fish with Cucumber \"Noodles\"",
+    "matched_expiring": [
+      "Yogurt",
+      "Beets"
+    ],
+    "inventory": [
+      "Sea salt",
+      "Sea bass",
+      "Dill"
+    ],
+    "missing": [],
+    "reason": "Smoked Fish with Cucumber \"Noodles,\" paired with tangy yogurt and earthy beets, highlights HaSalon's Mediterranean ethos and produce-driven creativity.",
+    "restaurant": "HaSalon",
+    "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
+  }
+]

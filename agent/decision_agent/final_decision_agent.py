@@ -1,416 +1,322 @@
 # final_decision_agent.py
-# Final Decision Agent (single target recipe, human-ish randomness) — with rich reasons
+# Final Decision Agent - LLM-based decision making
 # -----------------------------------------------------------------------------
-# Picks exactly ONE recipe using results/recipes/best_matching_recipes.json.
-# Assigns every expiring ingredient to COOK or SELL or DONATE.
-# Adds human-readable reasons per group that explain *why*, not just "not used".
+# This agent uses an LLM to make the final decisions about ingredient actions.
+# It loads the required data files and sends them to the LLM with the prompt
+# template to get COOK, SELL, and DONATE decisions.
 
 from __future__ import annotations
 
 import json
-import math
 import os
-import random
 import re
 import unicodedata
 from pathlib import Path
 from typing import Dict, List, Set, Tuple, Any, Optional
 
-# ── Paths
-PROJECT_ROOT   = Path(__file__).resolve().parents[2]
-RESULTS_DIR    = PROJECT_ROOT / "results"
-RECIPES_DIR    = RESULTS_DIR / "recipes"
+# Import the LLM chat utility (same as used in find_restaurant.py)
+from utils.chat_and_embedding import LLMChat
+from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, \
+    PromptTemplate
+from langchain_core.messages import HumanMessage  # ✅ Use LangChain message type
 
-BEST_RECIPES_FILE       = RECIPES_DIR / "best_matching_recipes.json"
-EXPIRING_FILE           = PROJECT_ROOT / "data" / "expiring_ingredients.json"
-TOP_RESTAURANTS_FILE    = RESULTS_DIR / "top_restaurants.json"
-DONATION_FILE           = RESULTS_DIR / "best_soup_kitchen.json"
-REPLY_TABLE_FILE        = RESULTS_DIR / "learning" / "top_restaurants_by_reply.json"
+# ── Paths ────────────────────────────────────────────────────────────────────
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+RESULTS_DIR = PROJECT_ROOT / "results"
+RECIPES_DIR = RESULTS_DIR / "recipes"
 
+# Input files
+BEST_RECIPES_FILE = RECIPES_DIR / "best_matching_recipes.json"
+EXPIRING_FILE = PROJECT_ROOT / "data" / "expiring_ingredients.json"
+TOP_RESTAURANTS_FILE = RESULTS_DIR / "top_restaurants.json"
+DONATION_FILE = RESULTS_DIR / "best_soup_kitchen.json"
+PROMPT_FILE = Path(__file__).parent / "prompts" / "ingredient_decision_prompt.txt"
+
+# Output file
 OUTPUT_FILE = RESULTS_DIR / "final_decision_output.json"
 
-# ── Behavior knobs (tweak to taste or via env)
-HUMAN_TEMPERATURE  = float(os.getenv("FOODFLOW_TEMPERATURE", "0.9"))  # 0.3=greedy, 1.2=wilder
-SEED_ENV           = os.getenv("FOODFLOW_SEED")  # set to a number for reproducibility
-LEFTOVER_SELL_PROB = float(os.getenv("FOODFLOW_SELL_PROB", "0.7"))    # with a SELL target
 
-# ── Random instance (optionally seeded)
-_rng = random.Random()
-if SEED_ENV is not None:
-    try:
-        _rng.seed(int(SEED_ENV))
-    except Exception:
-        _rng.seed(SEED_ENV)
-
-# ── Helpers
-def _norm(s: str) -> str:
-    s = unicodedata.normalize('NFKD', s or "").encode('ascii', 'ignore').decode('ascii')
-    return re.sub(r'\s+', ' ', s.lower()).strip()
-
-def _canonicalize_list(values: List[str]) -> List[str]:
-    seen: Set[str] = set()
-    out: List[str] = []
-    for v in values:
-        if not isinstance(v, str):
-            continue
-        key = _norm(v)
-        if key and key not in seen:
-            seen.add(key)
-            out.append(v.strip())
-    return out
-
+# ── Helpers ──────────────────────────────────────────────────────────────────
 def _load_json(path: Path) -> Any:
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
-
-def _safe_get_days(meta_row: Dict[str, Any]) -> Optional[float]:
-    d = meta_row.get("days_to_expire")
+    """Safely loads a JSON file with UTF-8 encoding."""
     try:
-        return float(d) if d is not None else None
-    except Exception:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Warning: Could not load {path}: {e}")
         return None
 
-def _expiring_universe() -> Tuple[List[str], Dict[str, str]]:
-    """Universe of expiring items and norm->canonical map from expiring_ingredients.json only."""
-    universe: List[str] = []
-    if EXPIRING_FILE.exists():
-        raw = _load_json(EXPIRING_FILE)
-        for row in raw:
-            nm = (row.get("item") if isinstance(row, dict) else None) or (row.get("name") if isinstance(row, dict) else None)
-            if not nm and isinstance(row, str):
-                nm = row
-            if isinstance(nm, str) and nm.strip():
-                universe.append(nm.strip())
-    universe = _canonicalize_list(universe)
-    canon_by_norm = {_norm(x): x for x in universe}
-    return universe, canon_by_norm
 
-def _expiring_meta_map() -> Dict[str, Dict[str, Any]]:
-    """norm(name) -> {days_to_expire, quantity, unit} for reasoning."""
-    meta: Dict[str, Dict[str, Any]] = {}
-    if not EXPIRING_FILE.exists(): return meta
-    for row in _load_json(EXPIRING_FILE):
-        if not isinstance(row, dict): continue
-        nm = (row.get("item") or row.get("name") or "").strip()
-        if not nm: continue
-        meta[_norm(nm)] = {
-            "days_to_expire": row.get("days_to_expire") or row.get("days") or row.get("expires_in_days"),
-            "quantity": row.get("quantity"),
-            "unit": row.get("unit"),
-        }
-    return meta
-
-# --- Light knowledge to craft better reasons ---
-COOK_PRIORITY = {
-    # spoils fast or benefits from cooking now
-    "mushrooms", "duck breast", "shrimp", "sea bass", "eggplant", "zucchini", "cauliflower", "white wine",
-}
-SELL_MARKETABLE = {
-    # common cross-restaurant staples
-    "artichoke", "lemon zest", "rosemary", "parsley", "mint", "cream", "butter",
-    "crushed tomato", "white wine", "zucchini", "cauliflower", "lamb chops",
-}
-DONATE_FRIENDLY = {
-    # good for community kitchens when near expiry (assuming safe handling)
-    "yogurt", "labneh", "bread", "beets", "leeks", "cabbage",
-}
-
-def _softmax_sample(weights: List[float], temperature: float, rng: random.Random) -> int:
-    if temperature <= 0:
-        return max(range(len(weights)), key=lambda i: weights[i])
-    scaled = [w / temperature for w in weights]
-    m = max(scaled) if scaled else 0.0
-    exps = [math.exp(x - m) for x in scaled]
-    s = sum(exps) or 1.0
-    probs = [x / s for x in exps]
-    r = rng.random()
-    cum = 0.0
-    for i, p in enumerate(probs):
-        cum += p
-        if r <= cum:
-            return i
-    return len(probs) - 1
-
-def _select_one_recipe(best: List[Dict[str, Any]], expiring_norms: Set[str],
-                       rng: random.Random, temperature: float) -> Optional[Dict[str, Any]]:
-    """Score = 0.75*coverage + 0.25*rank_norm + noise; sample via softmax(T)."""
-    if not best: return None
-    coverages, ranks = [], []
-    for rec in best:
-        cov = {_norm(x) for x in (rec.get("matched_expiring") or []) if isinstance(x, str)}
-        coverages.append(len(expiring_norms & cov))
-        ranks.append(int(rec.get("rank", 9999)))
-    max_cov = max(coverages) if coverages else 1
-    max_rank = max(ranks) if ranks else 1
-    max_cov = max(1, max_cov); max_rank = max(1, max_rank)
-
-    weights = []
-    for cov, rk in zip(coverages, ranks):
-        cov_norm = cov / max_cov
-        rank_norm = 1.0 - (rk - 1) / (max_rank - 1) if max_rank > 1 else 1.0
-        base = 0.75 * cov_norm + 0.25 * rank_norm
-        weights.append(base + rng.uniform(-0.05, 0.05))
-    idx = _softmax_sample(weights, temperature=temperature, rng=rng)
-    return best[idx] if 0 <= idx < len(best) else None
-
-def _pick_targets_and_reply_prob() -> Tuple[Optional[Dict[str, Any]], Optional[str], Optional[float]]:
+def _load_prompt_template() -> str:
+    """Load the prompt template from the prompts directory.
+    Raises FileNotFoundError if the file is missing.
     """
-    Returns:
-      (sell_top_entry, sell_target_name, reply_prob_if_known)
-      sell_top_entry is the first object from top_restaurants.json (may hold matched_ingredients, reason, expected_reply_prob)
-    """
-    sell_entry = None
-    sell_name, reply_prob = None, None
+    with open(PROMPT_FILE, encoding="utf-8") as f:
+        return f.read()
 
-    if TOP_RESTAURANTS_FILE.exists():
-        try:
-            top = _load_json(TOP_RESTAURANTS_FILE)
-            if isinstance(top, list) and top:
-                sell_entry = top[0]
-            elif isinstance(top, dict):
-                for key in ["restaurants", "top", "results", "items", "matches"]:
-                    arr = top.get(key)
-                    if isinstance(arr, list) and arr:
-                        sell_entry = arr[0]; break
-                if not sell_entry:
-                    sell_entry = top
-        except Exception:
-            sell_entry = None
 
-    if isinstance(sell_entry, dict):
-        sell_name = (sell_entry.get("name") or sell_entry.get("title") or "").strip() or None
-        # use embedded expected_reply_prob if present
-        rp = sell_entry.get("expected_reply_prob")
-        try:
-            reply_prob = float(rp) if rp is not None else None
-        except Exception:
-            reply_prob = None
+def _format_expiring_ingredients(expiring_data: Any) -> str:
+    """Format expiring ingredients data for the prompt."""
+    if not expiring_data:
+        return "No expiring ingredients found."
 
-    # overwrite with learned table if available (source of truth)
-    if sell_name and REPLY_TABLE_FILE.exists():
-        try:
-            table = _load_json(REPLY_TABLE_FILE)
-            by = {(_norm(r.get("name",""))): r for r in table if isinstance(r, dict)}
-            row = by.get(_norm(sell_name))
-            if row and "expected_reply_prob" in row:
-                reply_prob = float(row["expected_reply_prob"])
-        except Exception:
-            pass
+    if not isinstance(expiring_data, list):
+        return str(expiring_data)
 
-    return sell_entry, sell_name, reply_prob
+    formatted = []
+    for item in expiring_data:
+        if isinstance(item, dict):
+            name = item.get("item") or item.get("name", "Unknown")
+            quantity = item.get("quantity", "")
+            unit = item.get("unit", "")
+            days = item.get("days_to_expire") or item.get("days") or item.get("expires_in_days", "Unknown")
+            formatted.append(f"- {name}: {quantity} {unit}, expires in {days} days")
+        elif isinstance(item, str):
+            formatted.append(f"- {item}")
 
-def _build_decisions_single_recipe(
-    expiring_universe: List[str],
-    canon_by_norm: Dict[str, str],
-    selected: Optional[Dict[str, Any]],
-    sell_target: Optional[str],
-    donate_target: Optional[str],
-    rng: random.Random,
-) -> List[Dict[str, Any]]:
-    """Per-ingredient decisions with a SINGLE selected recipe."""
-    selected_title = (selected or {}).get("title", "").strip() if selected else ""
-    selected_norms = {_norm(x) for x in ((selected or {}).get("matched_expiring") or []) if isinstance(x, str)}
-    expiring_norms = {_norm(x) for x in expiring_universe}
-    selected_norms &= expiring_norms  # only cook things truly expiring
+    return "\n".join(formatted)
 
-    decisions: List[Dict[str, Any]] = []
-    for item in expiring_universe:
-        k = _norm(item)
-        if selected and k in selected_norms:
-            decisions.append({
-                "item": canon_by_norm.get(k, item),
-                "action": "COOK",
-                "reason": f"Used in selected recipe '{selected_title}'.",
-                "target_recipes": [selected_title],
-            })
+
+def _format_recipes(recipes_data: Any) -> str:
+    """Format recipe data for the prompt."""
+    if not recipes_data:
+        return "No recipes found."
+
+    if not isinstance(recipes_data, list):
+        return str(recipes_data)
+
+    formatted = []
+    for i, recipe in enumerate(recipes_data[:5]):  # Limit to top 5 recipes
+        if isinstance(recipe, dict):
+            title = recipe.get("title", f"Recipe {i + 1}")
+            rank = recipe.get("rank", "Unknown")
+            matched = recipe.get("matched_expiring", [])
+            instructions = recipe.get("instructions", "No instructions")
+
+            formatted.append(f"Recipe {rank}: {title}")
+            formatted.append(f"  Matched expiring ingredients: {', '.join(matched) if matched else 'None'}")
+            formatted.append(f"  Instructions: {instructions[:200]}{'...' if len(instructions) > 200 else ''}")
+            formatted.append("")
+
+    return "\n".join(formatted)
+
+
+def _format_restaurants(restaurants_data: Any) -> str:
+    """Format restaurant data for the prompt."""
+    if not restaurants_data:
+        return "No restaurants found."
+
+    if isinstance(restaurants_data, dict):
+        # Handle single restaurant or dict with restaurants list
+        if "name" in restaurants_data:
+            name = restaurants_data.get("name", "Unknown Restaurant")
+            matched = restaurants_data.get("matched_ingredients", [])
+            return f"- {name}\n  Interested in: {', '.join(matched) if matched else 'Various ingredients'}"
         else:
-            # human-ish leftover choice for expiring items only
-            if sell_target and rng.random() < LEFTOVER_SELL_PROB:
-                decisions.append({
-                    "item": canon_by_norm.get(k, item),
-                    "action": "SELL",
-                    "reason": f"Better matched to {sell_target}'s menu and demand window.",
-                    "target_restaurants": [sell_target],
-                })
-            else:
-                decisions.append({
-                    "item": canon_by_norm.get(k, item),
-                    "action": "DONATE",
-                    "reason": "Short shelf-life / lower marketability today; donation reduces waste.",
-                    "donation_center": donate_target or "Local soup kitchen",
-                })
+            # Check for nested restaurant data
+            for key in ["restaurants", "top", "results", "items", "matches"]:
+                if key in restaurants_data and isinstance(restaurants_data[key], list):
+                    restaurants_data = restaurants_data[key]
+                    break
+
+    if isinstance(restaurants_data, list):
+        formatted = []
+        for restaurant in restaurants_data[:3]:  # Limit to top 3
+            if isinstance(restaurant, dict):
+                name = restaurant.get("name", "Unknown Restaurant")
+                matched = restaurant.get("matched_ingredients", [])
+                formatted.append(f"- {name}")
+                formatted.append(f"  Interested in: {', '.join(matched) if matched else 'Various ingredients'}")
+        return "\n".join(formatted)
+
+    return str(restaurants_data)
+
+
+def _format_donation_center(donation_data: Any) -> str:
+    """Format donation center data for the prompt."""
+    if not donation_data:
+        return "Local Soup Kitchen"
+
+    if isinstance(donation_data, dict):
+        return donation_data.get("name", "Local Soup Kitchen")
+
+    return str(donation_data)
+
+
+def _parse_llm_response(response: str) -> Tuple[List[str], List[str], List[str], str, str, str]:
+    """
+    Parse the LLM response to extract the three action lists and targets.
+    Returns: (sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center)
+    """
+    sell_items, cook_items, donate_items = [], [], []
+    restaurant_name, recipe_title, donation_center = "", "", ""
+
+    lines = response.strip().split('\n')
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+
+        # Parse selling line
+        if line.lower().startswith('selling to'):
+            # Extract restaurant name and items
+            match = re.match(r'selling to ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
+            if match:
+                restaurant_name = match.group(1).strip()
+                items_str = match.group(2).strip()
+                if items_str:
+                    sell_items = [item.strip() for item in items_str.split(',') if item.strip()]
+
+        # Parse cooking line
+        elif line.lower().startswith('cook recipe'):
+            match = re.match(r'cook recipe ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
+            if match:
+                recipe_title = match.group(1).strip()
+                items_str = match.group(2).strip()
+                if items_str:
+                    cook_items = [item.strip() for item in items_str.split(',') if item.strip()]
+
+        # Parse donation line
+        elif line.lower().startswith('donate to'):
+            match = re.match(r'donate to ([^:]+):\s*\[(.*?)\]', line, re.IGNORECASE)
+            if match:
+                donation_center = match.group(1).strip()
+                items_str = match.group(2).strip()
+                if items_str:
+                    donate_items = [item.strip() for item in items_str.split(',') if item.strip()]
+
+    return sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center
+
+
+def _create_decision_output(sell_items: List[str], cook_items: List[str], donate_items: List[str],
+                            restaurant_name: str, recipe_title: str, donation_center: str) -> List[Dict[str, Any]]:
+    """Create the structured decision output."""
+    decisions = []
+
+    # Add COOK decisions
+    for item in cook_items:
+        decisions.append({
+            "item": item,
+            "action": "COOK",
+            "reason": f"Used in selected recipe '{recipe_title}'",
+            "target_recipes": [recipe_title],
+        })
+
+    # Add SELL decisions
+    for item in sell_items:
+        decisions.append({
+            "item": item,
+            "action": "SELL",
+            "reason": f"Market demand and good shelf life for {restaurant_name}",
+            "target_restaurants": [restaurant_name],
+        })
+
+    # Add DONATE decisions
+    for item in donate_items:
+        decisions.append({
+            "item": item,
+            "action": "DONATE",
+            "reason": "Better suited for community benefit",
+            "donation_center": donation_center,
+        })
+
     return decisions
 
-# —— Group reason builders (richer, multi-signal) ————————————————
 
-def _split_by_days(items: List[str], meta: Dict[str, Dict[str, Any]]) -> Tuple[List[str], List[str], List[str]]:
-    """Return (<=1 day, 2–3 days, >3 days) lists by canonical item name."""
-    soon, mid, long = [], [], []
-    for it in items:
-        d = _safe_get_days(meta.get(_norm(it), {}))
-        if d is None:
-            mid.append(it)  # treat unknown as mid to avoid extreme choices
-        elif d <= 1:
-            soon.append(it)
-        elif d <= 3:
-            mid.append(it)
-        else:
-            long.append(it)
-    return soon, mid, long
-
-def _pick_examples(items: List[str], n: int = 3) -> List[str]:
-    return items[:n]
-
-def _intersect_with_sell_matches(sell_items: List[str], sell_entry: Optional[Dict[str, Any]]) -> List[str]:
-    """Return items that the sell target explicitly matched (if the file contains 'matched_ingredients')."""
-    if not sell_entry: return []
-    matched = set(_norm(x) for x in (sell_entry.get("matched_ingredients") or []) if isinstance(x, str))
-    out = []
-    for it in sell_items:
-        if _norm(it) in matched:
-            out.append(it)
-    return out
-
-def _group_reason_cook(selected: Optional[Dict[str, Any]], cook_items: List[str], meta: Dict[str, Dict[str, Any]]) -> str:
-    if not selected:
-        return "No recipe selected; nothing to cook."
-    title = (selected.get("title") or "").strip()
-    rank  = selected.get("rank")
-    soon, mid, long = _split_by_days(cook_items, meta)
-    high_risk_hits = [it for it in cook_items if _norm(it) in COOK_PRIORITY]
-    used_preview = ", ".join(_pick_examples(cook_items, 3)) if cook_items else "none"
-    bits = [f"picked '{title}'"]
-    if isinstance(rank, int):
-        bits.append(f"(rank #{rank})")
-    if cook_items:
-        bits.append(f"to convert {len(cook_items)} expiring items into menu value ({used_preview})")
-    if soon:
-        bits.append(f"including {len(soon)} due ≤1 day")
-    if high_risk_hits:
-        bits.append(f"; prioritizes quick-spoil items (e.g., {', '.join(_pick_examples(high_risk_hits, 2))})")
-    return " ".join(bits) + "."
-
-def _group_reason_sell(
-    sell_items: List[str],
-    sell_target: Optional[str],
-    sell_entry: Optional[Dict[str, Any]],
-    reply_prob: Optional[float],
-    meta: Dict[str, Dict[str, Any]],
-) -> str:
-    if not sell_items:
-        return "No items selected to sell."
-    soon, mid, long = _split_by_days(sell_items, meta)
-    menu_overlap = _intersect_with_sell_matches(sell_items, sell_entry)
-    marketables = [it for it in sell_items if _norm(it) in SELL_MARKETABLE]
-
-    tgt = sell_target or "the top nearby restaurant"
-    bits = [f"sending {len(sell_items)} items to {tgt}"]
-
-    # why sell vs cook/donate:
-    if long or mid:
-        bits.append(f"because {len(mid)+len(long)} item(s) have ≥2 days left")
-    if menu_overlap:
-        bits.append(f"and their menu matches items like {', '.join(_pick_examples(menu_overlap, 3))}")
-    elif marketables:
-        bits.append(f"and they commonly use staples like {', '.join(_pick_examples(marketables, 3))}")
-    if reply_prob is not None:
-        bits.append(f"(expected reply ≈ {reply_prob:.2f})")
-    if soon and not mid and not long:
-        bits.append("— only a few are close to expiry, still saleable today")
-
-    return " ".join(bits) + "."
-
-def _group_reason_donate(
-    donate_items: List[str],
-    donate_target: Optional[str],
-    meta: Dict[str, Dict[str, Any]],
-) -> str:
-    if not donate_items:
-        return "No items selected to donate."
-    soon, mid, long = _split_by_days(donate_items, meta)
-    donor_pref = [it for it in donate_items if _norm(it) in DONATE_FRIENDLY]
-
-    tgt = donate_target or "a local soup kitchen"
-    bits = [f"donating {len(donate_items)} item(s) to {tgt}"]
-
-    # why donate vs sell:
-    if soon:
-        bits.append(f"because {len(soon)} expire ≤1 day")
-    if donor_pref:
-        bits.append(f"and items are serviceable for bulk/meal-prep (e.g., {', '.join(_pick_examples(donor_pref, 2))})")
-    if mid and not soon:
-        bits.append("to reduce overstock where market demand is uncertain today")
-
-    return " ".join(bits) + "."
-
-# ── Public API
+# ── Public API ───────────────────────────────────────────────────────────────
 def decide_actions() -> List[Dict[str, Any]]:
-    """
-    Entry point used by main.py:
-      from agent.decision_agent.final_decision_agent import decide_actions
-      decide_actions()
-    """
-    if not BEST_RECIPES_FILE.exists():
-        raise FileNotFoundError(f"Missing {BEST_RECIPES_FILE}. Run the recipe agent first.")
 
-    best = _load_json(BEST_RECIPES_FILE)
-    if not isinstance(best, list) or not best:
-        raise ValueError("best_matching_recipes.json must be a non-empty list of recipes.")
 
-    best_sorted = sorted(best, key=lambda r: int(r.get("rank", 9999)))
-    expiring_list, canon_by_norm = _expiring_universe()
-    expiring_norms = {_norm(x) for x in expiring_list}
+    expiring_data = _load_json(EXPIRING_FILE)
+    recipes_data = _load_json(BEST_RECIPES_FILE)
+    restaurants_data = _load_json(TOP_RESTAURANTS_FILE)
+    donation_data = _load_json(DONATION_FILE)
 
-    # Choose exactly ONE recipe via softmax sampling
-    selected = _select_one_recipe(best_sorted, expiring_norms, rng=_rng, temperature=HUMAN_TEMPERATURE)
+    if not expiring_data:
+        raise FileNotFoundError(f"Missing or invalid {EXPIRING_FILE}")
+    if not recipes_data:
+        raise FileNotFoundError(f"Missing or invalid {BEST_RECIPES_FILE}")
 
-    # Targets & reply-prob for SELL
-    sell_entry, sell_target, reply_prob = _pick_targets_and_reply_prob()
-    donate_target = None
-    if DONATION_FILE.exists():
-        try:
-            d = _load_json(DONATION_FILE)
-            donate_target = (d.get("name") or "").strip() or None
-        except Exception:
-            donate_target = None
+    # --- 2. Load prompt template ---
+    prompt_template = _load_prompt_template()
 
-    # Per-ingredient decisions
-    decisions = _build_decisions_single_recipe(
-        expiring_universe=expiring_list,
-        canon_by_norm=canon_by_norm,
-        selected=selected,
-        sell_target=sell_target,
-        donate_target=donate_target,
-        rng=_rng,
-    )
+    # --- 3. Format data for the prompt ---
 
-    # Save per-ingredient decisions
+    formatted_expiring = _format_expiring_ingredients(expiring_data)
+    formatted_recipes = _format_recipes(recipes_data)
+    formatted_restaurants = _format_restaurants(restaurants_data)
+    formatted_donation = _format_donation_center(donation_data)
+
+    # --- 4. Create the complete prompt ---
+    full_prompt = f"""{prompt_template}
+
+Expiring ingredients:
+{formatted_expiring}
+
+Retrieved recipes:
+{formatted_recipes}
+
+Top restaurants:
+{formatted_restaurants}
+
+Donation centre:
+{formatted_donation}
+
+Please provide your decision in the exact format specified above."""
+
+    # --- 5. Send to LLM ---
+    print("Sending request to LLM...")
+
+    try:
+        chat = LLMChat()
+        # ✅ Pass LangChain-native message object
+        raw_response = chat.send_messages([HumanMessage(content=full_prompt)])
+        print("Received response from LLM")
+    except Exception as e:
+        print(f"Error communicating with LLM: {e}")
+        raise
+
+    # --- 6. Parse LLM response ---
+    sell_items, cook_items, donate_items, restaurant_name, recipe_title, donation_center = _parse_llm_response(
+        raw_response)
+
+    # --- 7. Create structured output ---
+    decisions = _create_decision_output(sell_items, cook_items, donate_items,
+                                        restaurant_name, recipe_title, donation_center)
+
+    # --- 8. Save to file ---
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(decisions, f, indent=2, ensure_ascii=False)
 
-    # Console summary with rich reasons
-    cook_list   = [d["item"] for d in decisions if d.get("action") == "COOK"]
-    sell_list   = [d["item"] for d in decisions if d.get("action") == "SELL"]
-    donate_list = [d["item"] for d in decisions if d.get("action") == "DONATE"]
+    # --- 9. Display summary ---
+    print("\n--- Final Decision Summary ---")
+    print(f"COOK   ({len(cook_items)} items): ", ", ".join(cook_items) if cook_items else "none")
+    if recipe_title:
+        print(f"  ↳ Recipe: {recipe_title}")
 
-    meta_map = _expiring_meta_map()
+    print(f"SELL   ({len(sell_items)} items): ", ", ".join(sell_items) if sell_items else "none")
+    if restaurant_name:
+        print(f"  ↳ Restaurant: {restaurant_name}")
 
-    print("")  # spacer
-    print("cook-list ingirdients:",   ", ".join(cook_list)   if cook_list   else "none")
-    print("reason:", _group_reason_cook(selected, cook_list, meta_map))
+    print(f"DONATE ({len(donate_items)} items): ", ", ".join(donate_items) if donate_items else "none")
+    if donation_center:
+        print(f"  ↳ Donation Center: {donation_center}")
+    print("----------------------------")
 
-    print("sell-list ingirdients:",   ", ".join(sell_list)   if sell_list   else "none")
-    print("reason:", _group_reason_sell(sell_list, sell_target, sell_entry, reply_prob, meta_map))
-
-    print("donate-list ingirdients:", ", ".join(donate_list) if donate_list else "none")
-    print("reason:", _group_reason_donate(donate_list, donate_target, meta_map))
+    print(f"\nLLM Raw Response:\n{raw_response}")
 
     return decisions
 
-# Keep script runnable directly
+
 def main():
-    decide_actions()
+    """Main execution function when script is run directly."""
+    try:
+        decide_actions()
+    except (FileNotFoundError, ValueError) as e:
+        print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     main()

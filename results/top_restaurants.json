@@ -1,33 +1,30 @@
 [
   {
+    "name": "Sabich Complete",
+    "matched_ingredients": [
+      "Labneh",
+      "Yogurt",
+      "Heirloom tomatoes"
+    ],
+    "reason": "Middle Eastern restaurant where labneh and yogurt are commonly used, and heirloom tomatoes can complement dishes. Extremely close (0.08km)."
+  },
+  {
     "name": "פסטה ויה | Pasta Via",
     "matched_ingredients": [
-      "Shrimp",
       "Cream",
-      "Parmesan cheese",
-      "Olive oil",
-      "Garlic"
+      "Butter",
+      "White wine",
+      "Rosemary"
     ],
-    "reason": "Italian restaurant that can use shrimp, cream, Parmesan, olive oil, and garlic in pasta dishes. Very close (0.3km) and likely to appreciate these ingredients."
+    "reason": "Italian restaurant that can use cream, butter, white wine, and rosemary in pasta and sauces. Very close (0.30km)."
   },
   {
     "name": "Amore Mio",
     "matched_ingredients": [
-      "Parmesan cheese",
-      "Olive oil",
-      "Garlic",
-      "Zucchini"
+      "Artichoke",
+      "Rosemary",
+      "White wine"
     ],
-    "reason": "Italian restaurant where Parmesan, olive oil, garlic, and zucchini are staples. Close by (0.3km) and a good fit for these ingredients."
-  },
-  {
-    "name": "Haturkiya & Hakeves",
-    "matched_ingredients": [
-      "Labneh",
-      "Mint",
-      "Garlic",
-      "Dill"
-    ],
-    "reason": "Middle Eastern restaurant that can use labneh, mint, garlic, and dill in traditional dishes. Located nearby (0.37km)."
+    "reason": "Italian restaurant where artichokes, rosemary, and white wine are ideal for Mediterranean dishes. Close (0.30km) and likely to appreciate fresh ingredients."
   }
 ]

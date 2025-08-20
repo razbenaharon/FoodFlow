@@ -1,0 +1,9 @@
+Here is the categorized list of ingredients extracted from the recipe:
+
+```json
+{
+  "expiring": ["White wine", "Rosemary", "Artichoke"],
+  "inventory": ["Butter", "Cream"],
+  "missing": ["Polenta"]
+}
+```

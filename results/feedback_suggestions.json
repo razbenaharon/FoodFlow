@@ -1,0 +1,56 @@
+[
+  {
+    "item": "Garlic",
+    "suggested_reduction": 5,
+    "unit": "cloves",
+    "reason": "Garlic appears frequently with significant leftover quantities (6-13 cloves) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Basil",
+    "suggested_reduction": 10,
+    "unit": "grams",
+    "reason": "Basil consistently has leftover quantities (21-38 grams) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Black pepper",
+    "suggested_reduction": 50,
+    "unit": "grams",
+    "reason": "Black pepper has recurring high leftover quantities (90-205 grams) and short expiration times (1-2 days)."
+  },
+  {
+    "item": "Labneh",
+    "suggested_reduction": 100,
+    "unit": "grams",
+    "reason": "Labneh frequently has leftover quantities (246-379 grams) and short expiration times (1-3 days)."
+  },
+  {
+    "item": "Parmesan cheese",
+    "suggested_reduction": 100,
+    "unit": "grams",
+    "reason": "Parmesan cheese has recurring high leftover quantities (200-386 grams) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Cream",
+    "suggested_reduction": 0.5,
+    "unit": "liters",
+    "reason": "Cream frequently has leftover quantities (0.6-1.4 liters) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Mint",
+    "suggested_reduction": 20,
+    "unit": "grams",
+    "reason": "Mint has recurring leftover quantities (41-75 grams) and short expiration times (2-4 days)."
+  },
+  {
+    "item": "Zucchini",
+    "suggested_reduction": 2,
+    "unit": "unit",
+    "reason": "Zucchini frequently has leftover quantities (4-6 units) and short expiration times (1-4 days)."
+  },
+  {
+    "item": "Rosemary",
+    "suggested_reduction": 10,
+    "unit": "grams",
+    "reason": "Rosemary has recurring leftover quantities (22-32 grams) and short expiration times (1-4 days)."
+  }
+]

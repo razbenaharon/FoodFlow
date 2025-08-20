@@ -1,62 +1,62 @@
 [
   {
-    "name": "Shrimp",
-    "quantity": 0.96,
-    "unit": "kg",
-    "days_to_expire": 2
-  },
-  {
-    "name": "Cream",
-    "quantity": 0.61,
-    "unit": "liters",
-    "days_to_expire": 2
-  },
-  {
-    "name": "Parmesan cheese",
-    "quantity": 280.22,
-    "unit": "grams",
-    "days_to_expire": 1
-  },
-  {
-    "name": "Olive oil",
-    "quantity": 614.89,
-    "unit": "ml",
-    "days_to_expire": 4
-  },
-  {
-    "name": "Zucchini",
-    "quantity": 3.13,
-    "unit": "unit",
-    "days_to_expire": 4
-  },
-  {
-    "name": "Duck breast",
-    "quantity": 1.08,
-    "unit": "kg",
-    "days_to_expire": 1
-  },
-  {
     "name": "Labneh",
-    "quantity": 188.19,
-    "unit": "grams",
-    "days_to_expire": 1
-  },
-  {
-    "name": "Dill",
-    "quantity": 30.92,
+    "quantity": 163.56,
     "unit": "grams",
     "days_to_expire": 2
   },
   {
-    "name": "Mint",
-    "quantity": 40.8,
+    "name": "Yogurt",
+    "quantity": 279.31,
     "unit": "grams",
     "days_to_expire": 3
   },
   {
-    "name": "Garlic",
-    "quantity": 14.27,
-    "unit": "cloves",
+    "name": "Cream",
+    "quantity": 0.69,
+    "unit": "liters",
     "days_to_expire": 1
+  },
+  {
+    "name": "Butter",
+    "quantity": 0.31,
+    "unit": "kg",
+    "days_to_expire": 1
+  },
+  {
+    "name": "White wine",
+    "quantity": 1.51,
+    "unit": "liters",
+    "days_to_expire": 3
+  },
+  {
+    "name": "Beets",
+    "quantity": 2.64,
+    "unit": "unit",
+    "days_to_expire": 4
+  },
+  {
+    "name": "Heirloom tomatoes",
+    "quantity": 3.44,
+    "unit": "unit",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Rosemary",
+    "quantity": 22.0,
+    "unit": "grams",
+    "days_to_expire": 2
+  },
+  {
+    "name": "Artichoke",
+    "quantity": 2.13,
+    "unit": "unit",
+    "days_to_expire": 1
+  },
+  {
+    "name": "Chili",
+    "quantity": 3.3,
+    "unit": "unit",
+    "days_to_expire": 4
   }
 ]

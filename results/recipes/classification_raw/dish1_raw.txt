@@ -1,0 +1,9 @@
+Here is the categorized list of ingredients based on the recipe and the provided expiring and inventory lists:
+
+```json
+{
+  "expiring": ["Labneh", "Chili"],
+  "inventory": ["Eggplant", "Olive oil", "Sea salt", "Parsley", "Garlic", "Basil", "Mint"],
+  "missing": ["Fresh herbs"]
+}
+```
