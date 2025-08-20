@@ -116,16 +116,6 @@ DONATE (1 items):  Artichoke
   🧾 Reason (DONATE): Low demand and expires in 1 day
 ----------------------------
 
-LLM Raw Response:
-selling to Hummus Abu Dabi, Tel Aviv: [Freekeh, Yogurt, Lemon zest]
-reason: High demand and stable to transport
-
-cook recipe Fire-Grilled Lamb Chops with Freekeh, Herb Yogurt, and Lemon Zest: [Lamb chops, Butter, Freekeh, Yogurt, Lemon zest, Olive oil, Basil, Mint]
-reason: Highest coverage of expiring ingredients
-
-donate to המקרר הקהילתי בצפון דיזנגוף: [Artichoke]
-reason: Low demand and expires in 1 day
-
 ===========================================================================
 
 🧑‍🍳 Sending selected recipe to kitchen...

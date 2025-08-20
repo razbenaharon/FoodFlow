@@ -399,7 +399,7 @@ Please provide your decision in the exact format specified above."""
         print(f"  🧾 Reason (DONATE): {reason_donate}")
     print("----------------------------")
 
-    print(f"\nLLM Raw Response:\n{raw_response}")
+
 
     return decisions
 

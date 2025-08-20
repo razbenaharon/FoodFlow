@@ -116,16 +116,6 @@ DONATE (1 items):  Heirloom tomatoes
   🧾 Reason (DONATE): Low demand and close to expiry.
 ----------------------------
 
-LLM Raw Response:
-selling to Toto: [Artichoke]
-reason: Artichoke is in demand and stable to transport.
-
-cook recipe Beet and Artichoke Freekeh Risotto: [Beets, Mint, Cream]
-reason: Highest coverage of expiring ingredients with acceptable rank.
-
-donate to Lasova Soup-Kitchen: [Heirloom tomatoes]
-reason: Low demand and close to expiry.
-
 ===========================================================================
 
 🧑‍🍳 Sending selected recipe to kitchen...

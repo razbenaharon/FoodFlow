@@ -116,16 +116,6 @@ DONATE (0 items):  none
   🧾 Reason (DONATE): No remaining items suitable for donation.
 ----------------------------
 
-LLM Raw Response:
-cook recipe Charred Eggplant with Lemon-Parmesan Butter and Herb Gremolata: [Olive oil, Parmesan cheese, Eggplant, Butter, Lemon zest, White wine]
-reason: Highest coverage of expiring ingredients.
-
-selling to Panama Pizza: []
-reason: No remaining items suitable for selling.
-
-donate to אוכל לנזקקים: []
-reason: No remaining items suitable for donation.
-
 ===========================================================================
 
 🧑‍🍳 Sending selected recipe to kitchen...

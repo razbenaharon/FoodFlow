@@ -116,16 +116,6 @@ DONATE (0 items):  none
   🧾 Reason (DONATE): No remaining expiring items to donate
 ----------------------------
 
-LLM Raw Response:
-selling to Fish Market by Meatos: [Sea bass]
-reason: High demand and stable to transport
-
-cook recipe Charred Eggplant with Mushroom-Basil Butter and Crushed Tomato Drizzle: [Mushrooms, Basil, Butter, Crushed tomato]
-reason: Highest coverage of expiring ingredients
-
-donate to בית מעשים טובים: []
-reason: No remaining expiring items to donate
-
 ===========================================================================
 
 🧑‍🍳 Sending selected recipe to kitchen...

@@ -116,16 +116,6 @@ DONATE (6 items):  Lamb chops, Freekeh, White wine, Leeks, Cauliflower, Dill
   🧾 Reason (DONATE): low demand or close to expiry, better for community benefit
 ----------------------------
 
-LLM Raw Response:
-selling to Chuma: [Artichoke]
-reason: in demand and stable to transport
-
-cook recipe Roasted Sea Bass with Artichoke and Beet Purée: [Sea bass, Beets]
-reason: highest coverage of expiring ingredients and lowest rank
-
-donate to עמותת לשובע המסעדה: [Lamb chops, Freekeh, White wine, Leeks, Cauliflower, Dill]
-reason: low demand or close to expiry, better for community benefit
-
 ===========================================================================
 
 🧑‍🍳 Sending selected recipe to kitchen...
