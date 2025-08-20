@@ -27,4 +27,10 @@ ENV/
 data/expiring_ingredients.json
 data/current_inventory.json
 data/recent_expiring_ingredients.json
-results/
+
+# Ignore everything in results
+results/*
+
+# But keep this placeholder file
+!results/.gitkeep
+
