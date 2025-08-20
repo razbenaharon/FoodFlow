@@ -1,66 +1,65 @@
 👋 Welcome to FoodFlow!
 You are now simulating operations for 'HaSalon' restaurant in Tel Aviv, owned by chef Eyal Shani.
-Our goal is to make smart decisions about what to cook, sell, or donate among expiring ingredients.
+Our goal is to make smart, sustainable decisions about what to cook, sell, or donate among expiring ingredients.
 
-For each expiring ingredient, the agent will choose the best course of action:
-- If cooking: a message will be sent to the chef with today’s special based on this ingredient.
-- If selling: a message will be sent to a nearby restaurant that is most likely to buy it.
-- If donating: a pickup will be scheduled with a suitable nearby donation center.
+For each expiring ingredient, the agent will determine the most suitable action:
+- 🍽️ Cook: A message will be sent to the chef with today’s special based on this ingredient.
+- 🍴 Sell: A message will be sent to a nearby restaurant most likely to purchase it.
+- ❤️ Donate: A pickup will be scheduled with a nearby donation center.
 
 ===========================================================================
 
-
-Press Enter to continue...
+Press Enter to see the magic happen...
 
 ===========================================================================
 
 📦 Current Inventory (excluding expiring):
-- Eggplant: 12 unit
-- Olive oil: 1500 ml
 - Sea salt: 500 grams
+- Parsley: 100 grams
 - Heirloom tomatoes: 10 unit
 - Garlic: 20 cloves
+- Basil: 50 grams
+- Black pepper: 300 grams
 - Lamb chops: 2 kg
 - Freekeh: 2 kg
 - Mint: 100 grams
 - Shrimp: 2.5 kg
+- Crushed tomato: 1.2 kg
 - Chili: 10 unit
-- Butter: 1 kg
 - Cream: 2 liters
 - Cauliflower: 6 unit
-- Lemon zest: 5 unit
 - Lemon: 10 unit
 - Artichoke: 6 unit
 - Zucchini: 8 unit
+- Yogurt: 500 grams
+- Duck breast: 1.5 kg
+- Rosemary: 50 grams
 - Honey: 300 grams
+- Sea bass: 5 fillet
 - Leeks: 6 stalk
 - Dill: 50 grams
+- Beets: 5 unit
 - Labneh: 500 grams
 - Mushrooms: 1 kg
-- Parmesan cheese: 500 grams
 - Water: unlimited unit
 - Salt: unlimited unit
 
 ⏳ Expiring Ingredients:
-- Parsley: 79.39 grams (Expires in 3 days)
-- Beets: 2.9 unit (Expires in 1 days)
-- Black pepper: 100.51 grams (Expires in 1 days)
-- Duck breast: 0.95 kg (Expires in 3 days)
-- Yogurt: 190.27 grams (Expires in 3 days)
-- Sea bass: 2.88 fillet (Expires in 4 days)
-- Rosemary: 16.02 grams (Expires in 4 days)
-- Basil: 20.07 grams (Expires in 2 days)
-- Crushed tomato: 0.58 kg (Expires in 4 days)
-- White wine: 1.58 liters (Expires in 3 days)
+- Olive oil: 659.68 ml (Expires in 2 days)
+- Parmesan cheese: 182.18 grams (Expires in 3 days)
+- Eggplant: 4.18 unit (Expires in 2 days)
+- Butter: 0.49 kg (Expires in 1 days)
+- Lemon zest: 2.07 unit (Expires in 2 days)
+- White wine: 0.64 liters (Expires in 2 days)
 
 ===========================================================================
 
-🥣 Running soup_kitchen recommendation agent...
+🥣 choosing soup kitchen for today...
 
 Best matching soup kitchen:
-Name: בית מעשים טובים
-Address: Zeev Jabotinsky St 106, Ramat Gan
-Distance: 3.25 km
+Name: אוכל לנזקקים
+Address: 4, Namal Tel Aviv, Tel Aviv-Yafo
+Distance: 1.27 km
 
 ===========================================================================
 
@@ -68,107 +67,98 @@ Distance: 3.25 km
 Recipe agent       [██████████████████████████████] 100%
 
 Best matching recipes:
-1. Duck Breast with Cherries and Chocolate
-   Matched expiring ingredients: Parsley, Beets, Black pepper, Duck breast, Sea bass, Rosemary, White wine
-   Inventory ingredients: Olive oil, Sea salt, Honey, Salt
+1. Charred Eggplant with Lemon-Parmesan Butter and Herb Gremolata
+   Matched expiring ingredients: Olive oil, Parmesan cheese, Eggplant, Butter, Lemon zest, White wine
+   Inventory ingredients: Sea salt, Parsley, Garlic, Black pepper, Lemon
    Missing ingredients: none
-   Reason: Duck Breast with Cherries and Chocolate highlights Israeli Mediterranean creativity, pairing expiring duck breast and black pepper with bold flavors and live fire cooking.
-2. Branzino Alla Max
-   Matched expiring ingredients: Parsley, Black pepper, Yogurt, Sea bass, Basil, Crushed tomato
-   Inventory ingredients: Olive oil, Sea salt, Heirloom tomatoes, Garlic, Chili, Lemon zest, Lemon, Salt
+   Reason: The charred eggplant highlights Israeli Mediterranean flavors, while the lemon-Parmesan butter elevates HaSalon's produce-driven, live fire cooking philosophy.
+2. Freekeh Risotto with Artichokes, Mushrooms, and White Wine
+   Matched expiring ingredients: Olive oil, Parmesan cheese, Butter, Lemon zest, White wine
+   Inventory ingredients: Freekeh, Artichoke, Mushrooms, Garlic, Sea salt, Black pepper
    Missing ingredients: none
-   Reason: Branzino Alla Max highlights HaSalon's Mediterranean ethos with sea bass and parsley, embracing live fire cooking and fresh, produce-driven flavors.
-3. Lentil and Orzo Salad with Roasted Cauliflower, Chard and Herbs
-   Matched expiring ingredients: Parsley, Black pepper, Sea bass, Rosemary, White wine
-   Inventory ingredients: Olive oil, Sea salt, Freekeh, Butter, Cauliflower, Lemon zest, Lemon, Water, Salt
-   Missing ingredients: none
-   Reason: This lentil and orzo salad highlights HaSalon's Mediterranean ethos, pairing roasted cauliflower with fresh parsley and black pepper for vibrant, produce-driven flavors.
+   Reason: The Freekeh Risotto with Artichokes, Mushrooms, and White Wine embodies HaSalon's Mediterranean ethos, elevated by expiring Parmesan and butter for richness.
+3. Grilled Sea Bass with Cauliflower Purée and Chili-Lemon Sauce
+   Matched expiring ingredients: Olive oil, Butter, Lemon zest, White wine
+   Inventory ingredients: Sea bass, Cauliflower, Chili, Lemon, Salt
+   Missing ingredients: Shallots
+   Reason: Grilled Sea Bass with Cauliflower Purée and Chili-Lemon Sauce embodies HaSalon's Mediterranean ethos, utilizing fresh produce, olive oil, and vibrant flavors.
 
 ===========================================================================
 
 🍽️ Running restaurant recommendation agent...
 
 Best matching restaurants:
-1. פסטה ויה | Pasta Via
-   Matched ingredients: Basil, Crushed tomato, White wine
-   Reason: Italian restaurant specializing in pasta dishes. Basil, crushed tomato, and white wine are ideal for their cuisine. Very close (0.3km).
-2. Amore Mio
-   Matched ingredients: Duck breast, Rosemary, White wine
-   Reason: Upscale Italian restaurant likely to use duck breast, rosemary, and white wine in their dishes. Close proximity (0.3km).
+1. Panama Pizza
+   Matched ingredients: Olive oil, Parmesan cheese, Butter
+   Reason: Pizza restaurant that can use olive oil, Parmesan cheese, and butter in their dishes. Located very close (0.86km).
+2. Market Vegan Restaurant
+   Matched ingredients: Eggplant, Olive oil, Lemon zest
+   Reason: Vegan restaurant likely to use eggplant, olive oil, and lemon zest in their plant-based dishes. Just 0.89km away.
 3. Hummus Eben Gvirol
-   Matched ingredients: Parsley, Black pepper, Yogurt
-   Reason: Middle Eastern restaurant where parsley, black pepper, and yogurt are commonly used. Nearby (0.37km) and popular for its cuisine.
+   Matched ingredients: Olive oil, Lemon zest
+   Reason: Middle Eastern restaurant where olive oil and lemon zest are commonly used. Extremely close (0.37km).
 
 ===========================================================================
 
 🧠 Running decision agent...
+Sending request to LLM...
+Received response from LLM
 
-cook-list ingirdients: Parsley, Black pepper, Yogurt, Sea bass, Basil, Crushed tomato
-reason: picked 'Branzino Alla Max' (rank #2) to convert 6 expiring items into menu value (Parsley, Black pepper, Yogurt) including 1 due ≤1 day ; prioritizes quick-spoil items (e.g., Sea bass).
-sell-list ingirdients: Duck breast, White wine
-reason: sending 2 items to פסטה ויה | Pasta Via because 2 item(s) have ≥2 days left and their menu matches items like White wine.
-donate-list ingirdients: Beets, Rosemary
-reason: donating 2 item(s) to בית מעשים טובים because 1 expire ≤1 day and items are serviceable for bulk/meal-prep (e.g., Beets).
+--- Final Decision Summary ---
+COOK   (6 items):  Olive oil, Parmesan cheese, Eggplant, Butter, Lemon zest, White wine
+  ↳ Recipe: Charred Eggplant with Lemon-Parmesan Butter and Herb Gremolata
+  🧾 Reason (COOK): Highest coverage of expiring ingredients.
+SELL   (0 items):  none
+  ↳ Restaurant: Panama Pizza
+  🧾 Reason (SELL): No remaining items suitable for selling.
+DONATE (0 items):  none
+  ↳ Donation Center: אוכל לנזקקים
+  🧾 Reason (DONATE): No remaining items suitable for donation.
+----------------------------
+
+LLM Raw Response:
+cook recipe Charred Eggplant with Lemon-Parmesan Butter and Herb Gremolata: [Olive oil, Parmesan cheese, Eggplant, Butter, Lemon zest, White wine]
+reason: Highest coverage of expiring ingredients.
+
+selling to Panama Pizza: []
+reason: No remaining items suitable for selling.
+
+donate to אוכל לנזקקים: []
+reason: No remaining items suitable for donation.
 
 ===========================================================================
 
 🧑‍🍳 Sending selected recipe to kitchen...
 
 ================= SEND TO KITCHEN =================
-👨‍🍳  Recipe: Branzino Alla Max
+👨‍🍳  Recipe: Charred Eggplant with Lemon-Parmesan Butter and Herb Gremolata
 ---------------------------------------------------
 🧺  Ingredients:
-  • 4 tablespoons extra-virgin olive oil
-  • 4 (8 ounce) sea bass or branzino fillets
-  • Salt and freshly ground black pepper
-  • 1 red pepper, seeded and coarsely chopped
-  • 1 purple onion, coarsely chopped
-  • 1 zucchini, coarsely chopped
-  • Fresh parsley, finely chopped, for garnish
-  • Sweet Sour Sauce
-  • 3 tablespoons extra-virgin olive oil
-  • 1/2 cup balsamic vinegar
-  • 2 tablespoons honey
+  • Olive oil
+  • Parmesan cheese
+  • Eggplant
+  • Butter
+  • Lemon zest
+  • White wine
+  • Sea salt
+  • Parsley
+  • Garlic
+  • Black pepper
+  • Lemon
 ---------------------------------------------------
-🧾  Instructions:
-  In a pan, heat 2 tablespoons extra-virgin olive oil and add the sea bass fillets. Season with salt
-  and pepper, to taste. Cook for a few minutes on each side or until the fish is just cooked through and remove the pan from the heat.
-  In another pan, heat up the remaining 2 tablespoons olive oil and add the red pepper, onion, and zucchini. Cook the vegetables until fork tender, and season with salt and pepper, to taste.
-  To make the Sweet Sour Sauce: Heat up the extra-virgin olive oil. Add the balsamic vinegar, and honey, and stir well. Cook and let reduce, until the sauce thickens.
-  Place each sea bass fillet over a bed of cooked vegetables. Drizzle with sweet and sour sauce and sprinkle with parsley. Serve warm.
+🧾  Chef Notes / Reason:
+  The charred eggplant highlights Israeli Mediterranean flavors, while the lemon-Parmesan butter elevates HaSalon's produce-driven, live fire cooking philosophy.
 ===================================================
 
 
 ===========================================================================
 
 ✉️ Preparing outbound messages...
-
-====== Message to restaurant ======
-Hi Pasta Via,
-This is HaSalon in Tel Aviv—today we have some high-quality surplus ingredients available for you:
-
-- **Duck breast**: 0.95 kg, expires in 3 days – ₪90/kg = ₪85.5
-- **White wine**: 1.58 liters, expires in 3 days – ₪40/liter = ₪63.2
-
-**Bundle offer**: Take both for ₪140 total.
-
-Pickup window: Today until 18:00.
-Contact us at: 052-1234567
-
-Let us know if you're interested!
-(Saved message for restaurant: פסטה ויה | Pasta Via)
-
-====== Message to soup kitchen ======
-Hi, this is HaSalon in Tel Aviv! We have fresh ingredients available for same-day donation:
-- Beets: 2.90 units, expires in 1 day
-- Rosemary: 16.02 grams, expires in 4 days
-
-Pickup can be arranged today between 16:00-18:00. Please contact us at 052-1234567. Thank you!
-(Saved message for soup kitchen: בית מעשים טובים)
+No messages generated.
 
 ===========================================================================
 
 📊 Checking if feedback agent should run -- asking for feedback only each 10 iterations of the agent...
-ℹ️ Only 3 runs found. Need 10 to activate feedback agent.
+ℹ️ Only 6 runs found. Need 10 to activate feedback agent.
 
 ✅ Simulation complete.
