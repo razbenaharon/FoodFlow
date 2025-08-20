@@ -141,23 +141,39 @@ def _gpt_message_to_restaurant(
     # Format list of items as bullet points
     item_list = "\n".join(f"- {line}" for line in sell_lines)
 
-    prompt = f"""You are a chef or kitchen manager from a restaurant called "{brand}" located in {city}.
-You are writing a short and clear WhatsApp-style message to a nearby restaurant named "{restaurant}".
-The purpose of the message is to offer surplus ingredients that are still in good condition and could be useful for today's or tomorrow's service.
+    prompt = f"""You write a concise, professional WhatsApp-style message in English from {brand} in {city} 
+    to a partner restaurant named "{restaurant}".
+    We want to SELL the following surplus ingredients today (quantities and expiry below).
+    Please:
+    - Start with a warm one-line intro that we're {brand} and have high-quality surplus available today.
+    - Bullet the items exactly as given THEN add a per-item suggested price and line subtotal in ILS (₪), 
+    based on freshness (bigger discount if fewer days to expire).
+    - After bullets, include: a bundled offer price, pickup window today, and this EXACT contact phone number: 
+    {CONTACT_PHONE}. Do NOT write placeholders.
+    - Keep it under 1200 characters. Avoid markdown code fences.
+    Surplus list:
+    {item_list}
+    
+    Output: message text only."""
 
-Ingredients to offer:
-{item_list}
 
-Rules:
-- Write like a real person, not a robot
-- Mention the restaurant name
-- Be polite and practical
-- Offer to coordinate pickup
-- No fancy language, just something that would be used in real kitchen WhatsApp groups
-- Limit to 3-5 lines
-
-Respond with just the message (no explanation, no formatting instructions). Add a fake contact number like: 052-1234567
-"""
+#     prompt = f"""You are a chef or kitchen manager from a restaurant called "{brand}" located in {city}.
+# You are writing a short and clear WhatsApp-style message to a nearby restaurant named "{restaurant}".
+# The purpose of the message is to offer surplus ingredients that are still in good condition and could be useful for today's or tomorrow's service.
+#
+# Ingredients to offer:
+# {item_list}
+#
+# Rules:
+# - Write like a real person, not a robot
+# - Mention the restaurant name
+# - Be polite and practical
+# - Offer to coordinate pickup
+# - No fancy language, just something that would be used in real kitchen WhatsApp groups
+# - Limit to 3-5 lines
+#
+# Respond with just the message (no explanation, no formatting instructions). Add a fake contact number like: 052-1234567
+# """
 
     response = LLMChat(temp=0.4).send_prompt(prompt).strip()
     return _ensure_contact_phone(response)
@@ -175,24 +191,37 @@ def _gpt_message_to_soup_kitchen(
 
     item_list = "\n".join(f"- {line}" for line in donate_lines)
 
-    prompt = f"""You are a chef or kitchen manager at a restaurant called "{brand}" in {city}.
-You're writing a kind, short WhatsApp-style message to a nearby soup kitchen named "{kitchen}".
-You want to offer a donation of food ingredients that are still good and could be used today or tomorrow.
+    prompt = f"""Write a kind, short WhatsApp-style message in English from {brand} in {city} to "{kitchen}".
+    We want to DONATE the following fresh ingredients today (quantities and expiry below).
+    Please:
+    - One-line intro that we're {brand} and we have same-day donation.
+    - Bullet the items exactly as given (no prices).
+    - Add an estimated pickup window today and this EXACT contact phone number: {CONTACT_PHONE}. Do NOT write placeholders.
+    - Keep it under 800 characters. Avoid markdown code fences.
 
-Ingredients to offer:
-{item_list}
+    Donation list:
+    {item_list}
+    
+    Output: message text only."""
 
-Guidelines:
-- Keep the message friendly, simple, and respectful
-- Mention the restaurant name
-- Offer to coordinate pickup or delivery
-- Avoid fancy or formal language — think like a kitchen staff WhatsApp message
-- Limit to 3-5 lines
-- End with a fake contact number like: 052-1234567
-- Write the message in English
-
-Return only the message text (no extra formatting or explanation).
-"""
+#     prompt = f"""You are a chef or kitchen manager at a restaurant called "{brand}" in {city}.
+# You're writing a kind, short WhatsApp-style message to a nearby soup kitchen named "{kitchen}".
+# You want to offer a donation of food ingredients that are still good and could be used today or tomorrow.
+#
+# Ingredients to offer:
+# {item_list}
+#
+# Guidelines:
+# - Keep the message friendly, simple, and respectful
+# - Mention the restaurant name
+# - Offer to coordinate pickup or delivery
+# - Avoid fancy or formal language — think like a kitchen staff WhatsApp message
+# - Limit to 3-5 lines
+# - End with a fake contact number like: 052-1234567
+# - Write the message in English
+#
+# Return only the message text (no extra formatting or explanation).
+# """
 
     response = LLMChat(temp=0.4).send_prompt(prompt).strip()
     return _ensure_contact_phone(response)
