@@ -3,7 +3,7 @@ import csv
 import os
 from utils.chat_and_embedding import LLMChat
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, PromptTemplate
-
+import random
 
 
 def run_find_restaurant():
@@ -47,8 +47,12 @@ def run_find_restaurant():
                 "distance_km": safe_float(row.get("distance_from_ha_salon_km"))
             })
 
-    # 🔻 Limit token load
-    restaurants = sorted(restaurants, key=lambda r: r["distance_km"])[:20]
+    # Limit token load
+    # Step 1: Randomly sample up to 50 restaurants
+    sampled_restaurants = random.sample(restaurants, min(50, len(restaurants)))
+
+    # Step 2: Sort the sampled list by distance, take the closest 20
+    restaurants = sorted(sampled_restaurants, key=lambda r: r["distance_km"])[:20]
 
     # --- Format input strings ---
     ingredient_json_str = json.dumps(expiring, indent=2)

@@ -99,7 +99,7 @@ def run_find_recipes() -> None:
         expiring, _ = load_json(EXPIRING_FILE, "expiring ingredients")
         current,  _ = load_json(INVENTORY_FILE, "current inventory")
 
-    # ✅ lists for fallback matching
+    #  lists for fallback matching
     exp_names  = [d.get("item") or d.get("name") for d in expiring if isinstance(d, dict)]
     inv_names  = [d.get("item") or d.get("name") for d in current  if isinstance(d, dict)]
 
@@ -138,51 +138,70 @@ def run_find_recipes() -> None:
         # Stage C: RAG — retrieve top recipe titles for each dish AND save per-dish JSON
         embed_model = LLMEmbed()
 
-        def _extract_titles_from_obj(objs: Any) -> List[str]:
-            out: List[str] = []
-            if isinstance(objs, list):
-                for r in objs:
-                    if isinstance(r, dict):
-                        t = (
-                            r.get("title") or r.get("name") or
-                            (r.get("payload", {}).get("title") if isinstance(r.get("payload"), dict) else None)
-                        )
-                        if isinstance(t, str):
-                            out.append(t.strip())
-            elif isinstance(objs, dict):
-                if isinstance(objs.get("payload"), dict):
-                    t = objs["payload"].get("title")
-                    if isinstance(t, str):
-                        out.append(t.strip())
-                seqs = objs.get("results") or objs.get("hits") or objs.get("matches")
-                if isinstance(seqs, list):
-                    for r in seqs:
-                        if isinstance(r, dict):
-                            t = (
-                                r.get("title") or r.get("name") or
-                                (r.get("payload", {}).get("title") if isinstance(r.get("payload"), dict) else None)
-                            )
-                            if isinstance(t, str):
-                                out.append(t.strip())
-            return out
+        # def _extract_titles_from_obj(objs: Any) -> List[str]:
+        #     out: List[str] = []
+        #     if isinstance(objs, list):
+        #         for r in objs:
+        #             if isinstance(r, dict):
+        #                 t = (
+        #                     r.get("title") or r.get("name") or
+        #                     (r.get("payload", {}).get("title") if isinstance(r.get("payload"), dict) else None)
+        #                 )
+        #                 if isinstance(t, str):
+        #                     out.append(t.strip())
+        #     elif isinstance(objs, dict):
+        #         if isinstance(objs.get("payload"), dict):
+        #             t = objs["payload"].get("title")
+        #             if isinstance(t, str):
+        #                 out.append(t.strip())
+        #         seqs = objs.get("results") or objs.get("hits") or objs.get("matches")
+        #         if isinstance(seqs, list):
+        #             for r in seqs:
+        #                 if isinstance(r, dict):
+        #                     t = (
+        #                         r.get("title") or r.get("name") or
+        #                         (r.get("payload", {}).get("title") if isinstance(r.get("payload"), dict) else None)
+        #                     )
+        #                     if isinstance(t, str):
+        #                         out.append(t.strip())
+        #     return out
 
-        def _read_top_title_from_disk(path: str) -> Optional[str]:
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                titles = _extract_titles_from_obj(data)
-                return titles[0] if titles else None
-            except Exception:
-                return None
+        # def _read_top_title_from_disk(path: str) -> Optional[str]:
+        #     try:
+        #         with open(path, "r", encoding="utf-8") as f:
+        #             data = json.load(f)
+        #         titles = _extract_titles_from_obj(data)
+        #         return titles[0] if titles else None
+        #     except Exception:
+        #         return None
 
-        def _retrieve_all_top_titles_from_disk() -> List[Optional[str]]:
-            """Always read back the saved retrieval files to get the REAL retrieved titles."""
-            titles: List[Optional[str]] = []
+        # def _retrieve_all_top_titles_from_disk() -> List[Optional[str]]:
+        #     """Always read back the saved retrieval files to get the REAL retrieved titles."""
+        #     titles: List[Optional[str]] = []
+        #     for i, d in enumerate(dishes, 1):
+        #         save_path = os.path.join(RETRIEVED_DIR, f"retrieved_dish{i}.json")
+        #         query_text = f"{d['title']}\n{d['body']}"
+        #         with suppress_stdout_stderr():
+        #             # This saves to disk; we don't rely on the return value.
+        #             retrieve_similar_recipes(
+        #                 query_str=query_text,
+        #                 embedder=embed_model,
+        #                 collection_name=COLLECTION_NAME,
+        #                 result_limit=TOP_K,
+        #                 save_path=save_path
+        #             )
+        #         top_title = _read_top_title_from_disk(save_path)
+        #         titles.append(top_title)
+        #         progress.advance(5)
+        #     return titles
+
+        def _retrieve_all_top_objects_from_disk() -> List[Dict[str, Any]]:
+            """Reads each saved retrieved result and returns the raw dict for each dish."""
+            all_data = []
             for i, d in enumerate(dishes, 1):
                 save_path = os.path.join(RETRIEVED_DIR, f"retrieved_dish{i}.json")
                 query_text = f"{d['title']}\n{d['body']}"
                 with suppress_stdout_stderr():
-                    # This saves to disk; we don't rely on the return value.
                     retrieve_similar_recipes(
                         query_str=query_text,
                         embedder=embed_model,
@@ -190,12 +209,29 @@ def run_find_recipes() -> None:
                         result_limit=TOP_K,
                         save_path=save_path
                     )
-                top_title = _read_top_title_from_disk(save_path)
-                titles.append(top_title)
+                try:
+                    with open(save_path, "r", encoding="utf-8") as f:
+                        obj = json.load(f)
+                except Exception:
+                    obj = {}
+                all_data.append(obj)
                 progress.advance(5)
-            return titles
+            return all_data
 
-        retrieved_titles = _retrieve_all_top_titles_from_disk()
+        retrieved_objs = _retrieve_all_top_objects_from_disk()
+
+        retrieved_titles = []
+        for i, obj in enumerate(retrieved_objs):
+            title = None
+            if isinstance(obj, dict):
+                results = obj.get("matches") or obj.get("results") or obj.get("hits") or []
+                if results and isinstance(results[0], dict):
+                    payload = results[0].get("payload", {})
+                    title = payload.get("name") or payload.get("title")
+            if title and isinstance(title, str) and title.strip():
+                retrieved_titles.append(title.strip())
+            else:
+                retrieved_titles.append(dishes[i]["title"].strip())  # fallback to GPT title
 
         # Stage D: classify ingredients (in-memory only; no per-dish analysis files)
         with open(CLASS_PROMPT_FILE, "r", encoding="utf-8") as f:
@@ -225,8 +261,11 @@ def run_find_recipes() -> None:
 
                 try:
                     parsed = json.loads(extract_json_block(response))
-                except Exception:
-                    parsed = None
+                except Exception as e:
+                    try:
+                        parsed = chat_model_struct.extract_json_string(response)
+                    except Exception as e:
+                        parsed = None
                 analyses[idx - 1] = parsed
                 progress.advance(5)
             return analyses
@@ -267,13 +306,15 @@ def run_find_recipes() -> None:
         raise err[0]
     final_titles, reasons, analyses_by_dish, dishes = res[0]
 
-    # --- restaurant context (forced to HaSalon unless FORCE_* empty)
-    top_rest = load_top_restaurant(RESULTS_DIR)
-    rest_name = (FORCE_RESTAURANT_NAME or "").strip()
-    rest_capsule = no_en_dashes((FORCE_RESTAURANT_CONTEXT or "").strip())
-    if not rest_name and top_rest:
-        rest_name = top_rest.get("name") or top_rest.get("title") or "the chosen restaurant"
-        rest_capsule = restaurant_capsule(top_rest)
+    # --- restaurant context (fixed: HaSalon only, no fallback)
+    rest_name = FORCE_RESTAURANT_NAME.strip()
+    rest_capsule = no_en_dashes(FORCE_RESTAURANT_CONTEXT.strip())
+
+    # Fallback loading disabled
+    # top_rest = load_top_restaurant(RESULTS_DIR)
+    # if not rest_name and top_rest:
+    #     rest_name = top_rest.get("name") or top_rest.get("title") or "the chosen restaurant"
+    #     rest_capsule = restaurant_capsule(top_rest)
 
     # --- compose final summary (print for console; save ONLY JSON)
     print("\nBest matching recipes:")
@@ -281,7 +322,8 @@ def run_find_recipes() -> None:
     summary: List[Dict[str, Any]] = []
     for i, title in enumerate(final_titles[:3], 1):
         analysis = analyses_by_dish[i - 1]
-        exp_match, inv_match, miss = extract_matched_sets(analysis)
+        analysis_dict = json.loads(analysis)
+        exp_match, inv_match, miss = extract_matched_sets(analysis_dict)
 
         # 🔁 Fallback if classifier returned nothing
         if not exp_match and not inv_match and not miss:
@@ -290,7 +332,7 @@ def run_find_recipes() -> None:
             inv_match = _fallback_match(inv_names, dish_text)
             miss = []  # we can't infer missing from text alone
 
-        # ✅ Inventory must exclude expiring (no overlap), and Missing excludes both
+        #  Inventory must exclude expiring (no overlap), and Missing excludes both
         inv_match = _subtract_preserve_order(inv_match, exp_match)
         miss = _subtract_preserve_order(miss, exp_match + inv_match)
 

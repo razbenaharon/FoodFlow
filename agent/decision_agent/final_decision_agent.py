@@ -190,9 +190,23 @@ def _parse_llm_response(response: str) -> Tuple[List[str], List[str], List[str],
 
 
 def _create_decision_output(sell_items: List[str], cook_items: List[str], donate_items: List[str],
-                            restaurant_name: str, recipe_title: str, donation_center: str) -> List[Dict[str, Any]]:
+                            restaurant_name: str, recipe_title: str, donation_center: str,
+                            recipes_data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Create the structured decision output."""
     decisions = []
+
+    # Try to find the real retrieved title
+    retrieved_title = None
+    for recipe in recipes_data:
+        if isinstance(recipe, dict):
+            title = recipe.get("title", "").strip()
+            if title.lower() == recipe_title.lower():
+                retrieved_title = title
+                break
+
+    # If not found, just fallback to the LLM's title
+    if not retrieved_title:
+        retrieved_title = recipe_title
 
     # Add COOK decisions
     for item in cook_items:
@@ -200,7 +214,7 @@ def _create_decision_output(sell_items: List[str], cook_items: List[str], donate
             "item": item,
             "action": "COOK",
             "reason": f"Used in selected recipe '{recipe_title}'",
-            "target_recipes": [recipe_title],
+            "target_recipes": [recipe_title, retrieved_title],
         })
 
     # Add SELL decisions
@@ -282,8 +296,11 @@ Please provide your decision in the exact format specified above."""
         raw_response)
 
     # --- 7. Create structured output ---
-    decisions = _create_decision_output(sell_items, cook_items, donate_items,
-                                        restaurant_name, recipe_title, donation_center)
+    decisions = _create_decision_output(
+        sell_items, cook_items, donate_items,
+        restaurant_name, recipe_title, donation_center,
+        recipes_data  # ← pass it in
+    )
 
     # --- 8. Save to file ---
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)

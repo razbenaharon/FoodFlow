@@ -128,19 +128,75 @@ def _ensure_contact_phone(text: str) -> str:
     return new_text
 
 # --- GPT prompts for restaurant and soup kitchen messages ---
-def _gpt_message_to_restaurant(restaurant: str, sell_lines: List[str], brand: str = DEFAULT_RESTAURANT_NAME, city: str = DEFAULT_CITY) -> str:
-    """Generate GPT message offering surplus to a restaurant."""
-    if not sell_lines: return ""
-    prompt = f"""You write a concise, professional WhatsApp-style message ... (prompt omitted for brevity)"""
-    msg = LLMChat(temp=0.5).send_prompt(prompt).strip()
-    return _ensure_contact_phone(msg)
+def _gpt_message_to_restaurant(
+    restaurant: str,
+    sell_lines: List[str],
+    brand: str = DEFAULT_RESTAURANT_NAME,
+    city: str = DEFAULT_CITY
+) -> str:
+    """Generate GPT message offering surplus ingredients to a restaurant via WhatsApp-style format."""
+    if not sell_lines:
+        return ""
 
-def _gpt_message_to_soup_kitchen(kitchen: str, donate_lines: List[str], brand: str = DEFAULT_RESTAURANT_NAME, city: str = DEFAULT_CITY) -> str:
-    """Generate GPT message offering donation to a soup kitchen."""
-    if not donate_lines: return ""
-    prompt = f"""Write a kind, short WhatsApp-style message ... (prompt omitted for brevity)"""
-    msg = LLMChat(temp=0.5).send_prompt(prompt).strip()
-    return _ensure_contact_phone(msg)
+    # Format list of items as bullet points
+    item_list = "\n".join(f"- {line}" for line in sell_lines)
+
+    prompt = f"""You are a chef or kitchen manager from a restaurant called "{brand}" located in {city}.
+You are writing a short and clear WhatsApp-style message to a nearby restaurant named "{restaurant}".
+The purpose of the message is to offer surplus ingredients that are still in good condition and could be useful for today's or tomorrow's service.
+
+Ingredients to offer:
+{item_list}
+
+Rules:
+- Write like a real person, not a robot
+- Mention the restaurant name
+- Be polite and practical
+- Offer to coordinate pickup
+- No fancy language, just something that would be used in real kitchen WhatsApp groups
+- Limit to 3-5 lines
+
+Respond with just the message (no explanation, no formatting instructions). Add a fake contact number like: 052-1234567
+"""
+
+    response = LLMChat(temp=0.4).send_prompt(prompt).strip()
+    return _ensure_contact_phone(response)
+
+
+def _gpt_message_to_soup_kitchen(
+    kitchen: str,
+    donate_lines: List[str],
+    brand: str = DEFAULT_RESTAURANT_NAME,
+    city: str = DEFAULT_CITY
+) -> str:
+    """Generate GPT message offering food donation to a soup kitchen via WhatsApp-style format."""
+    if not donate_lines:
+        return ""
+
+    item_list = "\n".join(f"- {line}" for line in donate_lines)
+
+    prompt = f"""You are a chef or kitchen manager at a restaurant called "{brand}" in {city}.
+You're writing a kind, short WhatsApp-style message to a nearby soup kitchen named "{kitchen}".
+You want to offer a donation of food ingredients that are still good and could be used today or tomorrow.
+
+Ingredients to offer:
+{item_list}
+
+Guidelines:
+- Keep the message friendly, simple, and respectful
+- Mention the restaurant name
+- Offer to coordinate pickup or delivery
+- Avoid fancy or formal language — think like a kitchen staff WhatsApp message
+- Limit to 3-5 lines
+- End with a fake contact number like: 052-1234567
+- Write the message in English
+
+Return only the message text (no extra formatting or explanation).
+"""
+
+    response = LLMChat(temp=0.4).send_prompt(prompt).strip()
+    return _ensure_contact_phone(response)
+
 
 # ---------------- public API ----------------
 def send_message(restaurant: Optional[str] = None, soup_kitchen: Optional[str] = None) -> Dict[str, str]:
@@ -171,11 +227,3 @@ def send_message(restaurant: Optional[str] = None, soup_kitchen: Optional[str] =
     if not out_paths: print("No messages generated.")
     return out_paths
 
-# --------------- CLI ---------------
-if __name__ == "__main__":
-    import argparse
-    p = argparse.ArgumentParser(description="Send sales/donation messages via GPT.")
-    p.add_argument("--restaurant", type=str, help="Target restaurant name (optional)")
-    p.add_argument("--soup_kitchen", type=str, help="Target soup kitchen name (optional)")
-    args = p.parse_args()
-    send_message(args.restaurant, args.soup_kitchen)

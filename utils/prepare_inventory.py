@@ -44,8 +44,12 @@ def prepare_inventory() -> None:
         if (ing.get("item") or ing.get("name")).lower() not in blacklist
     ]
 
-    # 3) Pick up to 10 random expiring items
-    expiring = random.sample(expiring_candidates, min(10, len(expiring_candidates)))
+    # 3) Pick up random expiring items
+    max_items = min(10, len(expiring_candidates))
+    min_items = min(5, max_items)  # Avoids min > max
+
+    num_to_expire = random.randint(min_items, max_items)
+    expiring = random.sample(expiring_candidates, num_to_expire)
 
     # 4) Reduce their quantities and assign days_to_expire
     processed_expiring = []

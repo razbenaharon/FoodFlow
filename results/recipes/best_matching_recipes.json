@@ -1,47 +1,64 @@
 [
   {
     "rank": 1,
-    "title": "Roasted Eggplant",
+    "title": "Charred Artichoke & Leek with Honey-Mint Drizzle",
     "matched_expiring": [
-      "Labneh",
-      "Chili"
+      "Artichoke",
+      "Honey",
+      "Mint",
+      "Leeks"
     ],
     "inventory": [
-      "Eggplant",
-      "Olive oil"
+      "Olive oil",
+      "Sea salt"
     ],
     "missing": [],
-    "reason": "Roasted Eggplant, paired with labneh and chili, embodies HaSalon's Israeli Mediterranean ethos, celebrating produce-driven simplicity and bold, fire-kissed flavors.",
+    "reason": "The charred artichoke and leek with honey-mint drizzle highlights HaSalon's Mediterranean roots, celebrating fresh produce and bold, fire-kissed flavors.",
     "restaurant": "HaSalon",
     "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
   },
   {
     "rank": 2,
-    "title": "Sturgeon Fillets Served with a Fig and Corn Cream, a Licorice Flavored Crustacean Broth, and Stuffed Artichokes",
+    "title": "Shrimp & Mushroom Freekeh Risotto",
     "matched_expiring": [
-      "White wine",
-      "Rosemary"
+      "Shrimp",
+      "Mushrooms",
+      "Garlic",
+      "Mint",
+      "Leeks"
     ],
-    "inventory": [],
+    "inventory": [
+      "Freekeh",
+      "Olive oil",
+      "Butter",
+      "Parmesan cheese",
+      "White wine",
+      "Salt",
+      "Water"
+    ],
     "missing": [],
-    "reason": "This dish embodies HaSalon's Mediterranean ethos with fresh produce and live fire, enhanced by rosemary and white wine's aromatic depth.",
+    "reason": "The Shrimp & Mushroom Freekeh Risotto highlights HaSalon's Mediterranean roots, celebrating fresh shrimp and mushrooms with bold, produce-driven flavors.",
     "restaurant": "HaSalon",
     "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
   },
   {
     "rank": 3,
-    "title": "Smoked Fish with Cucumber \"Noodles\"",
+    "title": "Lamb Chops with Cauliflower & Labneh Purée",
     "matched_expiring": [
-      "Yogurt",
-      "Beets"
+      "Garlic",
+      "Mint",
+      "Leeks"
     ],
     "inventory": [
+      "Lamb chops",
+      "Cauliflower",
+      "Labneh",
+      "Olive oil",
       "Sea salt",
-      "Sea bass",
-      "Dill"
+      "Black pepper"
     ],
     "missing": [],
-    "reason": "Smoked Fish with Cucumber \"Noodles,\" paired with tangy yogurt and earthy beets, highlights HaSalon's Mediterranean ethos and produce-driven creativity.",
+    "reason": "Lamb Chops with Cauliflower and Labneh Purée embodies HaSalon's produce-driven Israeli Mediterranean ethos, elevated by garlic and mint's vibrant freshness.",
     "restaurant": "HaSalon",
     "restaurant_context": "Israeli Mediterranean; Tel Aviv; produce driven; live fire; chef Eyal Shani"
   }
