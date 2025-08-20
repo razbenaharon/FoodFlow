@@ -1,0 +1,30 @@
+# Python compiled files & caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+.Python
+
+# Environment & IDE settings
+.env
+.idea/
+.vscode/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Logs & system files
+*.log
+.DS_Store
+
+# Project-generated data
+data/expiring_ingredients.json
+data/current_inventory.json
+data/recent_expiring_ingredients.json
+results/
