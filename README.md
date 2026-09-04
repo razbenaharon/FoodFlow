@@ -1,3 +1,11 @@
+> [!NOTE]
+> **This repository has moved and is archived (read-only).**
+>
+> The project now lives in
+> **[razbenaharon/academic-projects/foodflow](https://github.com/razbenaharon/academic-projects/tree/main/foodflow)**,
+> alongside the rest of my Technion coursework. Continue there.
+
+
 # FoodFlow – Developer Guide & Runbook
 
 FoodFlow simulates day-to-day operations for a restaurant (**HaSalon, Tel Aviv**), deciding **what to cook, sell, or donate** from inventory and expiring items. It is built from modular “agents”.
